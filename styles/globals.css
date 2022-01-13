@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 a {
@@ -13,4 +14,16 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root{
+  --p-color: #009EE1;
+  --s-color: #2AF598;
+  --text-1: #313131;
+  --text-2: #515553;
+
+  --p-gradient: linear-gradient(246.88deg, #009EE1 14.68%, #2AF598 91.32%);
+
+  --gray-1: #E5E5E5;
+  --gray-2: #F9F9F9;
 }

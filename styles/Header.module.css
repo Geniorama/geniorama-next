@@ -1,0 +1,78 @@
+.genButtonNav{
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+    display: grid;
+    align-items: center;
+    padding: .5rem;
+    background: none;
+}
+
+.genButtonNav__line{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--p-color);
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.genNav{
+    position: fixed;
+    height: 100vh;
+    background: rgba(255, 255, 255, .9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-200%);
+    transition: .5s;
+}
+
+.genNavActive{
+    transform: translateY(0);
+}
+
+.genNav ul{
+    height: 100%;
+}
+
+.genNav ul a{
+    font-size: 3rem;
+    color: var(--p-color);
+    margin: 1rem 0;
+}
+
+.genNavContainer{
+    height: 100%;
+    position: relative;
+}
+
+.genNavBtnClose{
+    border: none;
+    width: 50px;
+    height: 50px;
+    padding: .5rem;
+    background: none;
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+
+.genNavBtnClose__line{
+    display: block;
+    width: 80%;
+    height: 3px;
+    background-color: var(--text-1);
+    box-sizing: border-box;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.genNavBtnClose__line:first-child{
+    transform: rotate(45deg);
+}
+
+.genNavBtnClose__line:last-child{
+    transform: rotate(-45deg);
+}
