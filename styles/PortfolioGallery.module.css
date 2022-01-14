@@ -80,3 +80,8 @@
 .genPortfolioLink:hover .genPortfolioGrid__item__cap::before{
     opacity: 1;
 }
+
+.genPortfolioLink{
+    display: block;
+    text-decoration: none;
+}

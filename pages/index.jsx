@@ -125,6 +125,7 @@ Los resultados son la consecuencia de tu visión y nuestra ejecución.</p>
             <h2 className='gen-info-section__title'>NUESTROS <br /> SERVICIOS</h2>
             <div className={styles.genWrapServices}>
               <CardOurGen
+                link="/"
                 title="DISEÑO DE PÁGINAS WEB"
               />
               <CardOurGen
