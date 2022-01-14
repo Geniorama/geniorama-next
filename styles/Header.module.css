@@ -27,6 +27,7 @@
     width: 100%;
     transform: translateY(-200%);
     transition: .5s;
+    z-index: 3;
 }
 
 .genNavActive{

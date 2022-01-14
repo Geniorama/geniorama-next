@@ -1,0 +1,17 @@
+.genDataCounter .genDataCounter__number, .genDataCounter .genDataCounter__leyend{
+    display: block;
+}
+
+.genDataCounter__number{
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--p-color);
+    line-height: 3rem;
+}
+
+.genDataCounter__leyend{
+    color: var(--p-color);
+    font-size: .8rem;
+    font-weight: 600;
+}

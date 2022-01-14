@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 a {
@@ -23,7 +28,23 @@ a {
   --text-2: #515553;
 
   --p-gradient: linear-gradient(246.88deg, #009EE1 14.68%, #2AF598 91.32%);
+  --p-gradient-v: linear-gradient(0deg, rgba(42,245,152,1) 0%, rgba(0,158,225,1) 100%);
 
   --gray-1: #E5E5E5;
   --gray-2: #F9F9F9;
+}
+
+.gen-info-section{
+  padding: 5rem 0;
+}
+
+.gen-info-section__title{
+  color: var(--p-color);
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.gen-info-section__desc{
+  color: var(--text-2);
+  margin: 2rem 0;
 }

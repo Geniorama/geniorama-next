@@ -1,0 +1,26 @@
+.CardOurGen{
+    border: 1px solid var(--gray-1);
+    background-color: white;
+    padding: 3rem;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.CardOurGen:hover{
+    -webkit-box-shadow: 12px 2px 49px 9px rgba(0,0,0,0.10); 
+    box-shadow: 12px 2px 49px 9px rgba(0,0,0,0.10);
+    border-color: transparent;
+}
+
+.CardOurGen__title{
+    color: var(--p-color);
+    font-weight: 600;
+}
+
+.CardOurGen__desc{
+    color: var(--text-2);
+}
+
+.CardOurGen__link{
+    display: block;
+}
