@@ -37,3 +37,10 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
 }
+
+.genCarouselSection{
+  padding: 6em 2em;
+  background-color: #F8F9F9;
+  width: 100%;
+  border-radius: 30px;
+}
