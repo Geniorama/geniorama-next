@@ -12,6 +12,7 @@ import IconGenCrea from '../public/iconos-web_GEN-CREATIVO.svg'
 import IconGenReal from '../public/iconos-web_GEL-REAL.svg'
 import ImgExampleServ from '../public/opportunity.svg'
 import Testimonial from '../components/Testimonial'
+import ImgTeam from '../public/team-member.png'
 
 
 export default function Home() {
@@ -194,6 +195,17 @@ Los resultados son la consecuencia de tu visión y nuestra ejecución.</p>
                     text="SOBRE NOSOTROS"
                     link="#"
                   />
+                </div>
+              </div>
+            </div>
+        </section>
+        <section className='gen-info-section'>
+            <div className="container">
+              <div className="row justify-content-between">
+                <div className="col-12 col-lg-9">
+                    <CardTeamGen
+                      image={ImgTeam}
+                    />
                 </div>
               </div>
             </div>
