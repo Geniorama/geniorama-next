@@ -1,0 +1,46 @@
+.genTestimonialSingle{
+    position: relative;
+    padding-left: 6rem;
+}
+
+.genTestimonialSingle__profile__avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.genTestimonialSingle__quote{
+    position: absolute;
+    left: 0;
+    top: -50px;
+}
+
+.genTestimonialSingle__desc{
+    color: black;
+    font-size: 1.2rem;
+}
+
+.genTestimonialSingle__profile{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.genTestimonialSingle__profile span{
+    display: block;
+}
+
+.genTestimonialSingle__profile__info{
+    margin-left: 1rem;
+    font-weight: 600;
+}
+
+.genTestimonialSingle__profile__info__name{
+    color: var(--p-color);
+    font-size: 1.2rem;
+}
+
+.genTestimonialSingle__profile__info__pos{
+    color: var(--text-2);
+}

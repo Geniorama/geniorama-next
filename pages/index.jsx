@@ -10,7 +10,8 @@ import PortfolioGallery from '../components/PortfolioGallery'
 import IconGenEstr from '../public/iconos-web_GEN-ESTRATEGICO.svg'
 import IconGenCrea from '../public/iconos-web_GEN-CREATIVO.svg'
 import IconGenReal from '../public/iconos-web_GEL-REAL.svg'
-import ImgServWeb from '../public/web.png'
+import ImgExampleServ from '../public/opportunity.svg'
+import Testimonial from '../components/Testimonial'
 
 
 export default function Home() {
@@ -125,42 +126,77 @@ Los resultados son la consecuencia de tu visión y nuestra ejecución.</p>
             <h2 className='gen-info-section__title'>NUESTROS <br /> SERVICIOS</h2>
             <div className={styles.genWrapServices}>
               <CardOurGen
+                image={ImgExampleServ}
                 link="/"
                 title="DISEÑO DE PÁGINAS WEB"
               />
               <CardOurGen
+                image={ImgExampleServ}
+                link="/"
                 title="AJUSTES Y SOPORTE WEB"
               />
               <CardOurGen
+                image={ImgExampleServ}
+                link="/"
                 title="HOSTING Y SERVIDORES"
               />
 
               <CardOurGen
+                image={ImgExampleServ}
+                link="/"
                 title="POSICIONAMIENTO WEB (SEO)"
               />
 
               <CardOurGen
+                image={ImgExampleServ}
+                link="/"
                 title="PAUTA DIGITAL"
               />
 
               <CardOurGen
+                image={ImgExampleServ}
+                link="/"
                 title="SOCIAL MEDIA"
               />
 
               <CardOurGen
+                image={ImgExampleServ}
+                link="/"
                 title="DISEÑO GRÁFICO"
               />
 
               <CardOurGen
+                image={ImgExampleServ}
+                link="/"
                 title="PRODUCCIÓN AUDIOVISUAL"
               />
 
               <CardOurGen
+                image={ImgExampleServ}
+                link="/"
                 title="STREAMING (TRANSMISIONES ONLINE)"
               />
             </div>
             
           </div>
+        </section>
+
+        <section className='gen-info-section'>
+            <div className="container">
+              <div className="row justify-content-between">
+                <div className="col-12 col-lg-6">
+                    <Testimonial />
+                </div>
+                <div className="col-12 col-lg-5">
+                  <h2 className='gen-info-section__title'>MÁS DE <br /> NOSOTROS</h2>
+                  <p className='my-4'>Somos una agencia de marketing y publicidad digital con más de 6 años de experiencia, administrando, optimizando y generando resultados para diferentes marcas nacionales e internacionales. </p>
+                  <ButtonGen
+                    text="SOBRE NOSOTROS"
+                    link="#"
+                  />
+                </div>
+              </div>
+            </div>
         </section>
     </Layout>
   )

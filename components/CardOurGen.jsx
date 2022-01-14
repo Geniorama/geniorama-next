@@ -16,8 +16,8 @@ export default function CardOurGen({title, description, image, link}) {
               <Image 
                 src={image}
                 className={styles.CardOurGen__img}
-                width={120}
-                height={120}
+                width={100}
+                height={150}
               />
               :
               null
