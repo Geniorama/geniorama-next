@@ -14,6 +14,9 @@ import ImgExampleServ from "../public/opportunity.svg";
 import Testimonial from "../components/Testimonial";
 import CardPost from "../components/CardPost";
 import CarouselPosts from "../components/CarouselPosts";
+import CardTeamGen from "../components/CardTeamGen";
+import ImgTeam from "../public/team-member.png";
+import CarouselGen from "../components/CarouselGen";
 
 export default function Home() {
   return (
@@ -200,6 +203,55 @@ export default function Home() {
           </h2>
         </div>
       </div>
+      <section className="gen-info-section">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-12 col-md-4">
+              <CardTeamGen
+                image={ImgTeam}
+                name="Oscar Pedraza"
+                position="CEO/ Marketing Manager"
+                linkedin="https://www.linkedin.com/"
+                facebook="https://www.facebook.com/"
+                instagram="https://www.instagram.com/"
+              />
+            </div>
+            <div className="col-12 col-md-4">
+              <CardTeamGen
+                image={ImgTeam}
+                name="Oscar Pedraza"
+                position="CEO/ Marketing Manager"
+                linkedin="https://www.linkedin.com/"
+                facebook="https://www.facebook.com/"
+                instagram="https://www.instagram.com/"
+              />
+            </div>
+            <div className="col-12 col-md-4 p-4">
+              <h2 className="gen-info-section__title">
+                NUESTROS
+                <br />
+                GENIOS
+              </h2>
+              <p className="pt-4 pb-4">
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give
+                you a complete account of the system, and expound the actual
+                teachings of the great explorer of human happiness. No one.
+              </p>
+              <ButtonGen text="SOBRE NOSOTROS" link="#" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="gen-info-section">
+        <div className="container">
+          <h2 className="gen-info-section__title mb-5">NUESTROS<br />AMIGOS</h2>
+          <div className={styles.genCarouselSection}>
+            <CarouselGen
+            />
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }

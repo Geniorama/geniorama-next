@@ -1,0 +1,52 @@
+.CardTeamGen{
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.CardTeamGen__img{
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.CardTeamGen__info{
+    margin-top: -5em;
+    z-index: 2;
+    width: 80%;
+    padding: 2em;
+    background-color: var(--p-color);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.CardTeamGen__info__name{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.CardTeamGen__info__position{
+    color:rgba(255,255,255,0.68);
+    font-size: 15px;
+}
+.CardTeamGen__info__social{
+    margin-top: 1em;
+}
+
+.CardTeamGen__info__social__contIcons{
+    margin: .5em;
+}
+
+.CardTeamGen__info__social__contIcons svg{
+    fill: white;
+    transition: .4s;
+}
+
+.CardTeamGen__info__social__contIcons svg:hover{
+    opacity: .8;
+}
