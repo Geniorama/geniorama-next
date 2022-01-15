@@ -1,0 +1,45 @@
+.genFooter{
+    background-color: #252525;
+    padding: 3rem;
+    color: white;
+}
+
+.genNavFooter a{
+    color: white;
+    opacity: .5;
+    transition: .3s;
+}
+
+.genNavFooter a:hover{
+    color: var(--p-color);
+    opacity: 1;
+}
+
+.genNavSocialFooter a{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+
+.genNavSocialFooter__icon{
+    display: block;
+}
+
+.genNavSocialFooter__icon svg{
+    width: 18px;
+    fill: white;
+}
+
+.genNavSocialFooter a:hover{
+    background-color: var(--p-color);
+    border-color: var(--p-color);
+}
+

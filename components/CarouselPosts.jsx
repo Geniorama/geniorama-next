@@ -12,8 +12,21 @@ export default function CarouselPosts(){
         <Swiper
             modules={[Pagination]}
             spaceBetween={20}
-            slidesPerView={4}
             pagination={{clickable:true}}
+            breakpoints={{
+                375: {
+                  slidesPerView: 1,
+                },
+                768: {
+                  slidesPerView: 2,
+                },
+                1280: {
+                  slidesPerView: 3,
+                },
+                1440: {
+                    slidesPerView: 4,
+                }
+            }}
             >
             <SwiperSlide className='p-2 py-5'>
                 <CardPost/>
