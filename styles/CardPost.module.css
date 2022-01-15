@@ -1,0 +1,64 @@
+.genCardPostLink{
+    display: block;
+    text-decoration: none;
+}
+
+.genCardPostArticle{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .4s;
+    min-height: 500px;
+}
+.genCardPostArticle__cap{
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    left: 0;
+    background-color: white;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 8%;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.genCardPostArticle__cap__date{
+    font-size: .9rem;
+    font-weight: 400;
+    color: var(--text-2);
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.genCardPostArticle__cap__title{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    margin-top: .5rem;
+}
+
+.genCardPostArticle__img{
+    border-radius: 20px;
+    
+}
+
+.genCardPostArticle__fig{
+    margin: 0;
+}
+
+.genCardPostArticle__cap__desc{
+    font-size: 1rem;
+    color: var(--text-2);
+    font-weight: 400;
+    line-height: 1.3rem;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.genCardPostLink:hover{
+    color: unset;
+}
+
+.genCardPostLink:hover .genCardPostArticle{
+    -webkit-box-shadow: 12px 2px 49px 9px rgba(0,0,0,0.10); 
+    box-shadow: 12px 2px 49px 9px rgba(0,0,0,0.10);
+    transform: translateY(-5px)
+}
