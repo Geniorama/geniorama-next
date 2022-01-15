@@ -1,6 +1,7 @@
 .CarouselGen__logo{
     filter: grayscale(100%);
     transition: .4s;
+    width: 100%;
 }
 
 .CarouselGen__logo:hover{
