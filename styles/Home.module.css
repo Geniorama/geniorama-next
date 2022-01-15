@@ -44,3 +44,8 @@
   width: 100%;
   border-radius: 30px;
 }
+
+.genWrapTeam{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}

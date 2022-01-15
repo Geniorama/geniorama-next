@@ -17,6 +17,7 @@ import CarouselPosts from "../components/CarouselPosts";
 import CardTeamGen from "../components/CardTeamGen";
 import ImgTeam from "../public/team-member.png";
 import CarouselGen from "../components/CarouselGen";
+import ImgAngelBurgos from "../public/angel-burgos.jpg"
 
 export default function Home() {
   return (
@@ -195,38 +196,40 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="gen-info-section">
+      <section className="gen-info-section">
         <div className="container">
           <h2 className="gen-info-section__title">
             PUBLICACIONES <br /> RECIENTES
             <CarouselPosts />
           </h2>
         </div>
-      </div>
+      </section>
+
       <section className="gen-info-section">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-12 col-md-4">
-              <CardTeamGen
-                image={ImgTeam}
-                name="Oscar Pedraza"
-                position="CEO/ Marketing Manager"
-                linkedin="https://www.linkedin.com/"
-                facebook="https://www.facebook.com/"
-                instagram="https://www.instagram.com/"
-              />
+            <div className="col-12 col-lg-8">
+              <div className={styles.genWrapTeam}>
+                <CardTeamGen
+                  image={ImgTeam}
+                  name="Oscar Pedraza"
+                  position="CEO/ Marketing Manager"
+                  linkedin="https://www.linkedin.com/"
+                  facebook="https://www.facebook.com/"
+                  instagram="https://www.instagram.com/"
+                />
+
+                <CardTeamGen
+                  image={ImgAngelBurgos}
+                  name="Angel Burgos"
+                  position="CTO/ Web Manager"
+                  linkedin="https://www.linkedin.com/"
+                  facebook="https://www.facebook.com/"
+                  instagram="https://www.instagram.com/"
+                />
+              </div>
             </div>
-            <div className="col-12 col-md-4">
-              <CardTeamGen
-                image={ImgTeam}
-                name="Oscar Pedraza"
-                position="CEO/ Marketing Manager"
-                linkedin="https://www.linkedin.com/"
-                facebook="https://www.facebook.com/"
-                instagram="https://www.instagram.com/"
-              />
-            </div>
-            <div className="col-12 col-md-4 p-4">
+            <div className="col-12 col-lg-4 p-4">
               <h2 className="gen-info-section__title">
                 NUESTROS
                 <br />
