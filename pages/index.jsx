@@ -11,7 +11,6 @@ import IconGenCrea from "../public/iconos-web_GEN-CREATIVO.svg";
 import IconGenReal from "../public/iconos-web_GEL-REAL.svg";
 import ImgExampleServ from "../public/opportunity.svg";
 import Testimonial from "../components/Testimonial";
-import CardPost from "../components/CardPost";
 import CarouselPosts from "../components/CarouselPosts";
 import CardTeamGen from "../components/CardTeamGen";
 import ImgTeam from "../public/team-member.png";
@@ -21,9 +20,12 @@ import BannerHome from "../components/BannerHome";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import IconoExperiencia from "../public/iconos-web_6-anos-experiencia.svg"
+import IconoClientes from "../public/iconos-web_clientes-felices.svg"
+import IconoTazas from '../public/iconos-web_tazas-de-cafe.svg'
+import IconoIdea from '../public/iconos-web_me-gusta-la-idea.svg'
 
-export default function Home() {
-
+export default function Home({data, dataCat}) {
   useEffect(()=>{
     AOS.init()
   }, [])
@@ -93,10 +95,30 @@ export default function Home() {
       <section className="gen-info-section">
         <div className="container">
           <div className={styles.genWrapCounters}>
-            <DataCounter />
-            <DataCounter />
-            <DataCounter />
-            <DataCounter />
+            <DataCounter
+              image={IconoExperiencia}
+              prefix="+"
+              number="7"
+              leyend="Años de experiencia"
+            />
+            <DataCounter
+              image={IconoClientes}
+              prefix="+"
+              number="100"
+              leyend="Clientes felices"
+            />
+            <DataCounter
+              image={IconoTazas}
+              prefix="+"
+              number="45.789"
+              leyend="Tazas de café o un poco más..."
+            />
+            <DataCounter
+              image={IconoIdea}
+              prefix="+"
+              number="367"
+              leyend="Veces hemos ecuchado: ¡Me gusta esa idea!" 
+            />
           </div>
         </div>
       </section>
@@ -107,7 +129,9 @@ export default function Home() {
             NUESTROS <br /> PROYECTOS WEB
           </h2>
 
-          <PortfolioGallery />
+          <PortfolioGallery
+            info={data}
+          />
         </div>
       </section>
 
@@ -247,3 +271,20 @@ export default function Home() {
     </Layout>
   );
 }
+
+export async function getStaticProps(ctx){
+
+  const url_api = "https://www.geniorama.site/demo/geniorama/wp-json/wp/v2/portfolio/?per_page=9"
+  try{
+    const res = await fetch(url_api)
+    const data = await res.json()
+    return {
+      props: {
+        data
+      }
+    }
+  } catch (error){
+    console.log(error)
+  }
+}
+
