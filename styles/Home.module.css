@@ -1,16 +1,3 @@
-.genBannerIntro__title{
-  font-size: 3rem;
-  color: var(--p-color);
-  font-weight: 700;
-}
-
-.genBannerIntro__desc{
-  font-size: 1.5rem;
-  line-height: 2rem;
-  color: var(--text-2);
-  margin: 2rem 0;
-}
-
 .genContGrid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

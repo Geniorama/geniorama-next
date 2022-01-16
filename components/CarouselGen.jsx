@@ -11,8 +11,6 @@ export default function CarouselGen() {
     <Swiper
       modules={[Autoplay]}
       spaceBetween={30}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
       autoplay
       breakpoints={{
         375: {

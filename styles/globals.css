@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Be Vietnam Pro', sans-serif;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5{

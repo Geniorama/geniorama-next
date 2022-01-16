@@ -2,7 +2,6 @@ import Image from "next/image";
 import ButtonGen from "../components/ButtonGen";
 import Layout from "../components/Layout/Layout";
 import styles from "../styles/Home.module.css";
-import ImgBanner from "../public/geniorama-banner.svg";
 import CardOurGen from "../components/CardOurGen";
 import ImagenComo from "../public/como-lo-hacemos-scaled.jpg";
 import DataCounter from "../components/DataCounter";
@@ -18,34 +17,24 @@ import CardTeamGen from "../components/CardTeamGen";
 import ImgTeam from "../public/team-member.png";
 import CarouselGen from "../components/CarouselGen";
 import ImgAngelBurgos from "../public/angel-burgos.jpg"
+import BannerHome from "../components/BannerHome";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
+
+  useEffect(()=>{
+    AOS.init()
+  }, [])
   return (
     <Layout>
-      <section className={`${styles.genBannerIntro} py-5`}>
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-12 col-md-6">
-              <h1 className={styles.genBannerIntro__title}>
-                ¡MARKETING DE RESULTADOS DIGITALES!
-              </h1>
-              <p className={styles.genBannerIntro__desc}>
-                Generamos campañas de alto impacto para tu negocio
-              </p>
-              <ButtonGen link="#" text="EMPECEMOS" />
-            </div>
-
-            <div className="col-12 col-md-6">
-              <Image src={ImgBanner} />
-            </div>
-          </div>
-        </div>
-      </section>
+      <BannerHome />
 
       <section className="gen-info-section">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-12 col-lg-3 px-4 mb-4 mb-lg-0">
+            <div className="col-12 col-lg-3 px-4 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
               <h2 className="gen-info-section__title">¡NUESTRO GEN DIGITAL!</h2>
               <p className="gen-info-section__desc">
                 Nuestros genes impulsan y potencian el crecimiento de los
@@ -54,7 +43,7 @@ export default function Home() {
               <ButtonGen text="VER MÁS" link="#" />
             </div>
 
-            <div className="col-12 col-lg-9">
+            <div className="col-12 col-lg-9" data-aos="fade-left" data-aos-duration="1000">
               <div className={styles.genContGrid}>
                 <CardOurGen
                   image={IconGenEstr}
