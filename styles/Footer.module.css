@@ -43,3 +43,16 @@
     border-color: var(--p-color);
 }
 
+.genBottomFooter{
+    font-size: .9rem;
+    color: #ccc;
+}
+
+.genBottomFooter__link{
+    transition: .3s;
+}
+
+.genBottomFooter__link:hover{
+    color: var(--p-color);
+}
+

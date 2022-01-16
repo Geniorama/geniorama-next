@@ -99,6 +99,17 @@ export default function Footer(){
                         </li>
                     </ul>
                 </div>
+
+                <div className={`${styles.genBottomFooter} row justify-content-between mt-4`}>
+                    <div className="col-12 col-lg-6 text-center text-lg-right">
+                        <p>Geniorama 2022 | All Rights Reserved</p>
+                    </div>
+                    <div className="col-12 col-lg-6 text-center text-lg-right">
+                        <Link href="#">
+                            <a className={styles.genBottomFooter__link}>Políticas de privacidad</a>
+                        </Link>
+                    </div>
+                </div>
             </div>
         </footer>
     )
