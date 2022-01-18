@@ -32,3 +32,11 @@
 .genCardAboutUs:hover .genCardAboutUs__desc{
     color: white;
 }
+
+.genCardAboutUs:hover path[class='pic1']{
+    fill: var(--s-color-2);
+}
+
+.genCardAboutUs:hover path[class='pic2']{
+    fill: rgb(33, 102, 169);
+}

@@ -196,6 +196,9 @@ export default function Home({data}) {
             <div className="col-12 col-lg-6 mb-5 mb-lg-0">
               <Testimonial
                 image={ImgTeam}
+                text={"“ ¡Somos constructores! Hacemos puentes que unen marcas y personas, hacemos caminos que facilitan viajes de ida y vuelta”"}
+                name={"Oscar Pedraza"}
+                position={"CEO / Marketing Manager"}
               />
             </div>
             <div className="col-12 col-lg-5">

@@ -1,6 +1,7 @@
 .genTestimonialSingle{
     position: relative;
     padding-left: 6rem;
+    margin-bottom: 3rem;
 }
 
 .genTestimonialSingle__profile__avatar{

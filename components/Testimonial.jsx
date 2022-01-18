@@ -3,7 +3,7 @@ import ImgQuotes from "../public/icons/signo-de-comillas-a-la-izquierda.png";
 import Image from "next/image";
 import Avatar from "../public/pexels-sinitta-leunen-6652928.jpg";
 
-export default function Testimonial({image}) {
+export default function Testimonial({image, text, name, position}) {
   return (
     <div className={styles.genTestimonialSingle}>
       <div className={styles.genTestimonialSingle__quote}>
@@ -12,8 +12,7 @@ export default function Testimonial({image}) {
       
       
       <p className={styles.genTestimonialSingle__desc}>
-        “ ¡Somos constructores! Hacemos puentes que unen marcas y personas,
-        hacemos caminos que facilitan viajes de ida y vuelta”
+        {text}
       </p>
 
       <div className={styles.genTestimonialSingle__profile}>
@@ -27,8 +26,8 @@ export default function Testimonial({image}) {
         }
         
         <p className={styles.genTestimonialSingle__profile__info}>
-          <span className={styles.genTestimonialSingle__profile__info__name}>Oscar Pedraza</span>
-          <span className={styles.genTestimonialSingle__profile__info__pos}>CEO / Marketing Manager</span>
+          <span className={styles.genTestimonialSingle__profile__info__name}>{name}</span>
+          <span className={styles.genTestimonialSingle__profile__info__pos}>{position}</span>
         </p>
       </div>
     </div>
