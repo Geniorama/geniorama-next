@@ -25,12 +25,14 @@ import IconoClientes from "../public/iconos-web_clientes-felices.svg"
 import IconoTazas from '../public/iconos-web_tazas-de-cafe.svg'
 import IconoIdea from '../public/iconos-web_me-gusta-la-idea.svg'
 
-export default function Home({data, dataCat}) {
+export default function Home({data}) {
   useEffect(()=>{
     AOS.init()
   }, [])
   return (
-    <Layout>
+    <Layout 
+      title={"Geniorama - Agencia Digital"}
+      idPage={"gen-home"}>
       <BannerHome />
 
       <section className="gen-info-section">

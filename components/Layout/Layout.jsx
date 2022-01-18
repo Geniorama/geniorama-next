@@ -2,7 +2,7 @@ import Head from "next/head";
 import Footer from "../Footer";
 import Header from "../Header";
 
-export default function Layout({children, title, description}){
+export default function Layout({children, title, description, idPage}){
     return(
         <div className="gen-layout">
             <Head>
@@ -12,7 +12,7 @@ export default function Layout({children, title, description}){
 
             <Header />
             
-            <main className="gen-main" id='gen-home'>
+            <main className="gen-main" id={idPage}>
                 {children}
             </main>
 

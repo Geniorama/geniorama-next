@@ -1,0 +1,37 @@
+.genHeadingPage{
+    color: var(--p-color);
+    max-width: 700px;
+    margin: auto;
+}
+
+.genHeadingPage__smallTitle{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    position: relative;
+}
+
+.genHeadingPage__smallTitle::before{
+    content: '';
+    height: 3px;
+    width: 50px;
+    left: -70px;
+    top: calc(50% - 2px);
+    position: absolute;
+    background-color: var(--s-color-2);
+}
+
+.genHeadingPage__smallTitle::after{
+    content: '';
+    height: 3px;
+    width: 50px;
+    right: -70px;
+    top: calc(50% - 2px);
+    position: absolute;
+    background-color: var(--s-color-2);
+}
+
+.genHeadingPage__smallSubTitle{
+    font-size: 3rem;
+    font-weight: 600;
+}

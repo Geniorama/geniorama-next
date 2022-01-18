@@ -31,7 +31,6 @@ export default function PortfolioGallery({info}){
                     info.map((post) => (
                         
                         <div key={post.id} className={styles.genPortfolioGrid__item}>
-                            {console.log(post._embedded)}
                             <Link href="#">
                                 <a className={styles.genPortfolioLink}>
                                     <div className={styles.genPortfolioLink__item__cont__img}>

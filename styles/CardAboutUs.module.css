@@ -1,0 +1,34 @@
+.genCardAboutUs{
+    border-radius: 30px;
+    -webkit-box-shadow: 12px 2px 49px 9px rgba(0,0,0,0.10); 
+    box-shadow: 12px 2px 49px 9px rgba(0,0,0,0.10);
+    transition: .4s;
+    background-color: white;
+}
+
+.genCardAboutUs__title{
+    color: var(--s-color-2);
+}
+
+.genCardAboutUs__img{
+    width: 7rem;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.genCardAboutUs__img svg{
+    width: 100%;
+}
+
+.genCardAboutUs__desc{
+    color: var(--text-2);
+    transition: .4s;
+}
+
+.genCardAboutUs:hover{
+    background-color: var(--p-color-2);
+}
+
+.genCardAboutUs:hover .genCardAboutUs__desc{
+    color: white;
+}

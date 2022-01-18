@@ -1,0 +1,17 @@
+.genWrapCardsAbout{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.genWrapOurGenius{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.genCarouselBrands{
+    background-color: #f8f8f8;
+    padding: 5rem 4rem;
+    border-radius: 40px;
+}

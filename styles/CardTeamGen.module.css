@@ -7,11 +7,15 @@
     align-items: center;
 }
 .CardTeamGen__img{
-    width: 100% !important;
-    height: auto !important;
-    object-fit: cover;
     border-radius: 30px;
+    filter: grayscale(100%);
+    transition: .4s;
 }
+
+.CardTeamGen:hover .CardTeamGen__img{
+    filter: grayscale(0%);
+}
+
 .CardTeamGen__info{
     margin-top: -5em;
     z-index: 2;
