@@ -3,7 +3,7 @@ import ImgQuotes from "../public/icons/signo-de-comillas-a-la-izquierda.png";
 import Image from "next/image";
 import Avatar from "../public/pexels-sinitta-leunen-6652928.jpg";
 
-export default function Testimonial() {
+export default function Testimonial({image}) {
   return (
     <div className={styles.genTestimonialSingle}>
       <div className={styles.genTestimonialSingle__quote}>
@@ -17,9 +17,14 @@ export default function Testimonial() {
       </p>
 
       <div className={styles.genTestimonialSingle__profile}>
+        {image
+        ?
         <div className={styles.genTestimonialSingle__profile__avatar}>
-            <Image src={Avatar} className={styles.genTestimonialSingle__profile__avatar__img} />
+            <Image src={image} className={styles.genTestimonialSingle__profile__avatar__img} />
         </div>
+        :
+        null
+        }
         
         <p className={styles.genTestimonialSingle__profile__info}>
           <span className={styles.genTestimonialSingle__profile__info__name}>Oscar Pedraza</span>

@@ -192,7 +192,9 @@ export default function Home({data, dataCat}) {
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-12 col-lg-6 mb-5 mb-lg-0">
-              <Testimonial />
+              <Testimonial
+                image={ImgTeam}
+              />
             </div>
             <div className="col-12 col-lg-5">
               <h2 className="gen-info-section__title">
