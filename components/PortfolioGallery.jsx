@@ -29,13 +29,19 @@ export default function PortfolioGallery({info}){
             <div className={styles.genPortfolioGrid}>
                 {
                     info.map((post) => (
+                        
                         <div key={post.id} className={styles.genPortfolioGrid__item}>
+                            {console.log(post._embedded)}
                             <Link href="#">
                                 <a className={styles.genPortfolioLink}>
-                                    <Image 
-                                        src={ExampleImage}
-                                        className={styles.genPortfolioGrid__item__img}
-                                    />
+                                    <div className={styles.genPortfolioLink__item__cont__img}>
+                                        <Image 
+                                            src={post.images.medium}
+                                            className={styles.genPortfolioGrid__item__img}
+                                            width={400}
+                                            height={400}
+                                        />
+                                    </div>
                                     <div className={styles.genPortfolioGrid__item__cap}>
                                         
                                             <a className={styles.genPortfolioGrid__item__cap__button}>

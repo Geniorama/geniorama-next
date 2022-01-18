@@ -276,7 +276,7 @@ export default function Home({data, dataCat}) {
 
 export async function getStaticProps(ctx){
 
-  const url_api = "https://www.geniorama.site/demo/geniorama/wp-json/wp/v2/portfolio/?per_page=9"
+  const url_api = "https://www.geniorama.site/demo/geniorama/wp-json/wp/v2/portfolio/?per_page=9&_embed=true"
   try{
     const res = await fetch(url_api)
     const data = await res.json()

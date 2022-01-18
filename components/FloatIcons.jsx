@@ -3,7 +3,8 @@ import styles from "../styles/FloatIcons.module.css";
 export default function FloatIcons() {
   return (
     <div className={styles.genFloatIcons}>
-      <a href="#" className={styles.genFloatIcons__link}>
+      {/* Link Whatsapp */}
+      <a href="https://wa.link/k9v2me" target="_blank" className={styles.genFloatIcons__link}>
         <span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +20,9 @@ export default function FloatIcons() {
           </svg>
         </span>
       </a>
-      <a href="#" className={styles.genFloatIcons__link}>
+
+      {/* Link Back to top */}
+      <a href="#" target="_blank" className={styles.genFloatIcons__link}>
         <span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
