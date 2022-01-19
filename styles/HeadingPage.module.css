@@ -31,7 +31,7 @@
     background-color: var(--s-color-2);
 }
 
-.genHeadingPage__smallSubTitle{
+.genHeadingPage__largeTitle{
     font-size: 3rem;
     font-weight: 600;
 }

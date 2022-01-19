@@ -205,7 +205,7 @@ export default function Home({data}) {
               <h2 className="gen-info-section__title">
                 MÁS DE <br /> NOSOTROS
               </h2>
-              <p className="my-4">
+              <p className="my-4 gen-info-section__desc">
                 Somos una agencia de marketing y publicidad digital con más de 7
                 años de experiencia, administrando, optimizando y generando
                 resultados para diferentes marcas nacionales e internacionales.{" "}
@@ -255,7 +255,7 @@ export default function Home({data}) {
                 <br />
                 GENIOS
               </h2>
-              <p className="pt-4 pb-4">
+              <p className="gen-info-section__desc">
                 But I must explain to you how all this mistaken idea of
                 denouncing pleasure and praising pain was born and I will give
                 you a complete account of the system, and expound the actual

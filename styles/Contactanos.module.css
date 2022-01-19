@@ -1,0 +1,5 @@
+.genWrapInfoContact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 1fr));
+    gap: 3rem;
+}

@@ -1,0 +1,26 @@
+.genCardInfo__link{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+.genCardInfo{
+    background-color: white;
+    -webkit-box-shadow: 12px 2px 49px 9px rgba(0,0,0,0.10); 
+    box-shadow: 12px 2px 49px 9px rgba(0,0,0,0.10);
+    padding: 4rem;
+    border-radius: 30px;
+}
+
+.genCardInfo__desc{
+    margin-left: 2rem;
+}
+
+.genCardInfo__title{
+    font-size: 2rem;
+    color: var(--p-color-2);
+}
+
+.genCardInfo__desc__p{
+    color: var(--text-2);
+}

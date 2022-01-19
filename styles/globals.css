@@ -50,4 +50,36 @@ a {
 .gen-info-section__desc{
   color: var(--text-2);
   margin: 2rem 0;
+  line-height: 1.8rem;
+}
+
+.gen-input-group{
+  margin-bottom: 1.5rem;
+}
+
+.gen-input-label{
+  font-size: .9rem;
+  color: #757575;
+  font-weight: 600;
+}
+
+.gen-input-text{
+  width: 100%;
+  height: 70px;
+  padding: 10px 1.5rem;
+  margin: .5rem 0;
+  border-radius: 15px;
+  border: none;
+  background-color: white;
+  -webkit-box-shadow: 5px 2px 29px 0px rgba(0,0,0,0.03); 
+  box-shadow: 5px 2px 29px 0px rgba(0,0,0,0.03);
+  outline: none;
+}
+
+.gen-input-text::placeholder{
+  color: #ccc;
+}
+
+.gen-input-text:focus::placeholder{
+  color: var(--text-2);
 }

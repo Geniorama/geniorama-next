@@ -19,7 +19,10 @@ import SvgIconOurMission from "../components/SvgImages/SvgIconOurMission";
 export default function SobreNosotros() {
   return (
     <Layout title={"Servicios - Geniorama"} idPage={"gen-servicios"}>
-      <HeadingPage />
+      <HeadingPage
+        sTitle={"SOBRE NOSOTROS"}
+        lTitle={"¡MARKETING DE RESULTADOS DIGITALES!"}
+      />
 
       <section className={"gen-info-section"}>
         <div className="container">
