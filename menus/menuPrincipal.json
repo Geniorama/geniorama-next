@@ -1,0 +1,37 @@
+[
+    {
+        "id": "genHome",
+        "title": "HOME",
+        "link": "/"
+    },
+
+    {
+        "id": "genProjects",
+        "title": "PROYECTOS",
+        "link": "/proyectos"
+    },
+
+    {
+        "id": "genAbout",
+        "title": "NOSOTROS",
+        "link": "/sobre-nosotros"
+    },
+
+    {
+        "id": "genServices",
+        "title": "SERVICIOS",
+        "link": "/servicios"
+    },
+
+    {
+        "id": "genBlog",
+        "title": "BLOG",
+        "link": "/blog"
+    },
+
+    {
+        "id": "genContact",
+        "title": "CONTÁCTANOS",
+        "link": "/contactanos"
+    }
+]

@@ -22,7 +22,7 @@ export default function FloatIcons() {
       </a>
 
       {/* Link Back to top */}
-      <a href="#" target="_blank" className={styles.genFloatIcons__link}>
+      <a href="#gen-ancle-top" className={styles.genFloatIcons__link}>
         <span>
           <svg
             xmlns="http://www.w3.org/2000/svg"

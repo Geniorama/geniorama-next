@@ -1,4 +1,5 @@
 import styles from '../styles/HeadingPage.module.css'
+import Breadcrumbs from 'nextjs-breadcrumbs';
 
 export default function HeadingPage({sTitle, lTitle}){
     return(
@@ -6,6 +7,12 @@ export default function HeadingPage({sTitle, lTitle}){
             <div className="container text-center">
                 <h1 className={styles.genHeadingPage__smallTitle}>{sTitle}</h1>
                 <h2 className={styles.genHeadingPage__largeTitle}>{lTitle}</h2>
+                <Breadcrumbs 
+                    listStyle={{'list-style':"none"}} 
+                    listClassName={styles.genBreadcrumbs} 
+                    rootLabel="Home"
+                    activeItemStyle={{'color':'#ccc'}}
+                />
             </div>
         </section>
     )

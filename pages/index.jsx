@@ -25,6 +25,7 @@ import IconoClientes from "../public/iconos-web_clientes-felices.svg"
 import IconoTazas from '../public/iconos-web_tazas-de-cafe.svg'
 import IconoIdea from '../public/iconos-web_me-gusta-la-idea.svg'
 
+
 export default function Home({data}) {
   useEffect(()=>{
     AOS.init()

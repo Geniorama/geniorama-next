@@ -71,8 +71,8 @@ a {
   border-radius: 15px;
   border: none;
   background-color: white;
-  -webkit-box-shadow: 5px 2px 29px 0px rgba(0,0,0,0.1); 
-  box-shadow: 5px 2px 29px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 5px 2px 49px 0px rgba(0,0,0,0.1); 
+  box-shadow: 5px 2px 49px 0px rgba(0,0,0,0.1);
   outline: none;
 }
 
@@ -82,4 +82,9 @@ a {
 
 .gen-input-text:focus::placeholder{
   color: var(--text-2);
+}
+
+.gen-textarea{
+  height: 170px;
+  padding-top: 1.5rem;
 }

@@ -43,9 +43,9 @@ export default function PortfolioGallery({info}){
                                     </div>
                                     <div className={styles.genPortfolioGrid__item__cap}>
                                         
-                                            <a className={styles.genPortfolioGrid__item__cap__button}>
+                                            <button className={styles.genPortfolioGrid__item__cap__button}>
                                                 <Image src={IconRight} />
-                                            </a>
+                                            </button>
                                         
                                         <h5 className={styles.genPortfolioGrid__item__cap__title}>
                                             {post.title.rendered}

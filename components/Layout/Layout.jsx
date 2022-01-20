@@ -5,6 +5,7 @@ import Header from "../Header";
 export default function Layout({children, title, description, idPage}){
     return(
         <div className="gen-layout">
+            <div id="gen-ancle-top"></div>
             <Head>
                 <title>{title}</title>
                 <meta name="description" content={description} />

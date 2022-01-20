@@ -3,3 +3,21 @@
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr));
     gap: 3rem;
 }
+
+.genNavSocialContact a{
+    color: var(--p-color-2);
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--p-color-2);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    transition: .4s;
+}
+
+.genNavSocialContact a:hover{
+    background-color: var(--p-color-2);
+    color: #fff;
+}

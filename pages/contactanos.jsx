@@ -5,6 +5,8 @@ import styles from "../styles/Contactanos.module.css";
 import IconPhone from "../public/icon-phone.svg";
 import IconClock from "../public/clock-2.svg";
 import ContactForm from "../components/ContactForm";
+import SocialShapes from "../utils/socialShapes.json"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Contactanos() {
   return (
@@ -56,6 +58,16 @@ export default function Contactanos() {
                 that are extremely painful. Nor again is there anyone who loves
                 .
               </div>
+
+              <ul className={`${styles.genNavSocialContact} nav`}>
+                {SocialShapes.map(item => (
+                  <li key={item.id} className="nav-item">
+                    <a href={item.link} className="nav-link" target="_blank">
+                      <FontAwesomeIcon icon={['fab', item.fa]}/>
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
             <div className="col-12 col-lg-6 px-5">
                 <ContactForm />

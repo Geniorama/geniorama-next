@@ -2,7 +2,8 @@ import styles from './../styles/Header.module.css'
 import LogoDark from './../public/logo/logo-geniorama-02.svg'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect } from 'react'
+import MenuPrincipal from '../menus/menuPrincipal.json'
+
 
 export default function Header(){
 
@@ -49,35 +50,14 @@ export default function Header(){
                         <span className={styles.genNavBtnClose__line}></span>
                     </button>
                     <ul className="nav flex-column justify-content-center align-items-center">
-                        <li className="nav-item">
-                            <Link href="#">
-                                <a href="#" className="nav-link">Home</a>
-                            </Link>
-                        </li>
-
-                        <li className="nav-item">
-                            <Link href="#">
-                                <a href="#" className="nav-link">Proyectos</a>
-                            </Link>
-                        </li>
-
-                        <li className="nav-item">
-                            <Link href="#">
-                                <a href="#" className="nav-link">Nosotros</a>
-                            </Link>
-                        </li>
-
-                        <li className="nav-item">
-                            <Link href="#">
-                                <a href="#" className="nav-link">Servicios</a>
-                            </Link>
-                        </li>
-
-                        <li className="nav-item">
-                            <Link href="#">
-                                <a href="#" className="nav-link">Contacto</a>
-                            </Link>
-                        </li>
+                        {MenuPrincipal.map(item=>(
+                            <li key={item.id} className="nav-item">
+                                <Link href={item.link}>
+                                    <a className="nav-link">{item.title}</a>
+                                </Link>
+                            </li>
+                        ))
+                        }
                     </ul>
                 </div>
             </nav>

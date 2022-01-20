@@ -35,3 +35,22 @@
     font-size: 3rem;
     font-weight: 600;
 }
+
+.genBreadcrumbs{
+    color: var(--text-2);
+    display: flex;
+    justify-content: center;
+}
+
+.genBreadcrumbs a{
+    margin: .2rem;
+    text-transform: capitalize;
+}
+
+.genBreadcrumbs a:hover{
+    color: var(--p-color);
+}
+
+.genBreadcrumbs a::after{
+    content: ' / ';
+}
