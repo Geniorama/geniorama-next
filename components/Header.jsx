@@ -11,7 +11,7 @@ export default function Header(){
         const header = document.getElementById('gen-header')
         const stickyClass = styles.genHeader__sticky
         window.addEventListener('scroll', function(){
-            if(scrollY > 300){
+            if(scrollY > 200){
                 header.classList.add(stickyClass)
             } else {
                 header.classList.remove(stickyClass)

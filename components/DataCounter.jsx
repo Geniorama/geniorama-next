@@ -3,7 +3,7 @@ import styles from "../styles/DataCounter.module.css"
 
 export default function DataCounter({image, prefix, number, leyend, target}){
     return(
-        <div className={`${styles.genDataCounter} text-center gen-item-counter`}>
+        <div data-aos="zoom-in" data-aos-duration="1000" className={`${styles.genDataCounter} text-center gen-item-counter`}>
             {image
             ?
             <Image 

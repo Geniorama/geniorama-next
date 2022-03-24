@@ -34,7 +34,7 @@ export default function PortfolioGallery({info, filters}){
                 {
                     info.map((post) => (
                         
-                        <div key={post.id} className={styles.genPortfolioGrid__item}>
+                        <div key={post.id}  data-aos="zoom-in" data-aos-duration="1000" className={styles.genPortfolioGrid__item}>
                             <a href={post.acf.link ? post.acf.link.url : "#"} target={post.acf.link ? post.acf.link.target : ""} title={post.acf.link ? post.acf.link.title : ""} className={styles.genPortfolioLink}>
                                 <div className={styles.genPortfolioLink__item__cont__img}>
                                     <Image 

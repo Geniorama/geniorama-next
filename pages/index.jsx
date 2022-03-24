@@ -124,7 +124,7 @@ export default function Home({data, dataBlog}) {
                   actividades y ejecutamos. Los resultados son la consecuencia de
                   tu visión y nuestra ejecución.
                 </p>
-                <ButtonGen text="SOBRE NOSOTROS" link="#" />
+                <ButtonGen text="VER SERVICIOS" link="#" />
               </div>
             </div>
           </div>
@@ -258,7 +258,7 @@ export default function Home({data, dataBlog}) {
                 años de experiencia, administrando, optimizando y generando
                 resultados para diferentes marcas nacionales e internacionales.{" "}
               </p>
-              <ButtonGen text="SOBRE NOSOTROS" link="#" />
+              <ButtonGen text="SOBRE NOSOTROS" link="/sobre-nosotros" />
             </div>
           </div>
         </div>
