@@ -4,6 +4,11 @@
     width: 100%;
 }
 
+.CarouselGen__item{
+    padding: 2rem;
+    text-align: center;
+}
+
 .CarouselGen__logo:hover{
     filter: grayscale(0%);
 }

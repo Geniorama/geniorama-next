@@ -3,9 +3,17 @@
 }
 
 .genBannerIntro__title {
-  font-size: 3rem;
+  font-size: 70px;
   color: var(--p-color);
   font-weight: 700;
+  line-height: 70px;
+}
+
+.genBannerIntro__title__top{
+  display: block;
+  font-weight: normal;
+  font-size: 30px;
+  color: #575757;
 }
 
 .genBannerIntro__desc {

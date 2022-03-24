@@ -13,10 +13,6 @@
     gap: 3rem;
 }
 
-.genPortfolioGrid__item__img{
-    border-radius: 20px;
-}
-
 .genPortfolioGrid__item__cap{
     background-color: var(--p-color);
     padding: 2rem;
@@ -85,4 +81,17 @@
 .genPortfolioLink{
     display: block;
     text-decoration: none;
+}
+
+.genPortfolioLink__item__cont__img{
+    border: 1px solid #d7d7d7;
+    width: 100%;
+    height: 350px;
+    position: relative;border-radius: 20px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.genPortfolioLink:hover .genPortfolioLink__item__cont__img{
+    filter: grayscale(1);
 }

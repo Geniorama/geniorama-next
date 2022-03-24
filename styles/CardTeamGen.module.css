@@ -37,6 +37,7 @@
 .CardTeamGen__info__position{
     color:rgba(255,255,255,0.68);
     font-size: 15px;
+    text-align: center;
 }
 .CardTeamGen__info__social{
     margin-top: 1em;

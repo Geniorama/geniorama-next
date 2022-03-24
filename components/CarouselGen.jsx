@@ -5,6 +5,9 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/autoplay";
 import styles from "../styles/CarouselGen.module.css"
+import LogoEkon from "../public/nuestros-amigos-logos/logo_ekon7.jpg"
+import LogoNerd from "../public/nuestros-amigos-logos/logo-agency.png"
+import LogoMekontent from "../public/nuestros-amigos-logos/Logo-Mekontent.png"
 
 export default function CarouselGen() {
   return (
@@ -27,49 +30,49 @@ export default function CarouselGen() {
         },
       }}
     >
-      <SwiperSlide className="text-center">
+      <SwiperSlide className={styles.CarouselGen__item}>
+        <Image
+            className={styles.CarouselGen__logo} 
+            src={LogoEkon} 
+        />
+      </SwiperSlide>
+      <SwiperSlide className={styles.CarouselGen__item}>
+        <Image
+            className={styles.CarouselGen__logo} 
+            src={LogoNerd} 
+        />
+      </SwiperSlide>
+      <SwiperSlide className={styles.CarouselGen__item}>
+        <Image
+            className={styles.CarouselGen__logo} 
+            src={LogoMekontent} 
+        />
+      </SwiperSlide>
+      <SwiperSlide className={styles.CarouselGen__item}>
         <Image
             className={styles.CarouselGen__logo} 
             src={ImgCarousel} 
         />
       </SwiperSlide>
-      <SwiperSlide className="text-center">
+      <SwiperSlide className={styles.CarouselGen__item}>
         <Image
             className={styles.CarouselGen__logo} 
             src={ImgCarousel} 
         />
       </SwiperSlide>
-      <SwiperSlide className="text-center">
+      <SwiperSlide className={styles.CarouselGen__item}>
         <Image
             className={styles.CarouselGen__logo} 
             src={ImgCarousel} 
         />
       </SwiperSlide>
-      <SwiperSlide className="text-center">
+      <SwiperSlide className={styles.CarouselGen__item}>
         <Image
             className={styles.CarouselGen__logo} 
             src={ImgCarousel} 
         />
       </SwiperSlide>
-      <SwiperSlide className="text-center">
-        <Image
-            className={styles.CarouselGen__logo} 
-            src={ImgCarousel} 
-        />
-      </SwiperSlide>
-      <SwiperSlide className="text-center">
-        <Image
-            className={styles.CarouselGen__logo} 
-            src={ImgCarousel} 
-        />
-      </SwiperSlide>
-      <SwiperSlide className="text-center">
-        <Image
-            className={styles.CarouselGen__logo} 
-            src={ImgCarousel} 
-        />
-      </SwiperSlide>
-      <SwiperSlide className="text-center">
+      <SwiperSlide className={styles.CarouselGen__item}>
         <Image
             className={styles.CarouselGen__logo} 
             src={ImgCarousel} 

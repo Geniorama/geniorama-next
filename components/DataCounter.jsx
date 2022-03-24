@@ -1,9 +1,9 @@
 import Image from "next/image"
 import styles from "../styles/DataCounter.module.css"
 
-export default function DataCounter({image, prefix, number, leyend}){
+export default function DataCounter({image, prefix, number, leyend, target}){
     return(
-        <div className={`${styles.genDataCounter} text-center`}>
+        <div className={`${styles.genDataCounter} text-center gen-item-counter`}>
             {image
             ?
             <Image 
@@ -16,7 +16,7 @@ export default function DataCounter({image, prefix, number, leyend}){
             }
             <span className={styles.genDataCounter__number}>
                <span className={styles.genDataCounter__number__prefix}>{prefix}</span>
-               <span className={styles.genDataCounter__number__dig}>{number}</span>
+               <span data-target={target} className={`${styles.genDataCounter__number__dig} gen-item-counter__number`}>{number}</span>
             </span>
             <span className={styles.genDataCounter__leyend}>
                 {leyend}

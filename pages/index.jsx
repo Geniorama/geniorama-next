@@ -26,9 +26,41 @@ import IconoTazas from '../public/iconos-web_tazas-de-cafe.svg'
 import IconoIdea from '../public/iconos-web_me-gusta-la-idea.svg'
 
 
-export default function Home({data}) {
+export default function Home({data, dataBlog}) {
   useEffect(()=>{
     AOS.init()
+    const counters = document.querySelectorAll('.gen-item-counter__number')
+    const speed = 2000
+
+    counters.forEach(counter => {
+      counter.innerText = "0"
+
+      const updateCounter = () =>{
+        const target = parseInt(counter.dataset.target)
+        const count = parseInt(counter.innerText)
+
+        const inc = target / speed
+
+        if(count < target){
+          counter.innerText = `${Math.ceil(count + inc)}`
+          setTimeout(updateCounter, 4)
+        } else {
+          counter.innerText = target
+        }
+      }
+
+      const genCounters = document.getElementById('gen-section-counters')
+      const topGenCounters = genCounters.offsetTop
+      window.addEventListener('scroll', function(){
+        if(scrollY >= (topGenCounters - 100)){
+          updateCounter()
+        }
+      })
+    })
+
+    
+
+    
   }, [])
   return (
     <Layout 
@@ -77,49 +109,57 @@ export default function Home({data}) {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-12 col-lg-6">
-              <Image src={ImagenComo} className={styles.genImgRounded} />
+              <div data-aos="fade-right" data-aos-duration="1000">
+                <Image src={ImagenComo} className={styles.genImgRounded} />
+              </div>
             </div>
 
             <div className="col-12 col-lg-6 px-5">
-              <h2 className="gen-info-section__title">¿CÓMO LO HACEMOS?</h2>
-              <h5>¡Tus clientes son nuestra prioridad!</h5>
-              <p className="gen-info-section__desc">
-                Acompañamos los objetivos de tu marca brindando asesoría
-                estratégica y creativa. Trazamos un plan, un cronograma de
-                actividades y ejecutamos. Los resultados son la consecuencia de
-                tu visión y nuestra ejecución.
-              </p>
-              <ButtonGen text="SOBRE NOSOTROS" link="#" />
+              <div data-aos="fade-left" data-aos-duration="1000">
+                <h2 className="gen-info-section__title">¿CÓMO LO HACEMOS?</h2>
+                <h5>¡Tus clientes son nuestra prioridad!</h5>
+                <p className="gen-info-section__desc">
+                  Acompañamos los objetivos de tu marca brindando asesoría
+                  estratégica y creativa. Trazamos un plan, un cronograma de
+                  actividades y ejecutamos. Los resultados son la consecuencia de
+                  tu visión y nuestra ejecución.
+                </p>
+                <ButtonGen text="SOBRE NOSOTROS" link="#" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="gen-info-section">
+      <section id="gen-section-counters" className="gen-info-section">
         <div className="container">
           <div className={styles.genWrapCounters}>
             <DataCounter
               image={IconoExperiencia}
               prefix="+"
-              number="7"
+              number="0"
+              target="7"
               leyend="Años de experiencia"
             />
             <DataCounter
               image={IconoClientes}
               prefix="+"
-              number="100"
+              number={"0"}
+              target="100"
               leyend="Clientes felices"
             />
             <DataCounter
               image={IconoTazas}
               prefix="+"
-              number="45.789"
+              number={"0"}
+              target="45789"
               leyend="Tazas de café o un poco más..."
             />
             <DataCounter
               image={IconoIdea}
               prefix="+"
-              number="367"
+              number={"0"}
+              target="367"
               leyend="Veces hemos ecuchado: ¡Me gusta esa idea!" 
             />
           </div>
@@ -135,6 +175,13 @@ export default function Home({data}) {
           <PortfolioGallery
             info={data}
           />
+
+          <div className="text-center mt-5">
+            <ButtonGen
+              link="/proyectos/web"
+              text="Ver todo"
+            />
+          </div>
         </div>
       </section>
 
@@ -221,7 +268,9 @@ export default function Home({data}) {
         <div className="container">
           <h2 className="gen-info-section__title">
             PUBLICACIONES <br /> RECIENTES
-            <CarouselPosts />
+            <CarouselPosts
+              info={dataBlog}
+            />
           </h2>
         </div>
       </section>
@@ -281,14 +330,18 @@ export default function Home({data}) {
 }
 
 export async function getStaticProps(ctx){
-
-  const url_api = "https://www.geniorama.site/demo/geniorama/wp-json/wp/v2/portfolio/?per_page=9&_embed=true"
+  const url_api_blog ="https://www.geniorama.site/demo/geniorama/wp-json/wp/v2/posts"
+  const url_api = "https://www.geniorama.site/demo/geniorama/wp-json/wp/v2/portfolio/?per_page=6&_embed=true"
   try{
     const res = await fetch(url_api)
     const data = await res.json()
+
+    const resBlog = await fetch(url_api_blog)
+    const dataBlog = await resBlog.json()
     return {
       props: {
-        data
+        data,
+        dataBlog
       }
     }
   } catch (error){

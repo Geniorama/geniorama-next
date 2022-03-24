@@ -5,6 +5,7 @@ import "swiper/css/autoplay";
 import "swiper/css/effect-fade"
 import "swiper/css/navigation"
 import ImgBanner from "../public/geniorama-banner.svg";
+import Banner1 from "../public/banners/banner-1/cover-banner.png"
 import styles from '../styles/BannerHome.module.css'
 import ButtonGen from "../components/ButtonGen";
 import Image from "next/image";
@@ -20,23 +21,24 @@ export default function BannerHome(){
             effect="fade"
             >
             <SwiperSlide>
-                <div className={`${styles.genBannerIntro} py-5`}>
-                    <div className="container">
+                <div className={`${styles.genBannerIntro}`}>
                     <div className="row align-items-center">
                         <div className="col-12 col-md-6">
-                            <h1 className={styles.genBannerIntro__title}>
-                                ¡SITIOS WEB!
-                            </h1>
-                            <p className={styles.genBannerIntro__desc}>
-                                Generamos campañas de alto impacto para tu negocio
-                            </p>
-                            <ButtonGen link="#" text="EMPECEMOS" />
+                            <div className="ps-5 ms-5 pe-5">
+                                <h1 className={styles.genBannerIntro__title}>
+                                    <span className={styles.genBannerIntro__title__top}>Marketing de</span>
+                                    <span className={styles.genBannerIntro__title__bottom}>Resultados <br />Digitales</span>
+                                </h1>
+                                <p className={styles.genBannerIntro__desc}>
+                                    Generamos campañas de alto impacto para tu negocio
+                                </p>
+                                <ButtonGen link="#" text="EMPECEMOS" />
+                            </div>
                         </div>
 
                         <div className="col-12 col-md-6">
-                            <Image src={ImgBanner} />
+                            <Image src={Banner1} />
                         </div>
-                    </div>
                     </div>
                 </div>
             </SwiperSlide>

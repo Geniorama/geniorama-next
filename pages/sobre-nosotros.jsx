@@ -19,10 +19,12 @@ import SvgIconOurMission from "../components/SvgImages/SvgIconOurMission";
 export default function SobreNosotros() {
   return (
     <Layout title={"Servicios - Geniorama"} idPage={"gen-servicios"}>
-      <HeadingPage
-        sTitle={"SOBRE NOSOTROS"}
-        lTitle={"¡MARKETING DE RESULTADOS DIGITALES!"}
-      />
+      <div className="mt-5">
+        <HeadingPage
+          sTitle={"SOBRE NOSOTROS"}
+          lTitle={"¡MARKETING DE RESULTADOS DIGITALES!"}
+        />
+      </div>
 
       <section className={"gen-info-section"}>
         <div className="container">
@@ -67,9 +69,9 @@ export default function SobreNosotros() {
             />
 
             <CardTeamGen
-              image={ImgDuvanR}
-              name="Duvan Rodríguez"
-              position={"CTO / Frontend Developer"}
+              image={ImgCatalinaB}
+              name="Catalina Barrera"
+              position={"Digital Ads Manager"}
               linkedin={"#"}
               github={"#"}
               instagram={"#"}
@@ -103,13 +105,14 @@ export default function SobreNosotros() {
             />
 
             <CardTeamGen
-              image={ImgCatalinaB}
-              name="Catalina Barrera"
-              position={"Digital Ads Manager"}
+              image={ImgDuvanR}
+              name="Duvan Rodríguez"
+              position={"CTO / Frontend Developer"}
               linkedin={"#"}
               github={"#"}
               instagram={"#"}
             />
+            
           </div>
         </div>
       </section>
