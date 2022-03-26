@@ -8,7 +8,7 @@ export default function HeadingPage({sTitle, lTitle}){
                 <h1 className={styles.genHeadingPage__smallTitle}>{sTitle}</h1>
                 <h2 className={styles.genHeadingPage__largeTitle}>{lTitle}</h2>
                 <Breadcrumbs 
-                    listStyle={{'list-style':"none"}} 
+                    listStyle={{'listStyle':"none"}} 
                     listClassName={styles.genBreadcrumbs} 
                     rootLabel="Home"
                     activeItemStyle={{'color':'#ccc'}}

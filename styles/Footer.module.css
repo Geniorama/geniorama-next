@@ -27,6 +27,7 @@
     align-items: center;
     border-radius: 50%;
     color: #ccc;
+    padding: 10px;
     transition: .4s;
 }
 

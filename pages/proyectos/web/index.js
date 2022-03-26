@@ -2,8 +2,14 @@ import React from 'react'
 import Layout from '../../../components/Layout/Layout'
 import PortfolioGallery from '../../../components/PortfolioGallery'
 import HeadingPage from '../../../components/HeadingPage'
+import { useEffect } from 'react'
+import AOS from "aos";
 
 export default function index({data}) {
+  useEffect(()=>{
+    AOS.init()
+  },[])
+
   return (
     <Layout
     title={"Proyectos web - Geniorama"}
@@ -32,7 +38,7 @@ export default function index({data}) {
 
 export async function getStaticProps(ctx){
 
-  const url_api = "https://www.geniorama.site/demo/geniorama/wp-json/wp/v2/portfolio/?per_page=12&_embed=true"
+  const url_api = "https://www.geniorama.site/demo/geniorama/wp-json/wp/v2/portfolio/?per_page=24&_embed=true"
   try{
     const res = await fetch(url_api)
     const data = await res.json()

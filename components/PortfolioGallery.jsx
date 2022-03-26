@@ -41,6 +41,8 @@ export default function PortfolioGallery({info, filters}){
                                         src={post.images.large}
                                         className={styles.genPortfolioGrid__item__img}
                                         layout={"fill"}
+                                        objectFit={"cover"}
+                                        priority={true}
                                     />
                                 </div>
                                 <div className={styles.genPortfolioGrid__item__cap}>
