@@ -26,9 +26,9 @@ export default function ContactForm(){
                     <textarea name="" id="" className='gen-input-text gen-textarea' placeholder='¿En qué podemos ayudarte?'></textarea>
                 </div>
 
-                <div class="form-check mb-4">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                    <label class="form-check-label" htmlFor="flexCheckDefault">
+                <div className="form-check mb-4">
+                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                    <label className="form-check-label" htmlFor="flexCheckDefault">
                          He leído y acepto las <Link href={"#"}><a>Políticas de privacidad</a></Link>
                     </label>
                 </div>

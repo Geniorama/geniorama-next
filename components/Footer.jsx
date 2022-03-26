@@ -40,7 +40,7 @@ export default function Footer(){
                         <ul className={`${styles.genNavSocialFooter} nav justify-content-center`}>
                             {SocialShapes.map((item)=>(
                                 <li key={item.id} className="nav-item">
-                                    <a href={item.link} className="nav-link" target="_blank" title={item.name}>
+                                    <a href={item.link} className="nav-link" target="_blank" title={item.name} rel="noreferrer">
                                         <FontAwesomeIcon icon={['fab', item.fa]}/>
                                     </a>
                                 </li>
