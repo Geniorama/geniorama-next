@@ -20,7 +20,7 @@ export default function CardTeamGen({
         <span className={styles.CardTeamGen__info__position}>{position}</span>
         <div className={styles.CardTeamGen__info__social}>
           {linkedin ? (
-            <a id="gen-icon-linkedin" href={linkedin} target="_blank">
+            <a id="gen-icon-linkedin" href={linkedin} target="_blank" rel="noopener">
               <span className={styles.CardTeamGen__info__social__contIcons}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ export default function CardTeamGen({
           ) : null}
 
           {facebook ? (
-            <a id="gen-icon-facebook" href={facebook} target="_blank">
+            <a id="gen-icon-facebook" href={facebook} target="_blank" rel="noopener">
               <span className={styles.CardTeamGen__info__social__contIcons}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ export default function CardTeamGen({
           ) : null}
 
           {instagram ? (
-            <a id="gen-icon-instagram" href={instagram} target="_blank">
+            <a id="gen-icon-instagram" href={instagram} target="_blank" rel="noopener">
               <span className={styles.CardTeamGen__info__social__contIcons}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ export default function CardTeamGen({
           ) : null}
 
           {github ? (
-            <a id="gen-icon-github" href={github} target="_blank">
+            <a id="gen-icon-github" href={github} target="_blank" rel="noopener">
               <span className={styles.CardTeamGen__info__social__contIcons}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ export default function CardTeamGen({
           ) : null}
 
           {behance ? (
-            <a id="gen-icon-behance" href={behance} target="_blank">
+            <a id="gen-icon-behance" href={behance} target="_blank" rel="noopener">
               <span className={styles.CardTeamGen__info__social__contIcons}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

@@ -5,7 +5,7 @@ import HeadingPage from '../../../components/HeadingPage'
 import { useEffect } from 'react'
 import AOS from "aos";
 
-export default function index({data}) {
+export default function Index({data}) {
   useEffect(()=>{
     AOS.init()
   },[])
