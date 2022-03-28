@@ -24,6 +24,14 @@ import IconoExperiencia from "../public/iconos-web_6-anos-experiencia.svg"
 import IconoClientes from "../public/iconos-web_clientes-felices.svg"
 import IconoTazas from '../public/iconos-web_tazas-de-cafe.svg'
 import IconoIdea from '../public/iconos-web_me-gusta-la-idea.svg'
+import IconDisenoWeb from '../public/icons/iconos web_diseno_paginas_web.svg'
+import IconSoporteWeb from '../public/icons/iconos web_soporte_web.svg'
+import IconHosting from '../public/icons/iconos web_hosting_ servidores.svg'
+import IconPosicionamientoSeo from '../public/icons/iconos web_posicionamiento_seo.svg'
+import IconSocialMedia from '../public/icons/iconos web_social media.svg'
+import IconDisenoGrafico from '../public/icons/iconos web_diseno grafico.svg'
+import IconProdAudiovisual from '../public/icons/iconos web_produccion audiovisual.svg'
+import IconStream from '../public/icons/iconos web_streaming.svg'
 
 
 export default function Home({data, dataBlog}) {
@@ -56,11 +64,7 @@ export default function Home({data, dataBlog}) {
           updateCounter()
         }
       })
-    })
-
-    
-
-    
+    })    
   }, [])
   return (
     <Layout 
@@ -138,7 +142,7 @@ export default function Home({data, dataBlog}) {
               image={IconoExperiencia}
               prefix="+"
               number="0"
-              target="7"
+              target="8"
               leyend="Años de experiencia"
             />
             <DataCounter
@@ -192,45 +196,53 @@ export default function Home({data, dataBlog}) {
           </h2>
           <div className={styles.genWrapServices}>
             <CardOurGen
-              image={ImgExampleServ}
+              image={IconDisenoWeb}
               link="/"
               title="DISEÑO DE PÁGINAS WEB"
             />
             <CardOurGen
-              image={ImgExampleServ}
+              image={IconSoporteWeb}
               link="/"
-              title="AJUSTES Y SOPORTE WEB"
+              title="MANTENIMIENTO Y SOPORTE WEB"
             />
             <CardOurGen
-              image={ImgExampleServ}
+              image={IconHosting}
               link="/"
               title="HOSTING Y SERVIDORES"
             />
 
             <CardOurGen
-              image={ImgExampleServ}
+              image={IconPosicionamientoSeo}
               link="/"
               title="POSICIONAMIENTO WEB (SEO)"
             />
 
-            <CardOurGen image={ImgExampleServ} link="/" title="PAUTA DIGITAL" />
+            <CardOurGen
+              image={ImgExampleServ} 
+              link="/" 
+              title="PAUTA DIGITAL"
+            />
 
-            <CardOurGen image={ImgExampleServ} link="/" title="SOCIAL MEDIA" />
+            <CardOurGen 
+              image={IconSocialMedia} 
+              link="/" 
+              title="SOCIAL MEDIA"
+            />
 
             <CardOurGen
-              image={ImgExampleServ}
+              image={IconDisenoGrafico}
               link="/"
               title="DISEÑO GRÁFICO"
             />
 
             <CardOurGen
-              image={ImgExampleServ}
+              image={IconProdAudiovisual}
               link="/"
               title="PRODUCCIÓN AUDIOVISUAL"
             />
 
             <CardOurGen
-              image={ImgExampleServ}
+              image={IconStream}
               link="/"
               title="STREAMING (TRANSMISIONES ONLINE)"
             />
@@ -254,7 +266,7 @@ export default function Home({data, dataBlog}) {
                 MÁS DE <br /> NOSOTROS
               </h2>
               <p className="my-4 gen-info-section__desc">
-                Somos una agencia de marketing y publicidad digital con más de 7
+                Somos una agencia de marketing y publicidad digital con más de 8
                 años de experiencia, administrando, optimizando y generando
                 resultados para diferentes marcas nacionales e internacionales.{" "}
               </p>
@@ -268,10 +280,10 @@ export default function Home({data, dataBlog}) {
         <div className="container">
           <h2 className="gen-info-section__title">
             PUBLICACIONES <br /> RECIENTES
-            <CarouselPosts
-              info={dataBlog}
-            />
           </h2>
+          <CarouselPosts
+            info={dataBlog}
+          />
         </div>
       </section>
 
@@ -319,7 +331,7 @@ export default function Home({data, dataBlog}) {
       <section className="gen-info-section">
         <div className="container">
           <h2 className="gen-info-section__title mb-5">NUESTROS<br />AMIGOS</h2>
-          <div className={styles.genCarouselSection}>
+          <div className={`${styles.genCarouselSection} ${styles.genCarouselSectionBrands}`}>
             <CarouselGen
             />
           </div>

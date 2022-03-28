@@ -9,7 +9,7 @@ export default function Layout({children, title, description, idPage}){
             <Head>
                 <title>{title}</title>
                 <meta name="description" content={description} />
-                <meta charset="utf-8" />
+                <meta charSet="utf-8" />
             </Head>
 
             <Header />
