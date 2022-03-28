@@ -13,6 +13,7 @@ import LogoTaxo from "../public/nuestros-amigos-logos/Tax-o-logo-150x150.jpg"
 import LogoUnivercity from "../public/nuestros-amigos-logos/UniverCity Logo App.jpg"
 import LogoBalboa from "../public/nuestros-amigos-logos/balboa-logo-negro.png"
 import LogoAntitrama from "../public/nuestros-amigos-logos/antitrama-logo.png"
+import LogoCopu from "../public/nuestros-amigos-logos/logo-copublicitarias-geniorama.png"
 
 export default function CarouselGen() {
   return (
@@ -62,6 +63,16 @@ export default function CarouselGen() {
           <Image
               className={styles.CarouselGen__logo} 
               src={LogoMekontent}
+              layout={"fill"}
+              objectFit={"contain"}
+          />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className={styles.CarouselGen__item}>
+        <div className={styles.CarouselGen__item__contImg}>
+          <Image
+              className={styles.CarouselGen__logo} 
+              src={LogoCopu}
               layout={"fill"}
               objectFit={"contain"}
           />
