@@ -54,63 +54,52 @@ export default function SobreNosotros() {
               image={ImgOscarPedraza}
               name="Oscar Pedraza"
               position={"CTO / Web Manager"}
-              linkedin={"#"}
-              github={"#"}
-              instagram={"#"}
+              linkedin={"https://www.linkedin.com/in/oscar-pedraza/"}
             />
 
             <CardTeamGen
               image={ImgAngelBurgos}
               name="Angel Burgos"
               position={"CTO / Web Manager"}
-              linkedin={"#"}
-              github={"#"}
-              instagram={"#"}
+              linkedin={"https://www.linkedin.com/in/angel-burgos-mesa-a5907a126/"}
+              github={"https://github.com/angelpublicista"}
             />
 
             <CardTeamGen
               image={ImgCatalinaB}
               name="Catalina Barrera"
               position={"Digital Ads Manager"}
-              linkedin={"#"}
-              github={"#"}
-              instagram={"#"}
             />
 
             <CardTeamGen
               image={ImgDiegoB}
               name="Diego Burgos"
               position={"WordPress Developer"}
-              linkedin={"#"}
-              github={"#"}
-              instagram={"#"}
+              github={"https://github.com/DiegoFreelance2020"}
             />
 
             <CardTeamGen
               image={ImgFelipeH}
               name="Felipe Hernández"
               position={"UX/UI & Digital Designer"}
-              linkedin={"#"}
-              github={"#"}
-              instagram={"#"}
+              linkedin={"https://www.linkedin.com/in/fyliip96/"}
+              behance={"https://www.behance.net/Fyliip96?tracking_source=search_users%7Cfelipe%20hernandez"}
             />
 
             <CardTeamGen
               image={ImgCristianM}
               name="Cristian Marín"
               position={"Content Manager & Creative"}
-              linkedin={"#"}
-              github={"#"}
-              instagram={"#"}
+              linkedin={"https://www.linkedin.com/in/cristhian-camilo-mar%C3%ADn-linares-7b976754/"}
             />
 
             <CardTeamGen
               image={ImgDuvanR}
               name="Duvan Rodríguez"
               position={"CTO / Frontend Developer"}
-              linkedin={"#"}
-              github={"#"}
-              instagram={"#"}
+              linkedin={"https://www.linkedin.com/in/giovanni-rodr%C3%ADguez-25b9b621a/"}
+              github={"https://github.com/DuvanProgrammer"}
+              website={"#"}
             />
             
           </div>
@@ -119,6 +108,9 @@ export default function SobreNosotros() {
 
       <section className="gen-info-section">
         <div className="container">
+          <h2 className="gen-info-section__title">
+            ALIADOS
+          </h2>
           <div className={styles.genCarouselBrands}>
             <CarouselGen />
           </div>

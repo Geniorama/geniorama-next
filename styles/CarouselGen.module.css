@@ -1,7 +1,6 @@
 .CarouselGen__logo{
     filter: grayscale(100%);
-    transition: .4s;
-    width: 100%;
+    transition: .4s;;
 }
 
 .CarouselGen__item{
@@ -11,4 +10,9 @@
 
 .CarouselGen__logo:hover{
     filter: grayscale(0%);
+}
+
+.CarouselGen__item__contImg{
+    height: 60px;
+    position: relative;
 }
