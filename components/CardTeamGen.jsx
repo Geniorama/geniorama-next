@@ -22,7 +22,7 @@ export default function CardTeamGen({
         <span className={styles.CardTeamGen__info__position}>{position}</span>
         <div className={styles.CardTeamGen__info__social}>
           {linkedin ? (
-            <a id="gen-icon-linkedin" href={linkedin} target="_blank" rel="noopener">
+            <a id="gen-icon-linkedin" href={linkedin} target="_blank" rel="noreferrer">
               <span className={styles.CardTeamGen__info__social__contIcons}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ export default function CardTeamGen({
           ) : null}
 
           {facebook ? (
-            <a id="gen-icon-facebook" href={facebook} target="_blank" rel="noopener">
+            <a id="gen-icon-facebook" href={facebook} target="_blank" rel="noreferrer">
               <span className={styles.CardTeamGen__info__social__contIcons}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ export default function CardTeamGen({
           ) : null}
 
           {instagram ? (
-            <a id="gen-icon-instagram" href={instagram} target="_blank" rel="noopener">
+            <a id="gen-icon-instagram" href={instagram} target="_blank" rel="noreferrer">
               <span className={styles.CardTeamGen__info__social__contIcons}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ export default function CardTeamGen({
           ) : null}
 
           {github ? (
-            <a id="gen-icon-github" href={github} target="_blank" rel="noopener">
+            <a id="gen-icon-github" href={github} target="_blank" rel="noreferrer">
               <span className={styles.CardTeamGen__info__social__contIcons}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ export default function CardTeamGen({
           ) : null}
 
           {behance ? (
-            <a id="gen-icon-behance" href={behance} target="_blank" rel="noopener">
+            <a id="gen-icon-behance" href={behance} target="_blank" rel="noreferrer">
               <span className={styles.CardTeamGen__info__social__contIcons}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ export default function CardTeamGen({
 
 
           {youtube ? (
-            <a id="gen-icon-behance" href={youtube} target="_blank" rel="noopener">
+            <a id="gen-icon-behance" href={youtube} target="_blank" rel="noreferrer">
               <span className={styles.CardTeamGen__info__social__contIcons}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -123,11 +123,11 @@ export default function CardTeamGen({
 
 
           {website ? (
-            <a id="gen-icon-website" href={website} target="_blank" rel="noopener">
+            <a id="gen-icon-website" href={website} target="_blank" rel="noreferrer">
               <span className={styles.CardTeamGen__info__social__contIcons}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13.544 10.456C12.7249 9.63723 11.6141 9.17728 10.456 9.17728C9.29784 9.17728 8.1871 9.63723 7.36799 10.456L4.27899 13.544C3.45987 14.3631 2.99969 15.4741 2.99969 16.6325C2.99969 17.7909 3.45987 18.9019 4.27899 19.721C5.09811 20.5401 6.20908 21.0003 7.36749 21.0003C8.52591 21.0003 9.63687 20.5401 10.456 19.721L12 18.177" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M10.456 13.544C11.2751 14.3628 12.3858 14.8227 13.544 14.8227C14.7021 14.8227 15.8129 14.3628 16.632 13.544L19.721 10.456C20.5401 9.63688 21.0003 8.52591 21.0003 7.3675C21.0003 6.20909 20.5401 5.09812 19.721 4.279C18.9019 3.45988 17.7909 2.9997 16.6325 2.9997C15.4741 2.9997 14.3631 3.45988 13.544 4.279L12 5.823" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M13.544 10.456C12.7249 9.63723 11.6141 9.17728 10.456 9.17728C9.29784 9.17728 8.1871 9.63723 7.36799 10.456L4.27899 13.544C3.45987 14.3631 2.99969 15.4741 2.99969 16.6325C2.99969 17.7909 3.45987 18.9019 4.27899 19.721C5.09811 20.5401 6.20908 21.0003 7.36749 21.0003C8.52591 21.0003 9.63687 20.5401 10.456 19.721L12 18.177" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M10.456 13.544C11.2751 14.3628 12.3858 14.8227 13.544 14.8227C14.7021 14.8227 15.8129 14.3628 16.632 13.544L19.721 10.456C20.5401 9.63688 21.0003 8.52591 21.0003 7.3675C21.0003 6.20909 20.5401 5.09812 19.721 4.279C18.9019 3.45988 17.7909 2.9997 16.6325 2.9997C15.4741 2.9997 14.3631 3.45988 13.544 4.279L12 5.823" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </span>
             </a>

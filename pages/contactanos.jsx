@@ -64,7 +64,7 @@ export default function Contactanos() {
               <ul className={`${styles.genNavSocialContact} nav`}>
                 {SocialShapes.map(item => (
                   <li key={item.id} className="nav-item">
-                    <a href={item.link} className="nav-link" target="_blank" rel="noopener">
+                    <a href={item.link} className="nav-link" target="_blank" rel="noreferrer">
                       <FontAwesomeIcon icon={['fab', item.fa]}/>
                     </a>
                   </li>
