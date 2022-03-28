@@ -18,5 +18,12 @@
         "name": "instagram",
         "fa": "instagram",
         "link": "https://www.instagram.com/geniorama/"
+    },
+
+    {
+        "id": 3,
+        "name": "youtube",
+        "fa": "youtube",
+        "link": "https://www.youtube.com/channel/UCaEiOqNMkO6mnDSCLj1SASQ"
     }
 ]

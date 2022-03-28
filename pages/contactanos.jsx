@@ -14,10 +14,12 @@ export default function Contactanos() {
       title={"Contáctanos - Geniorama Agencia Digital"}
       idPage={"gen-contactanos"}
     >
-      <HeadingPage
-        sTitle={"CONTÁCTANOS"}
-        lTitle={"¡HABLEMOS DE TUS PROYECTOS!"}
-      />
+      <div className="mt-5">
+        <HeadingPage
+          sTitle={"CONTÁCTANOS"}
+          lTitle={"¡HABLEMOS DE TUS PROYECTOS!"}
+        />
+      </div>
 
       <section className="gen-info-section">
         <div className="container">

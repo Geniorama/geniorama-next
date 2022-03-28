@@ -51,11 +51,11 @@ export default function Footer(){
 
                     <div className={`${styles.genBottomFooter} row justify-content-between mt-4`}>
                         <div className="col-12 col-lg-6 text-center text-lg-right">
-                            <p>© Geniorama 2022 | All Rights Reserved</p>
+                            <p>© Geniorama {new Date().getFullYear()} | All Rights Reserved</p>
                         </div>
                         <div className="col-12 col-lg-6 text-center text-lg-right">
-                            <Link href="#">
-                                <a className={styles.genBottomFooter__link}>Políticas de privacidad</a>
+                            <Link href="/politica-de-privacidad">
+                                <a className={styles.genBottomFooter__link}>Política de privacidad</a>
                             </Link>
                         </div>
                     </div>
