@@ -99,7 +99,6 @@ export default function SobreNosotros() {
               position={"CTO / Frontend Developer"}
               linkedin={"https://www.linkedin.com/in/giovanni-rodr%C3%ADguez-25b9b621a/"}
               github={"https://github.com/DuvanProgrammer"}
-              website={"#"}
             />
             
           </div>
