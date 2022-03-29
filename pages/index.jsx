@@ -32,6 +32,7 @@ import IconSocialMedia from '../public/icons/iconos web_social media.svg'
 import IconDisenoGrafico from '../public/icons/iconos web_diseno grafico.svg'
 import IconProdAudiovisual from '../public/icons/iconos web_produccion audiovisual.svg'
 import IconStream from '../public/icons/iconos web_streaming.svg'
+import IconPauta from '../public/icons/pauta digital.svg'
 
 
 export default function Home({data, dataBlog}) {
@@ -218,7 +219,7 @@ export default function Home({data, dataBlog}) {
             />
 
             <CardOurGen
-              image={ImgExampleServ} 
+              image={IconPauta} 
               link="/" 
               title="PAUTA DIGITAL"
             />

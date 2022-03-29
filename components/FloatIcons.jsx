@@ -4,7 +4,7 @@ export default function FloatIcons() {
   return (
     <div className={styles.genFloatIcons}>
       {/* Link Whatsapp */}
-      <a href="https://wa.link/k9v2me" target="_blank" rel="noopener" className={styles.genFloatIcons__link}>
+      <a href="https://wa.link/k9v2me" target="_blank" rel="noreferrer" className={styles.genFloatIcons__link}>
         <span>
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -14,10 +14,12 @@ export default function Contactanos() {
       title={"Contáctanos - Geniorama Agencia Digital"}
       idPage={"gen-contactanos"}
     >
-      <HeadingPage
-        sTitle={"CONTÁCTANOS"}
-        lTitle={"¡HABLEMOS DE TUS PROYECTOS!"}
-      />
+      <div className="mt-5">
+        <HeadingPage
+          sTitle={"CONTÁCTANOS"}
+          lTitle={"¡HABLEMOS DE TUS PROYECTOS!"}
+        />
+      </div>
 
       <section className="gen-info-section">
         <div className="container">
@@ -62,7 +64,7 @@ export default function Contactanos() {
               <ul className={`${styles.genNavSocialContact} nav`}>
                 {SocialShapes.map(item => (
                   <li key={item.id} className="nav-item">
-                    <a href={item.link} className="nav-link" target="_blank" rel="noopener">
+                    <a href={item.link} className="nav-link" target="_blank" rel="noreferrer">
                       <FontAwesomeIcon icon={['fab', item.fa]}/>
                     </a>
                   </li>
