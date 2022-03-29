@@ -28,6 +28,8 @@
     border-radius: 50%;
     color: #ccc;
     padding: 10px;
+    text-decoration: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
     transition: .4s;
 }
 
