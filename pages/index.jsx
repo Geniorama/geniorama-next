@@ -324,7 +324,7 @@ export default function Home({data, dataBlog}) {
                 you a complete account of the system, and expound the actual
                 teachings of the great explorer of human happiness. No one.
               </p>
-              <ButtonGen text="SOBRE NOSOTROS" link="#" />
+              <ButtonGen text="SOBRE NOSOTROS" link="/sobre-nosotros" />
             </div>
           </div>
         </div>

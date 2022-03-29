@@ -2,7 +2,7 @@ import Head from "next/head";
 import Footer from "../Footer";
 import Header from "../Header";
 
-export default function Layout({children, title, description, idPage}){
+export default function Layout({children, title, description, idPage, isLogoLight}){
     return(
         <div className="gen-layout">
             <div id="gen-ancle-top"></div>
@@ -12,7 +12,9 @@ export default function Layout({children, title, description, idPage}){
                 <meta charSet="utf-8" />
             </Head>
 
-            <Header />
+            <Header
+                isLogoLight={isLogoLight ? isLogoLight : false}
+            />
             
             <main className="gen-main" id={idPage}>
                 {children}

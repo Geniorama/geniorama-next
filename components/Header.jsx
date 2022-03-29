@@ -1,20 +1,28 @@
 import styles from './../styles/Header.module.css'
 import LogoDark from './../public/logo/logo-geniorama-02.svg'
+import LogoLight from '../public/logo/logo-geniorama-03.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import MenuPrincipal from '../menus/menuPrincipal.json'
 import React, { useEffect } from 'react'
 
 
-export default function Header(){
+export default function Header({isLogoLight}){
     useEffect(() => {
         const header = document.getElementById('gen-header')
         const stickyClass = styles.genHeader__sticky
+        const headerDark = styles.genHeader__sticky__dark
         window.addEventListener('scroll', function(){
             if(scrollY > 200){
                 header.classList.add(stickyClass)
+                if(isLogoLight){
+                    header.classList.add(headerDark)
+                }
             } else {
                 header.classList.remove(stickyClass)
+                if(isLogoLight){
+                    header.classList.remove(headerDark)
+                }
             }
         })
     },[])
@@ -39,7 +47,7 @@ export default function Header(){
                     <Link href="/">
                         <a>
                             <Image 
-                                src={LogoDark}
+                                src={isLogoLight ? LogoLight : LogoDark}
                                 width={150}
                                 height={80}
                             />

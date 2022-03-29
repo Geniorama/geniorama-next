@@ -4,22 +4,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import limitChar from '../utils/limitChar';
 
 import CardPost from './CardPost';
 
 export default function CarouselPosts({info}){
-
-    const limitChar = (string, limit) => {
-        let newString=""
-        if(string.length > limit){
-            newString = string.substring(0,limit)
-        } else {
-            newString = string
-        }
-
-        return {__html: newString + "..."} 
-    }
-
     return(
         <Swiper
             modules={[Pagination]}

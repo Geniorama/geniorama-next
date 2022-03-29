@@ -1,4 +1,3 @@
-import React from 'react'
 import Layout from '../../../components/Layout/Layout'
 import PortfolioGallery from '../../../components/PortfolioGallery'
 import HeadingPage from '../../../components/HeadingPage'

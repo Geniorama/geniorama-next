@@ -1,0 +1,41 @@
+.genBreadcrumbs{
+    color: var(--text-2);
+    display: flex;
+    justify-content: center;
+}
+
+.genBreadcrumbs a{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: var(--text-2);
+    margin: .2rem;
+    text-transform: capitalize;
+}
+
+.genBreadcrumbs a:hover{
+    color: var(--p-color);
+}
+
+.genBreadcrumbs a::after{
+    content: ' / ';
+}
+
+.genBlogDate{
+    color: var(--text-2);
+    font-size: 15px;
+}
+
+.genArticle{
+    color: var(--text-2);
+}
+
+.genArticleBody img{
+    max-width: 100%;
+}
+
+.genArticleBody p{
+    line-height: 1.8rem;
+}
+
+.genArticleBody h1 span, .genArticleBody h2 span, .genArticleBody h3 span, .genArticleBody h4 span, .genArticleBody h5 span{
+    font-family: 'Poppins', sans-serif;
+}
