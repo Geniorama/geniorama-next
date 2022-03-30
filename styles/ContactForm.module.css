@@ -1,0 +1,55 @@
+.submitButton{
+    display: inline-block;
+    background: var(--p-gradient);
+    padding: .8em 2em;
+    border-radius: 50px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+.submitButtonP{
+    background: var(--p-gradient);
+    color: white;
+    position: relative;
+    transition: .4s;
+}
+
+.submitButtonP span{
+    position: relative;
+}
+
+
+.submitButtonP::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    background: linear-gradient(270deg, rgba(42,245,152,1) 0%, rgba(0,158,225,1) 100%);
+    width: 0%;
+    height: 100%;
+    opacity: 0;
+    -webkit-box-shadow: 9px 0px 17px 3px #2AF598; 
+    box-shadow: 9px 0px 17px 3px #2AF598;
+    transition: .4s;
+}
+
+.submitButtonP:hover{
+    transform: translateX(5px);
+}
+
+.submitButtonP:hover::before{
+    opacity: 1;
+    width: 100%;
+}
+
+.submitButtonP:hover{
+    color: white;
+}

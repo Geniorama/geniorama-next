@@ -14,6 +14,8 @@ import LogoUnivercity from "../public/nuestros-amigos-logos/UniverCity Logo App.
 import LogoBalboa from "../public/nuestros-amigos-logos/balboa-logo-negro.png"
 import LogoAntitrama from "../public/nuestros-amigos-logos/antitrama-logo.png"
 import LogoCopu from "../public/nuestros-amigos-logos/logo-copublicitarias-geniorama.png"
+import LogoBrainArt from "../public/nuestros-amigos-logos/logo-brain-art.svg"
+import LogoSocialThink from "../public/nuestros-amigos-logos/logo-social-think.png"
 
 export default function CarouselGen() {
   return (
@@ -21,7 +23,9 @@ export default function CarouselGen() {
       id="swiper-brands"
       modules={[Autoplay]}
       spaceBetween={30}
-      autoplay
+      autoplay={true}
+      speed={500}
+      loop={true}
       breakpoints={{
         375: {
           slidesPerView: 1,
@@ -112,6 +116,16 @@ export default function CarouselGen() {
         <div className={styles.CarouselGen__item__contImg}>
           <Image
               className={styles.CarouselGen__logo} 
+              src={LogoSocialThink}
+              layout={"fill"}
+              objectFit={"contain"}
+          />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className={styles.CarouselGen__item}>
+        <div className={styles.CarouselGen__item__contImg}>
+          <Image
+              className={styles.CarouselGen__logo} 
               src={LogoNerd}
               layout={"fill"}
               objectFit={"contain"}
@@ -123,6 +137,16 @@ export default function CarouselGen() {
           <Image
               className={styles.CarouselGen__logo} 
               src={LogoBalboa}
+              layout={"fill"}
+              objectFit={"contain"}
+          />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className={styles.CarouselGen__item}>
+        <div className={styles.CarouselGen__item__contImg}>
+          <Image
+              className={styles.CarouselGen__logo} 
+              src={LogoBrainArt}
               layout={"fill"}
               objectFit={"contain"}
           />
