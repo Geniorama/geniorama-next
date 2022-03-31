@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import styles from '../styles/ContactForm.module.css'
-import ButtonGen from './ButtonGen'
 import swal from 'sweetalert'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { useRouter } from 'next/router'
@@ -135,7 +134,7 @@ export default function ContactForm(){
                 </div>
 
                 <div className="form-group">
-                    <p className={styles.genPrivacyPolicy}>Al dar click en <strong>"ENVIAR"</strong> aceptas nuestra <a href='/politica-de-privacidad' target={"_blank"} rel="noreferrer">Política de privacidad</a></p>
+                    <p className={styles.genPrivacyPolicy}>Al dar click en <strong>&quotENVIAR&quot</strong> aceptas nuestra <Link href='/politica-de-privacidad'><a>Política de privacidad</a></Link></p>
                 </div>
 
                 <div className="form-group mb-3">
