@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "facebook",
+        "fa": "facebook",
+        "link": "https://www.facebook.com/AgenciaGeniorama"
+    },
+
+    {
+        "id": 2,
+        "name": "linkedIn",
+        "fa": "linkedin",
+        "link": "https://www.linkedin.com/company/geniorama"
+    },
+
+    {
+        "id": 3,
+        "name": "instagram",
+        "fa": "instagram",
+        "link": "https://www.instagram.com/geniorama/"
+    },
+
+    {
+        "id": 4,
+        "name": "youtube",
+        "fa": "youtube",
+        "link": "https://www.youtube.com/channel/UCaEiOqNMkO6mnDSCLj1SASQ"
+    }
+]
