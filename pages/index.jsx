@@ -71,6 +71,7 @@ export default function Home({data, dataBlog}) {
     <Layout 
       title={"Geniorama - Agencia Digital"}
       idPage={"gen-home"}>
+        
       <BannerHome />
 
       <section className="gen-info-section">
@@ -296,19 +297,16 @@ export default function Home({data, dataBlog}) {
                 <CardTeamGen
                   image={ImgTeam}
                   name="Oscar Pedraza"
-                  position="CEO/ Marketing Manager"
-                  linkedin="https://www.linkedin.com/"
-                  facebook="https://www.facebook.com/"
-                  instagram="https://www.instagram.com/"
+                  position={"CTO / Web Manager"}
+                  linkedin={"https://www.linkedin.com/in/oscar-pedraza/"}
                 />
 
                 <CardTeamGen
                   image={ImgAngelBurgos}
                   name="Angel Burgos"
-                  position="CTO/ Web Manager"
-                  linkedin="https://www.linkedin.com/"
-                  facebook="https://www.facebook.com/"
-                  instagram="https://www.instagram.com/"
+                  position={"CTO / Web Manager"}
+                  linkedin={"https://www.linkedin.com/in/angel-burgos-mesa-a5907a126/"}
+                  github={"https://github.com/angelpublicista"}
                 />
               </div>
             </div>

@@ -9,8 +9,8 @@ export default function Single({data}) {
   const dataPost = data[0]
   return (
     <Layout
-      title={"lorem"}
-      idPage={"gen-single-blog"}
+      title={dataPost.title.rendered}
+      idPage={`post-${dataPost.slug}`}
       isLogoLight
     >
       <HeadingBlog 
@@ -29,7 +29,7 @@ export default function Single({data}) {
           <div className="container">
             <div className={styles.genBlogDate}>
               <span>
-                <FontAwesomeIcon icon={faClock} /> {new Date(dataPost.date).toLocaleString()}
+                <FontAwesomeIcon icon={faClock} size={"xs"} /> {new Date(dataPost.date).toLocaleString()}
               </span>
             </div>
 

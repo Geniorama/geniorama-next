@@ -42,28 +42,6 @@ export default function BannerHome(){
                     </div>
                 </div>
             </SwiperSlide>
-
-            <SwiperSlide>
-                <div className={`${styles.genBannerIntro} py-5`}>
-                    <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-12 col-md-6">
-                            <h1 className={styles.genBannerIntro__title}>
-                                ¡MARKETING DE RESULTADOS DIGITALES!
-                            </h1>
-                            <p className={styles.genBannerIntro__desc}>
-                                Generamos campañas de alto impacto para tu negocio
-                            </p>
-                            <ButtonGen link="#" text="EMPECEMOS" />
-                        </div>
-
-                        <div className="col-12 col-md-6">
-                            <Image src={ImgBanner} />
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </SwiperSlide>
         </Swiper>
     )
 }
