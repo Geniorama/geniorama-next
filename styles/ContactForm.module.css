@@ -53,3 +53,11 @@
 .submitButtonP:hover{
     color: white;
 }
+
+.genPrivacyPolicy{
+    font-size: 14px;
+}
+
+.genPrivacyPolicy a{
+    color: var(--p-color);
+}

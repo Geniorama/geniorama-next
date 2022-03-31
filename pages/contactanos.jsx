@@ -7,6 +7,7 @@ import IconClock from "../public/clock-2.svg";
 import ContactForm from "../components/ContactForm";
 import SocialShapes from "../utils/socialShapes.json"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Script from "next/script";
 
 export default function Contactanos() {
   return (
@@ -14,6 +15,7 @@ export default function Contactanos() {
       title={"Contáctanos - Geniorama Agencia Digital"}
       idPage={"gen-contactanos"}
     >
+      <Script src="https://www.google.com/recaptcha/api.js" async defer/>
       <div className="mt-5">
         <HeadingPage
           sTitle={"CONTÁCTANOS"}

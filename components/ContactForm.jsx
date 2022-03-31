@@ -2,8 +2,15 @@ import Link from 'next/link'
 import styles from '../styles/ContactForm.module.css'
 import ButtonGen from './ButtonGen'
 import swal from 'sweetalert'
+import ReCAPTCHA from 'react-google-recaptcha'
+import { useRouter } from 'next/router'
 
 export default function ContactForm(){
+    const router = useRouter()
+    const forceReload = () => {
+        router.reload()
+    }
+
     const getValueText = (id) =>{
         const input = document.getElementById(id)
         const valInput = input.value
@@ -14,8 +21,31 @@ export default function ContactForm(){
         return false
     }
 
+
+    const ValidateEmail = (inputId) => {
+        const input = document.getElementById(inputId)
+
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      
+        if (input.value.match(validRegex)) {
+      
+          input.focus();
+      
+          return true;
+      
+        } else {
+      
+            input.focus();
+      
+          return false;
+      
+        }
+      
+    }
+
     const handleClick = (e) => {
         e.preventDefault()
+       
        const fullName = getValueText('full-name')
        const reason = getValueText('reason')
        const email = getValueText('email')
@@ -33,6 +63,30 @@ export default function ContactForm(){
            return false
         }
 
+        if(!ValidateEmail('email')){
+            swal({
+                title: "¡Upss!",
+                icon: "error",
+                text: "Por favor ingresa un email válido",
+                button: {
+                    text: "Vale"
+                }
+            });
+           return false
+        }
+
+        if (grecaptcha.getResponse() === '') {
+            swal({
+                title: "¡Upss!",
+                icon: "error",
+                text: "Debes verificar que no eres un robot",
+                button: {
+                    text: "Vale"
+                }
+            });
+            return false
+        }
+
        fetch(`https://hook.us1.make.com/wq5iw0hx4ptk9i9cuf1o0fif8z38fqyy?name=${fullName}&reason=${reason}&email=${email}&message=${msg}`)
        .then(function(res){
            if(res.ok){
@@ -41,13 +95,25 @@ export default function ContactForm(){
                     icon: "success",
                     text: "Hemos recibido tu mensaje"
                 });
+
+                setTimeout(forceReload, 3000)
+           } else {
+                swal({
+                    title: "¡Upss!",
+                    icon: "error",
+                    text: "No se ha podido enviar tu mensaje. Revisa los campos e inténtalo de nuevo",
+                    button: {
+                        text: "Vale"
+                    }
+                });
+                return false
            }
        })
     }
 
     return(
         <div className={styles.genContactForm}>
-            <form action="">
+            <form action="" id="gen-contact-form">
                 <div className="form-group gen-input-group">
                     <label className='gen-input-label' htmlFor="">Nombre completo*</label>
                     <input className='gen-input-text' type="text" id='full-name' name='full-name' required placeholder='Ingresa tu nombre completo' />
@@ -60,7 +126,7 @@ export default function ContactForm(){
 
                 <div className="form-group gen-input-group">
                     <label className='gen-input-label' htmlFor="">Correo*</label>
-                    <input className='gen-input-text' type="text" name='email' id='email' required placeholder='Ingresa tu nombre correo electrónico' />
+                    <input className='gen-input-text' type="email" name='email' id='email' required placeholder='Ingresa tu nombre correo electrónico' />
                 </div>
 
                 <div className="form-group gen-input-group">
@@ -68,14 +134,13 @@ export default function ContactForm(){
                     <textarea name="message" id="message" className='gen-input-text gen-textarea' placeholder='¿En qué podemos ayudarte?'></textarea>
                 </div>
 
-                <div className="form-check mb-4">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                    <label className="form-check-label" htmlFor="flexCheckDefault">
-                         He leído y acepto las <Link href={"/politica-de-privacidad"}><a>Políticas de privacidad</a></Link>
-                    </label>
+                <div className="form-group">
+                    <p className={styles.genPrivacyPolicy}>Al dar click en <strong>"ENVIAR"</strong> aceptas nuestra <a href='/politica-de-privacidad' target={"_blank"} rel="noreferrer">Política de privacidad</a></p>
                 </div>
 
-                {/* <ButtonGen link={"#"}  text={"ENVIAR"} /> */}
+                <div className="form-group mb-3">
+                    <ReCAPTCHA size='normal' sitekey={"6LcFpi4fAAAAAJl5-nQwrpA_skN6CGh3EGZyf_N1"} />
+                </div>
                 <button type="submit" onClick={(e) => handleClick(e)} className={styles.submitButton}>
                     <span>ENVIAR</span>
                 </button>
