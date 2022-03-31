@@ -36,7 +36,7 @@ export default function Index({data}) {
 
 export async function getStaticProps(ctx){
 
-  const url_api = "https://www.geniorama.site/demo/geniorama/wp-json/wp/v2/portfolio/?per_page=-1&_embed=true"
+  const url_api = "https://www.geniorama.site/demo/geniorama/wp-json/wp/v2/portfolio/?per_page=24&_embed=true"
   try{
     const res = await fetch(url_api)
     const data = await res.json()
