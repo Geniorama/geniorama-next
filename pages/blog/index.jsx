@@ -24,7 +24,7 @@ export default function Index({data}) {
                         <div key={item.id}>
                             <CardPost
                                 link={`/blog/${item.slug}`}
-                                image={item.acf.portada_blog ? item.acf.portada_blog.sizes.large : "https://www.geniorama.site/demo/geniorama/wp-content/uploads/2019/11/nikita-katsevich-QXDJGPZTwxs-unsplash-e1584533063531-1600x900.jpg"}
+                                image={item.acf.portada_blog ? item.acf.portada_blog.sizes.large : "https://www.geniorama.site/cms/wp-content/uploads/2019/11/nikita-katsevich-QXDJGPZTwxs-unsplash-e1584533063531-1600x900.jpg"}
                                 title={item.title.rendered}
                                 desc={limitChar(item.excerpt.rendered, 90)}
                             />
@@ -40,7 +40,7 @@ export default function Index({data}) {
 
 
 export async function getStaticProps(ctx){
-    const url_api_blog ="https://www.geniorama.site/demo/geniorama/wp-json/wp/v2/posts"
+    const url_api_blog ="https://www.geniorama.site/cms/wp-json/wp/v2/posts"
     try{
         const res = await fetch(url_api_blog)
         const data = await res.json()

@@ -15,7 +15,7 @@ export default function Single({data}) {
     >
       <HeadingBlog 
             title={dataPost.title.rendered}
-            bgImage={dataPost.acf.portada_blog ? dataPost.acf.portada_blog.url : "https://www.geniorama.site/demo/geniorama/wp-content/uploads/2022/03/andrew-neel-cckf4TsHAuw-unsplash.jpg"}
+            bgImage={dataPost.acf.portada_blog ? dataPost.acf.portada_blog.url : "https://www.geniorama.site/cms/wp-content/uploads/2022/03/andrew-neel-cckf4TsHAuw-unsplash.jpg"}
         />
         <div className="container my-5">
           <Breadcrumbs 
@@ -42,7 +42,7 @@ export default function Single({data}) {
 
 export async function getStaticPaths(){
   try {
-    const res = await fetch('https://www.geniorama.site/demo/geniorama/wp-json/wp/v2/posts')
+    const res = await fetch('https://www.geniorama.site/cms/wp-json/wp/v2/posts')
     const data = await res.json()
     const paths = data.map(({slug}) => ({params: {slug: `${slug}`}}))
     return {
@@ -56,7 +56,7 @@ export async function getStaticPaths(){
 
 export async function getStaticProps({params}){
   try {
-    const res = await fetch('https://www.geniorama.site/demo/geniorama/wp-json/wp/v2/posts/?slug=' + params.slug)
+    const res = await fetch('https://www.geniorama.site/cms/wp-json/wp/v2/posts/?slug=' + params.slug)
     const data = await res.json()
 
     return{
