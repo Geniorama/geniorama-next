@@ -140,7 +140,7 @@ export default function SobreNosotros() {
               name={"Diego Rodríguez"}
               position={"Founder & Director <a href='https://ultravioleta.co/' target='_blank' rel='noreferrer'>Ultravioleta.co</a>"}
               text={
-                <iframe src="https://widget.spreaker.com/player?episode_id=49245846&theme=light&playlist=false&playlist-continuous=false&chapters-image=true&episode_image_position=right&hide-logo=false&hide-likes=false&hide-comments=false&hide-sharing=false&hide-download=true" width="100%" height="150px" frameborder="0"></iframe>
+                <iframe src="https://widget.spreaker.com/player?episode_id=49245846&theme=light&playlist=false&playlist-continuous=false&chapters-image=true&episode_image_position=right&hide-logo=false&hide-likes=false&hide-comments=false&hide-sharing=false&hide-download=true" width="100%" height="150px" frameBorder="0"></iframe>
               }
             />
 
