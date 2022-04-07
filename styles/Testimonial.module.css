@@ -5,10 +5,11 @@
 }
 
 .genTestimonialSingle__profile__avatar{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     overflow: hidden;
+    position: relative;
 }
 
 .genTestimonialSingle__quote{
@@ -35,6 +36,8 @@
 .genTestimonialSingle__profile__info{
     margin-left: 1rem;
     font-weight: 600;
+    max-width: 200px;
+    margin-bottom: 0;
 }
 
 .genTestimonialSingle__profile__info__name{

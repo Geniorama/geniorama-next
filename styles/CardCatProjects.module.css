@@ -9,6 +9,7 @@
     margin-bottom: 11rem;
     border-radius: 20px;
     transition: .4s;
+    text-decoration: none;
 }
 
 .cardLink__img{

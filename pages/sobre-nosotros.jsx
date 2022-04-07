@@ -21,6 +21,7 @@ import CristianAaron from "../public/testimonios/cristian-aaron.jpg";
 import JuanArango from "../public/testimonios/juan-f-arango.jpg";
 import SylviaRugeles from "../public/testimonios/sylvia-rugeles.jpg";
 import SorangieLopez from "../public/testimonios/sorangie-lopez.jpg";
+import RodolfoVelasquez from "../public/testimonios/rodolfo-velasquez.jpg"
 
 export default function SobreNosotros() {
   return (
@@ -111,7 +112,7 @@ export default function SobreNosotros() {
             <CardTeamGen
               image={ImgDuvanR}
               name="Duvan Rodríguez"
-              position={"CTO / Frontend Developer"}
+              position={"Frontend Developer"}
               linkedin={
                 "https://www.linkedin.com/in/giovanni-rodr%C3%ADguez-25b9b621a/"
               }
@@ -202,6 +203,19 @@ export default function SobreNosotros() {
               }
               text={
                 "Geniorama Agencia, es el mejor Partner en asuntos creativos,  diseño de estrategias digitales y programación web con la mejor experiencia e interfaz de usuario.  Su versatilidad 360, que incluye producción audiovisual de calidad y acciones enfocadas BTL, hace realidad el cumplimiento de ambiciosos objetivos de comunicación para nuestras marcas"
+              }
+            />
+
+            <Testimonial
+              image={RodolfoVelasquez}
+              name={"Rodolfo Velásquez"}
+              position={
+                "Cofounder <a href='https://copublicitarias.com/' target='_blank' rel='noreferrer'>Copublicitarias</a>"
+              }
+              text={
+                <div className={styles.vimeoResponsive}>
+                  <iframe title="vimeo-player" src="https://player.vimeo.com/video/697180580?h=64e22c1c94&title=0&byline=0" frameBorder="0" allowFullScreen></iframe>
+                </div>
               }
             />
           </div>

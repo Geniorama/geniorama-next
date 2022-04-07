@@ -19,7 +19,12 @@ export default function Testimonial({image, text, name, position}) {
         {image
         ?
         <div className={styles.genTestimonialSingle__profile__avatar}>
-            <Image src={image} className={styles.genTestimonialSingle__profile__avatar__img} />
+            <Image 
+              src={image} 
+              className={styles.genTestimonialSingle__profile__avatar__img} 
+              layout={"fill"}
+              objectFit={"cover"}
+            />
         </div>
         :
         null
