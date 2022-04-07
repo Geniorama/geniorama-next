@@ -22,7 +22,7 @@ export default function Footer(){
                             className={styles.genFooterLogo}
                         />
 
-                        <ul className={`${styles.genNavFooter} nav justify-content-center`}>
+                        <ul className={`${styles.genNavFooter} nav justify-content-center flex-column flex-lg-row`}>
                             
                             {MenuPrincipal.map(item=>(
                                 <li key={item.id} className="nav-item">

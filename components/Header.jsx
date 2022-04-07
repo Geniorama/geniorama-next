@@ -13,7 +13,7 @@ export default function Header({isLogoLight}){
         const stickyClass = styles.genHeader__sticky
         const headerDark = styles.genHeader__sticky__dark
         window.addEventListener('scroll', function(){
-            if(scrollY > 200){
+            if(scrollY > 100){
                 header.classList.add(stickyClass)
                 if(isLogoLight){
                     header.classList.add(headerDark)

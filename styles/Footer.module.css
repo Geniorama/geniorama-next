@@ -57,6 +57,8 @@
 .genBottomFooter__link{
     color: #ccc;
     transition: .3s;
+    font-size: .9rem;
+    text-decoration: none;
 }
 
 .genBottomFooter__link:hover{

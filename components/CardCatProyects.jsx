@@ -1,0 +1,22 @@
+import Link from "next/link"
+import Image from "next/image"
+import styles from "../styles/CardCatProjects.module.css"
+
+export default function CardCatProyects({title, bgImage, link}) {
+  return (
+    <Link href={link}>
+        <a className={styles.cardLink}>
+            <Image 
+                src={bgImage} 
+                layout={"fill"} 
+                objectFit={"cover"}
+                className={styles.cardLink__img}
+            />
+
+            <div className={styles.cardLink__caption}>
+                <h2>{title}</h2>
+            </div>
+        </a>
+    </Link>
+  )
+}

@@ -13,6 +13,7 @@ export default function CardPost({link, image, date, title, desc}) {
             className={styles.genCardPostArticle__img}
             objectFit="cover"
             layout="fill"
+            priority
           />
           <figcaption className={styles.genCardPostArticle__cap}>
             <span className={styles.genCardPostArticle__cap__date}>
@@ -22,7 +23,6 @@ export default function CardPost({link, image, date, title, desc}) {
               {title}
             </h3>
             <div className={styles.genCardPostArticle__cap__desc} dangerouslySetInnerHTML={desc} />
-              
           </figcaption>
         </article>
       </a>

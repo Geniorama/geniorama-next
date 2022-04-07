@@ -97,3 +97,15 @@ p, span{
 #swiper-brands .swiper-wrapper{
   align-items: center;
 }
+
+@media (max-width: 992px){
+  .gen-info-section{
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 576px){
+  .gen-info-section{
+    padding: 2rem 0;
+  }
+}

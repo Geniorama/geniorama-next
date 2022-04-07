@@ -36,7 +36,7 @@ export default function CarouselPosts({info}){
                 <SwiperSlide key={item.id} className='p-2 py-5'>
                     <CardPost
                         link={`/blog/${item.slug}`}
-                        image={item.acf.portada_blog ? item.acf.portada_blog.sizes.large : "https://www.geniorama.site/demo/geniorama/wp-content/uploads/2019/11/nikita-katsevich-QXDJGPZTwxs-unsplash-e1584533063531-1600x900.jpg"}
+                        image={item.acf.portada_blog ? item.acf.portada_blog.sizes.large : "https://www.geniorama.site/cms/wp-content/uploads/2019/11/nikita-katsevich-QXDJGPZTwxs-unsplash-e1584533063531-1600x900.jpg"}
                         title={item.title.rendered}
                         desc={limitChar(item.excerpt.rendered, 90)}
                     />

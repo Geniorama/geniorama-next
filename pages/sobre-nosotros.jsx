@@ -15,6 +15,10 @@ import Testimonial from "../components/Testimonial";
 import AvatarExample from "../public/pexels-pixabay-415829.jpg";
 import SvgIconOurVission from "../components/SvgImages/SvgIconOurVission";
 import SvgIconOurMission from "../components/SvgImages/SvgIconOurMission";
+import DiegoRodriguez from "../public/testimonios/diego-rodriguez.jpg"
+import TaxoLogoAvatar from "../public/testimonios/taxo-logo-avatar.jpg"
+import CristianAaron from "../public/testimonios/cristian-aaron.jpg"
+import JuanArango from "../public/testimonios/juan-f-arango.jpg"
 
 export default function SobreNosotros() {
   return (
@@ -53,7 +57,7 @@ export default function SobreNosotros() {
             <CardTeamGen
               image={ImgOscarPedraza}
               name="Oscar Pedraza"
-              position={"CTO / Web Manager"}
+              position={"CEO / Marketing Manager"}
               linkedin={"https://www.linkedin.com/in/oscar-pedraza/"}
             />
 
@@ -108,7 +112,7 @@ export default function SobreNosotros() {
       <section className="gen-info-section">
         <div className="container">
           <h2 className="gen-info-section__title">
-            ALIADOS
+            PARTNERS
           </h2>
           <div className={styles.genCarouselBrands}>
             <CarouselGen />
@@ -123,20 +127,38 @@ export default function SobreNosotros() {
           </h2>
           <div className={styles.genWrapTestimonials}>
             <Testimonial
-              image={AvatarExample}
-              name={"Jane Doe"}
-              position={"Founder Company"}
+              image={TaxoLogoAvatar}
+              name={"Lina Duque"}
+              position={"CEO <a href='http://tax-o.com.co/' target='_blank' rel='noreferrer'>Taxo</a>"}
               text={
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                "Con sus ideas logramos una mayor cantidad de interacciones en redes sociales y vamos por buen camino en el posicionamiento de marca con nuestros Blogs y Posts. Muchas Gracias!"
               }
             />
 
             <Testimonial
-              image={AvatarExample}
-              name={"Jane Doe"}
-              position={"Founder Company"}
+              image={DiegoRodriguez}
+              name={"Diego Rodríguez"}
+              position={"Founder & Director <a href='https://ultravioleta.co/' target='_blank' rel='noreferrer'>Ultravioleta.co</a>"}
               text={
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                <iframe src="https://widget.spreaker.com/player?episode_id=49245846&theme=light&playlist=false&playlist-continuous=false&chapters-image=true&episode_image_position=right&hide-logo=false&hide-likes=false&hide-comments=false&hide-sharing=false&hide-download=true" width="100%" height="150px" frameborder="0"></iframe>
+              }
+            />
+
+            <Testimonial
+              image={CristianAaron}
+              name={"Cristian Aaron"}
+              position={"Founder <a href='http://naranjaexport.com/' target='_blank' rel='noreferrer'>Naranja Export</a>"}
+              text={
+                "Cambiamos nuestra imagen y nuestra página web para hacerla más atractiva y sólida para nuestros clientes. También empezamos a generar contenido para potenciar nuestras ventas. Excelente gestión"
+              }
+            />
+
+            <Testimonial
+              image={JuanArango}
+              name={"Juan Felipe Arango"}
+              position={"Director Creativo Ejecutivo Independiente"}
+              text={
+                "El equipo Geniorama se ha convertido en mi aliado estratégico. Desde nuestro primer proyecto me dieron la confianza y calidad para escogerlos con sus soluciones de desarrollo web y administración de campañas de pauta en redes sociales. Hoy ya tenemos una relación de negocio consolidada. ¡Un gran equipo!"
               }
             />
           </div>

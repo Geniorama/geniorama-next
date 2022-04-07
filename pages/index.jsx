@@ -116,7 +116,13 @@ export default function Home({data, dataBlog}) {
           <div className="row align-items-center">
             <div className="col-12 col-lg-6">
               <div data-aos="fade-right" data-aos-duration="1000">
-                <Image src={ImagenComo} className={styles.genImgRounded} />
+                <div className={styles.genImgRounded}>
+                  <Image 
+                    src={ImagenComo}
+                    layout={"fill"}
+                    objectFit={"cover"}
+                  />
+                </div>
               </div>
             </div>
 
@@ -180,6 +186,7 @@ export default function Home({data, dataBlog}) {
 
           <PortfolioGallery
             info={data}
+            favs
           />
 
           <div className="text-center mt-5">
@@ -297,7 +304,7 @@ export default function Home({data, dataBlog}) {
                 <CardTeamGen
                   image={ImgTeam}
                   name="Oscar Pedraza"
-                  position={"CTO / Web Manager"}
+                  position={"CEO / Marketing Manager"}
                   linkedin={"https://www.linkedin.com/in/oscar-pedraza/"}
                 />
 
@@ -317,19 +324,20 @@ export default function Home({data, dataBlog}) {
                 GENIOS
               </h2>
               <p className="gen-info-section__desc">
-                But I must explain to you how all this mistaken idea of
-                denouncing pleasure and praising pain was born and I will give
-                you a complete account of the system, and expound the actual
-                teachings of the great explorer of human happiness. No one.
+                En <strong>Geniorama</strong> creemos en el talento, es por eso que hemos consolidado un equipo de trabajo integral, lleno de profesionales listos para afrontar cualquier reto, llevando a nuestros clientes a alcanzar sus objetivos.
+                <br /><br />
+                <span>
+                ¡Conoce a los miembros del <br /> <strong>Dream Team Geniorama</strong>!
+                </span>
               </p>
-              <ButtonGen text="SOBRE NOSOTROS" link="/sobre-nosotros" />
+              <ButtonGen text="VER MÁS" link="/sobre-nosotros" />
             </div>
           </div>
         </div>
       </section>
       <section className="gen-info-section">
         <div className="container">
-          <h2 className="gen-info-section__title mb-5">NUESTROS<br />AMIGOS</h2>
+          <h2 className="gen-info-section__title mb-5">PARTNERS</h2>
           <div className={`${styles.genCarouselSection} ${styles.genCarouselSectionBrands}`}>
             <CarouselGen
             />

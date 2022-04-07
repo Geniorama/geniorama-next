@@ -27,9 +27,9 @@ export default function Contactanos() {
         <div className="container">
           <div className={styles.genWrapInfoContact}>
             <CardInfoContact
-              link={"#"}
+              link={"https://wa.link/ayn4i0"}
               icon={IconPhone}
-              title={"TELÉFONO"}
+              title={"WHATSAPP"}
               info={"(+57) 312 534 6167"}
             />
 

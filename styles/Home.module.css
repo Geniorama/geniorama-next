@@ -7,6 +7,10 @@
 
 .genImgRounded{
   border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
 }
 
 .genWrapCounters{
@@ -39,4 +43,11 @@
 
 .genCarouselSectionBrands{
   padding: 3em 2em;
+}
+
+@media (max-width: 576px){
+  .genImgRounded{
+    margin-bottom: 3rem;
+    height: 250px;
+  }
 }

@@ -7,7 +7,7 @@ export default function Testimonial({image, text, name, position}) {
   return (
     <div className={styles.genTestimonialSingle}>
       <div className={styles.genTestimonialSingle__quote}>
-      <Image src={ImgQuotes} className={styles.genTestimonialSingle__img} width={70} height={70}/>
+        <Image src={ImgQuotes} className={styles.genTestimonialSingle__img} width={70} height={70}/>
       </div>
       
       
@@ -27,7 +27,7 @@ export default function Testimonial({image, text, name, position}) {
         
         <p className={styles.genTestimonialSingle__profile__info}>
           <span className={styles.genTestimonialSingle__profile__info__name}>{name}</span>
-          <span className={styles.genTestimonialSingle__profile__info__pos}>{position}</span>
+          <span className={styles.genTestimonialSingle__profile__info__pos} dangerouslySetInnerHTML={{__html: position}}></span>
         </p>
       </div>
     </div>

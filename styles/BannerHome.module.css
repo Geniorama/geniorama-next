@@ -1,7 +1,3 @@
-.genBannerIntro{
-    background-color: #f8f8f8;
-}
-
 .genBannerIntro__title {
   font-size: 70px;
   color: var(--p-color);
@@ -21,4 +17,18 @@
   line-height: 2rem;
   color: var(--text-2);
   margin: 2rem 0;
+}
+
+@media (max-width: 992px){
+  .genBannerIntro{
+    padding-top: 7em;
+  }
+
+  .genBannerIntro__title{
+    line-height: 40px;
+  }
+
+  .genBannerIntro__title__bottom{
+    font-size: 40px;
+  }
 }

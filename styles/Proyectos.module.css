@@ -1,0 +1,14 @@
+.linkBack{
+    font-size: 30px;
+    color: var(--p-color);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.linkBack__text{
+    margin-left: 10px;
+}

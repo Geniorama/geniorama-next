@@ -111,3 +111,10 @@
 .genHeader__sticky__dark .genButtonNav{
     background-color: #454545;
 }
+
+@media (max-width: 576px){
+    .genNavBtnClose{
+        right: 2rem;
+        top: 2rem;
+    }
+}
