@@ -10,8 +10,8 @@ export default function CardInfoContact({icon, title, info, link}){
                 ?
                 <Image 
                     src={icon}
-                    width={100}
-                    height={100}
+                    width={70}
+                    height={70}
                     className={styles.genCardInfo__img}
                 />
                 :

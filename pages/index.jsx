@@ -77,35 +77,39 @@ export default function Home({data, dataBlog}) {
       <section className="gen-info-section">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-12 col-lg-3 px-4 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
-              <h2 className="gen-info-section__title">¡NUESTRO GEN DIGITAL!</h2>
-              <p className="gen-info-section__desc">
-                Nuestros genes impulsan y potencian el crecimiento de los
-                negocios.
-              </p>
-              <ButtonGen text="VER MÁS" link="#" />
+            <div className="col-12 px-4 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+              <h2 className="gen-info-section__title text-center">¡NUESTRO GEN DIGITAL!</h2>
+              <h5 className={styles.phrase}>
+                Generamos y aseguramos resultados reales, medibles y comprobables
+              </h5>
             </div>
 
-            <div className="col-12 col-lg-9" data-aos="fade-left" data-aos-duration="1000">
+            <div className="col-12" data-aos="fade-left" data-aos-duration="1000">
               <div className={styles.genContGrid}>
                 <CardOurGen
                   image={IconGenEstr}
                   title="GEN ESTRATÉGICO"
-                  description="Creamos campañas de comunicación innovadoras y arriesgadas que cautivan clientes."
+                  description={
+                    "<p>Somos expertos en crear y llevar a cabo campañas de comunicación y propuestas web innovadoras y arriesgadas,  capaces de sorprender y cautivar. Ponemos a su disposición las últimas tendencias de diseño y navegación, con el fin de mejorar en todo momento la experiencia del usuario ya que  nuestro objetivo es lograr en todo momento, que nuestros clientes alcancen sus objetivos.</p>"
+                  }
                 />
 
                 <CardOurGen
                   image={IconGenCrea}
                   title="GEN CREATIVO"
-                  description="Somos expertos en diseño, creatividad, y estilo y lo demostramos en cada etapa de tus campañas."
+                  description="<p>La creatividad también hace parte de nuestro ADN, somos expertos en investigación, conceptualización y diseño de campañas y páginas web creativas con un mensaje contundente. Toda nuestra atención está en los pequeños detalles, siendo este, el verdadero secreto de nuestro nivel de éxito al momento de comunicar y hacer visibles a nuestros clientes.</p>"
                 />
 
                 <CardOurGen
                   image={IconGenReal}
                   title="GEN REAL"
-                  description="Generamos los resultados que tu compañía necesita (leads, ventas, tráfico, prospectos e interacción)."
+                  description="<p>Desde nuestros inicios, hemos creído en el gran poder que tiene el Internet para el desarrollo e impulso de las marcas y nos hemos consolidado como verdaderos maestros de la pauta digital, llevando a cabo procesos creados específicamente para lograr las metas de cada uno de nuestros clientes.</p>"
                 />
               </div>
+            </div>
+
+            <div className="col-12 text-center py-5">
+              <ButtonGen text="VER MÁS" link="#" />
             </div>
           </div>
         </div>
@@ -198,7 +202,7 @@ export default function Home({data, dataBlog}) {
         </div>
       </section>
 
-      <section className="gen-info-section">
+      <section className="gen-info-section" id="servicios">
         <div className="container">
           <h2 className="gen-info-section__title">
             NUESTROS <br /> SERVICIOS

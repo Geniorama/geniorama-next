@@ -45,9 +45,8 @@ export default function CardOurGen({title, description, image, link}) {
           }
           
           <h3 className={styles.CardOurGen__title}>{title}</h3>
-          <p className={styles.CardOurGen__desc}>
-            {description}
-          </p>
+          <div className={styles.CardOurGen__desc} dangerouslySetInnerHTML={{__html: description}}>
+          </div>
         </div>
       }
     </div>

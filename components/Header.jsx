@@ -12,6 +12,20 @@ export default function Header({isLogoLight}){
         const header = document.getElementById('gen-header')
         const stickyClass = styles.genHeader__sticky
         const headerDark = styles.genHeader__sticky__dark
+
+        const headerMenu = document.getElementById('gen-menu')
+        const itemsMenu = headerMenu.querySelectorAll('.nav-link')
+
+        itemsMenu.forEach(element => {
+            element.addEventListener('click', () => {
+                const gen_menu = document.getElementById('gen-menu')
+                const active_class = styles.genNavActive
+
+                gen_menu.classList.remove(active_class)
+            })
+        })
+
+
         window.addEventListener('scroll', function(){
             if(scrollY > 100){
                 header.classList.add(stickyClass)
@@ -40,6 +54,7 @@ export default function Header({isLogoLight}){
         gen_menu.classList.remove(active_class)
     }
 
+    
     return(
         <header id='gen-header' className={styles.genHeader}>
             <div className="container">

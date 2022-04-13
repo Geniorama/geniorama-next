@@ -5,8 +5,8 @@ import styles from "../styles/Contactanos.module.css";
 import IconPhone from "../public/icon-phone.svg";
 import IconClock from "../public/clock-2.svg";
 import ContactForm from "../components/ContactForm";
-import SocialShapes from "../utils/socialShapes.json"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import SocialShapes from "../utils/socialShapes.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Script from "next/script";
 
 export default function Contactanos() {
@@ -15,7 +15,7 @@ export default function Contactanos() {
       title={"Contáctanos - Geniorama Agencia Digital"}
       idPage={"gen-contactanos"}
     >
-      <Script src="https://www.google.com/recaptcha/api.js" async defer/>
+      <Script src="https://www.google.com/recaptcha/api.js" async defer />
       <div className="mt-5">
         <HeadingPage
           sTitle={"CONTÁCTANOS"}
@@ -48,33 +48,37 @@ export default function Contactanos() {
           <div className="row">
             <div className="col-12 col-lg-6 px-5">
               <h3 className="gen-info-section__title">
-                BUT I MUST EXPLAIN TO YOU HOW ALL THIS MISTAKEN IDEA OF
-                DENOUNCING ?
+                Queremos ser el aliado más valioso de tu compañía
               </h3>
+              <h5 className="gen-info-section__subtitle">¡Hagamos una cita!</h5>
               <div className="gen-info-section__desc">
-                But I must explain to you how all this mistaken idea of
-                denouncing pleasure and praising pain was born and I will give
-                you a complete account of the system, and expound the actual
-                teachings of the great explorer of the truth, the master-builder
-                of human happiness. No one rejects, dislikes, or avoids pleasure
-                itself, because it is pleasure, but because those who do not
-                know how to pursue pleasure rationally encounter consequences
-                that are extremely painful. Nor again is there anyone who loves
-                .
+                Antes de cualquier cosa, queremos que sepas que nuestros
+                clientes terminan convirtiéndose en grandes amigos y es por eso
+                que tenemos tan buenos resultados. Queremos conocerte a ti y a
+                tu compañía, en <strong>Geniorama</strong> creemos que no hay mejor forma de
+                hacerlo que mediante una conversación sin tensiones. Cuéntanos
+                qué haces, qué te impulsa a continuar trabajando y sobre todo a
+                dónde quieres llegar; al final del día tendremos el panorama más
+                claro y sabremos qué podemos hacer por ti.
               </div>
 
               <ul className={`${styles.genNavSocialContact} nav`}>
-                {SocialShapes.map(item => (
+                {SocialShapes.map((item) => (
                   <li key={item.id} className="nav-item">
-                    <a href={item.link} className="nav-link" target="_blank" rel="noreferrer">
-                      <FontAwesomeIcon icon={['fab', item.fa]}/>
+                    <a
+                      href={item.link}
+                      className="nav-link"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FontAwesomeIcon icon={["fab", item.fa]} />
                     </a>
                   </li>
                 ))}
               </ul>
             </div>
             <div className="col-12 col-lg-6 px-5">
-                <ContactForm />
+              <ContactForm />
             </div>
           </div>
         </div>

@@ -50,9 +50,31 @@
 }
 
 .genNav ul a{
-    font-size: 1.5rem;
-    color: var(--p-color);
+    font-size: 2rem;
+    color: var(--text-2);
     margin: 1rem 0;
+    position: relative;
+}
+
+.genNav ul a::before{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--p-color);
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    z-index: 0;
+    transition: .5s;
+}
+
+.genNav ul a:hover{
+    color: var(--p-color);
+}
+
+.genNav ul a:hover::before{
+    width: 100%;
+    left: 0;
 }
 
 .genNavContainer{

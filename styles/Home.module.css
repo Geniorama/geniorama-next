@@ -45,6 +45,13 @@
   padding: 3em 2em;
 }
 
+.phrase{
+  font-size: 2rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 3rem auto;
+}
+
 @media (max-width: 576px){
   .genImgRounded{
     margin-bottom: 3rem;
