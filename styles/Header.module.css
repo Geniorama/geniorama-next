@@ -127,11 +127,16 @@
 }
 
 .genHeader__sticky__dark{
-    background-color: #252525;
+    background-color: var(--p-color-2);
 }
 
 .genHeader__sticky__dark .genButtonNav{
-    background-color: #454545;
+    background-color: var(--s-color-2);
+    color: white;
+}
+
+.genHeader__sticky__dark .genButtonNav .genButtonNav__line{
+    background-color: white;
 }
 
 @media (max-width: 576px){

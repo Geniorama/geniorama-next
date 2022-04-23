@@ -60,7 +60,7 @@ export default function Header({isLogoLight}){
             <div className="container">
                 <nav className='d-flex align-items-center justify-content-between'>
                     <Link href="/">
-                        <a>
+                        <a className={styles.logoLink}>
                             <Image 
                                 src={isLogoLight ? LogoLight : LogoDark}
                                 width={150}

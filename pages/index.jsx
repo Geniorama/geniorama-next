@@ -70,8 +70,10 @@ export default function Home({data, dataBlog}) {
   return (
     <Layout 
       title={"Geniorama - Agencia Digital"}
-      idPage={"gen-home"}>
-        
+      idPage={"gen-home"}
+      isLogoLight
+      >
+      
       <BannerHome />
 
       <section className="gen-info-section">

@@ -3,6 +3,8 @@ import Link from "next/link"
 import styles from "../styles/PortfolioGallery.module.css"
 import ExampleImage from "../public/simone-hutsch-NEiTE7luK6c-unsplash-1024x1024-1-420x420.jpg"
 import IconRight from "../public/icons/arrow-right-s-line.svg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons"
 
 export default function PortfolioGallery({info, filters}){
     return(
@@ -48,7 +50,7 @@ export default function PortfolioGallery({info, filters}){
                                 <div className={styles.genPortfolioGrid__item__cap}>
                                     
                                         <button className={styles.genPortfolioGrid__item__cap__button}>
-                                            <Image src={IconRight} />
+                                            <FontAwesomeIcon size="xs" icon={faAngleRight}/>
                                         </button>
                                     
                                     <h5 className={styles.genPortfolioGrid__item__cap__title}>

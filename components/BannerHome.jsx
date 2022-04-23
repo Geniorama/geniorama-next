@@ -27,7 +27,6 @@ export default function BannerHome(){
                     textButton={"EMPECEMOS"}
                     linkButton={"#"}
                     photo={Banner1}
-                    bgColor="#f8f8f8"
                 />
             </SwiperSlide>
         </Swiper>

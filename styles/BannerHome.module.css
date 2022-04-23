@@ -1,6 +1,10 @@
+.genBannerIntro{
+  background-color: var(--p-color);
+}
+
 .genBannerIntro__title {
   font-size: 70px;
-  color: var(--p-color);
+  color: var(--s-color);
   font-weight: 700;
   line-height: 70px;
 }
@@ -9,13 +13,13 @@
   display: block;
   font-weight: normal;
   font-size: 30px;
-  color: #575757;
+  color: white;
 }
 
 .genBannerIntro__desc {
   font-size: 1.5rem;
   line-height: 2rem;
-  color: var(--text-2);
+  color: white;
   margin: 2rem 0;
 }
 

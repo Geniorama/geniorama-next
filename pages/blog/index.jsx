@@ -13,7 +13,7 @@ export default function Index({data}) {
         <div className="pt-5 mb-5" style={{background: "#f8f8f8"}}>
             <HeadingPage
             sTitle={"Blog"}
-            lTitle={"EL CONOCIMIENTO ES PARA TOD@S"}
+            lTitle={"BLOGEN"}
             />
         </div>
 

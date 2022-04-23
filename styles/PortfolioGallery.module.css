@@ -25,19 +25,6 @@
     transition: .3s;
 }
 
-.genPortfolioGrid__item__cap::before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: var(--p-gradient-v);
-    border-radius: 20px;
-    opacity: 0;
-    transition: .3s;
-}
-
 .genPortfolioGrid__item__cap__title{
     position: relative;
     font-weight: 600;
@@ -51,21 +38,27 @@
 .genPortfolioGrid__item__cap__button{
     position: absolute;
     top: -25px;
-    background: var(--p-gradient);
+    background: var(--s-color);
     width: 45px;
     height: 45px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--p-color);
     right: 4%;
     border: none;
+    font-size: 12px;
     transition: .3s;
+}
+
+.genPortfolioGrid__item__cap__button svg{
+    width: 12px;
 }
 
 .genPortfolioLink:hover .genPortfolioGrid__item__cap{
     transform: translateY(-35px);
+    background-color: var(--p-color-2);
 
 }
 
@@ -74,8 +67,8 @@
 
 }
 
-.genPortfolioLink:hover .genPortfolioGrid__item__cap::before{
-    opacity: 1;
+.genPortfolioLink:hover .genPortfolioGrid__item__cap__title{
+    color: var(--s-color);
 }
 
 .genPortfolioLink{
@@ -87,7 +80,8 @@
     border: 1px solid #d7d7d7;
     width: 100%;
     height: 350px;
-    position: relative;border-radius: 20px;
+    position: relative;
+    border-radius: 20px;
     overflow: hidden;
     transition: .3s;
 }

@@ -20,7 +20,7 @@
 .cardLink__caption{
     background-color: var(--p-color);
     transform: translateY(70%);
-    border-radius: 10px;
+    border-radius: 150px;
     z-index: 2;
     color: white;
     text-align: center;
@@ -51,6 +51,7 @@
     transform: translateY(0);
 }
 
-.cardLink:hover .cardLink__caption::before{
-    opacity: 1;
+.cardLink:hover .cardLink__caption{
+    background-color: var(--s-color);
+    color: var(--p-color);
 }
