@@ -1,38 +1,34 @@
-.genBannerIntro{
-  background-color: var(--p-color);
+.sliderHome{
+  position: relative;
 }
 
-.genBannerIntro__title {
-  font-size: 70px;
+.sliderHomeItem{
+  position: relative;
+  min-height: 700px;
+  padding: 2rem 0;
+}
+
+.sliderHome__caption{
+  position: absolute;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.sliderHome__title1{
+  font-size: 40px;
+}
+
+.sliderHome__title2{
+  font-size: 100px;
   color: var(--s-color);
-  font-weight: 700;
-  line-height: 70px;
+  margin-bottom: 1rem;
 }
 
-.genBannerIntro__title__top{
-  display: block;
-  font-weight: normal;
+.sliderHome__desc{
   font-size: 30px;
-  color: white;
-}
-
-.genBannerIntro__desc {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  color: white;
-  margin: 2rem 0;
-}
-
-@media (max-width: 992px){
-  .genBannerIntro{
-    padding-top: 7em;
-  }
-
-  .genBannerIntro__title{
-    line-height: 40px;
-  }
-
-  .genBannerIntro__title__bottom{
-    font-size: 40px;
-  }
+  margin-bottom: 3rem;
 }

@@ -1,34 +1,70 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade, Navigation } from "swiper";
-import "swiper/css";
-import "swiper/css/autoplay";
-import "swiper/css/effect-fade"
-import "swiper/css/navigation"
-import Banner1 from "../public/banners/banner-1/cover-banner.png"
+
+import Banner1 from "../public/img/bg-slide-1.png"
 import styles from '../styles/BannerHome.module.css'
 import Image from "next/image";
-import Banner from "./Banner";
-
+import { useEffect } from "react";
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import Slider from "react-slick";
 
 export default function BannerHome(){
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true
+    };
     return(
-        <Swiper
-            modules={[EffectFade, Navigation]}
-            spaceBetween={30}
-            slidesPerView={1}
-            navigation
-            effect="fade"
-            >
-            <SwiperSlide>
-                <Banner
-                    titleTop={"Marketing de"}
-                    titleBottom={`Resultados </br>Digitales`}
-                    desc={"Generamos campañas de alto impacto para tu negocio"}
-                    textButton={"EMPECEMOS"}
-                    linkButton={"#"}
-                    photo={Banner1}
-                />
-            </SwiperSlide>
-        </Swiper>
+        <div id="slider-home" className={styles.sliderHome}>
+            <Slider {...settings}>
+                <div className={styles.sliderHomeItem}>
+                    <div className={styles.sliderHome__caption}>
+                        <div className="container">
+                            <h3 className={styles.sliderHome__title1}>Estrategias digitales con</h3>
+                            <h2 className={styles.sliderHome__title2}>Resultados reales</h2>
+                            <p className={styles.sliderHome__desc}>
+                                Generamos campañas de alto impacto para tu negocio
+                            </p>
+                            <a href="#" className="gen-button gen-button-primary">
+                                VER MÁS
+                            </a>
+                        </div>
+                    </div>
+                    <Image src={Banner1} layout={"fill"} objectFit={"cover"} />
+                </div>
+                <div className={styles.sliderHomeItem}>
+                    <div className={styles.sliderHome__caption}>
+                        <div className="container">
+                            <h3 className={styles.sliderHome__title1}>Estrategias digitales con</h3>
+                            <h2 className={styles.sliderHome__title2}>Resultados reales</h2>
+                            <p className={styles.sliderHome__desc}>
+                                Generamos campañas de alto impacto para tu negocio
+                            </p>
+                            <a href="#" className="gen-button gen-button-primary">
+                                VER MÁS
+                            </a>
+                        </div>
+                    </div>
+                    <Image src={Banner1} layout={"fill"} objectFit={"cover"} />
+                </div>
+                <div className={styles.sliderHomeItem}>
+                    <div className={styles.sliderHome__caption}>
+                        <div className="container">
+                            <h3 className={styles.sliderHome__title1}>Estrategias digitales con</h3>
+                            <h2 className={styles.sliderHome__title2}>Resultados reales</h2>
+                            <p className={styles.sliderHome__desc}>
+                                Generamos campañas de alto impacto para tu negocio
+                            </p>
+                            <a href="#" className="gen-button gen-button-primary">
+                                VER MÁS
+                            </a>
+                        </div>
+                    </div>
+                    <Image src={Banner1} layout={"fill"} objectFit={"cover"} />
+                </div>
+            </Slider>
+        </div>
     )
 }
