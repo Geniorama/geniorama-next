@@ -4,14 +4,14 @@
 
 .genDataCounter__number{
     font-size: 3rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 700;
-    color: var(--p-color);
+    color: white;
     line-height: 3rem;
 }
 
 .genDataCounter__leyend{
-    color: var(--p-color);
+    color: white;
     font-size: .8rem;
-    font-weight: 600;
+    font-weight: 500;
 }

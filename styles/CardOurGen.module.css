@@ -14,7 +14,7 @@
 
 .CardOurGen__title{
     color: var(--p-color);
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .CardOurGen__desc{

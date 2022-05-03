@@ -5,7 +5,9 @@
 .sliderHomeItem{
   position: relative;
   min-height: 700px;
+  height: 100vh;
   padding: 2rem 0;
+  overflow: hidden;
 }
 
 .sliderHome__caption{
@@ -31,4 +33,13 @@
 .sliderHome__desc{
   font-size: 30px;
   margin-bottom: 3rem;
+}
+
+.decoration{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
 }

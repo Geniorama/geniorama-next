@@ -1,55 +1,55 @@
 .genButton{
-    display: inline-block;
-    background: var(--s-color-2);
-    padding: .8em 2em;
+    font-size: 20px;
+    height: 58px;
+    border: 2px solid;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
     border-radius: 50px;
-    box-sizing: border-box;
-    border: 2px solid var(--s-color-2);
+    font-weight: bold;
     letter-spacing: 2px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    overflow: hidden;
-    text-decoration: none;
-    outline: none;
-}
-
-.genButtonP{
-    background: var(--s-color-2);
-    color: white;
-    position: relative;
     transition: .4s;
 }
 
-.genButtonP span{
-    position: relative;
-}
-
-
-.genButtonP::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 50px;
-    background: var(--p-color);
-    width: 0%;
-    height: 100%;
-    opacity: 0;
-    -webkit-box-shadow: 9px 0px 17px 3px var(--p-color);; 
-    box-shadow: 9px 0px 17px 3px var(--p-color);;
-    transition: .4s;
-}
-
-.genButtonP:hover{
-    transform: translateX(5px);
-}
-
-.genButtonP:hover::before{
-    opacity: 1;
-    width: 100%;
-}
-
-.genButtonP:hover{
+/* Primary button */
+.primary{
+    background: transparent;
     color: var(--s-color);
+    transition: .4s;
+}
+
+.primary:hover{
+    background-color: var(--s-color);
+    color: var(--p-color);
     border-color: var(--s-color);
+}
+
+
+/* Secondary button */
+.secondary{
+    background: transparent;
+    color: var(--s-color-2);
+    transition: .4s;
+}
+
+.secondary:hover{
+    background-color: var(--s-color-2);
+    color: white;
+    border-color: var(--s-color-2);
+}
+
+/* CTA button */
+.cta{
+    background: var(--s-color);
+    color: var(--p-color);
+    border-color: var(--s-color);
+    transition: .4s;
+}
+
+.cta:hover{
+    background-color: var(--s-color-2);
+    color: white;
+    border-color: var(--s-color-2);
 }

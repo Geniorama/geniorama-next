@@ -1,0 +1,28 @@
+.grid{
+    background-color: var(--p-color);
+    padding: 3rem;
+    border-radius: 300px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    position: relative;
+}
+
+.grid::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: -30px;
+    margin-left: 30px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--s-color);
+    border-radius: 300px;
+    transition: .4s;
+}
+
+.grid:hover::before{
+    margin-top: 0px;
+    margin-left: 0px;
+}

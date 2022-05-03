@@ -42,6 +42,22 @@ p, span{
   --gray-2: #F9F9F9;
 }
 
+.gen-text-p-color{
+  color: var(--p-color);
+}
+
+.gen-text-s-color{
+  color: var(--s-color);
+}
+
+.gen-text-s-color-2{
+  color: var(--s-color-2);
+}
+
+.gen-text-p-color-2{
+  color: var(--p-color-2);
+}
+
 .gen-info-section{
   padding: 5rem 0;
 }
@@ -50,6 +66,10 @@ p, span{
   color: var(--p-color);
   font-weight: 700;
   font-size: 2.5rem;
+}
+
+.gen-info-section__title span{
+  font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .gen-info-section__subtitle{
@@ -128,6 +148,86 @@ p, span{
 .gen-button-primary:hover{
   background-color: var(--s-color);
   color: var(--p-color-2);
+}
+
+/* Slick styles */
+.slick-gen-theme .slick-dots{
+  list-style: none;
+}
+
+.slick-gen-theme .slick-dots button{
+  opacity: 0;
+}
+
+.slick-gen-theme .slick-dots li{
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--s-color);
+  border-radius: 50%;
+}
+
+.slick-gen-theme .slick-dots li.slick-active{
+  background-color: var(--s-color);
+}
+
+.slick-gen-theme.dots-into .slick-dots{
+  bottom: 3rem;
+}
+
+.slick-arrow{
+  z-index: 2;
+}
+
+.gen-slick-arrow{
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid var(--s-color);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s;
+}
+
+.gen-slick-arrow__img{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s;
+}
+
+.gen-slick-next .gen-slick-arrow__img{
+  margin-left: -50px;
+}
+
+.gen-slick-prev .gen-slick-arrow__img{
+  margin-right: -50px;
+}
+
+.gen-slick-next{
+  right: 2rem;
+}
+
+.gen-slick-prev{
+  left: 2rem;
+}
+
+.gen-slick-arrow:hover {
+  background-color: var(--p-color);
+}
+
+.gen-slick-next:hover .gen-slick-arrow__img{
+  margin-left: 0px;
+}
+
+.gen-slick-prev:hover .gen-slick-arrow__img{
+  margin-right: 0px;
 }
 
 @media (max-width: 992px){
