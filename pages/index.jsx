@@ -249,7 +249,7 @@ export default function Home({data, dataBlog}) {
         <div className="container">
           <Testimonial
             image={ImgTeam}
-            text={"“ <strong>¡Somos constructores!</strong> Hacemos puentes que unen marcas y personas, hacemos caminos que facilitan viajes de ida y vuelta”"}
+            text={"<p><strong>¡Somos constructores!</strong> Hacemos puentes que unen marcas y personas, hacemos caminos que facilitan viajes de ida y vuelta</p>"}
             name={"Oscar Pedraza"}
             position={"CEO / Marketing Manager"}
             bigText

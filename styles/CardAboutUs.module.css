@@ -8,6 +8,7 @@
 
 .genCardAboutUs__title{
     color: var(--s-color-2);
+    font-weight: bold;
 }
 
 .genCardAboutUs__img{

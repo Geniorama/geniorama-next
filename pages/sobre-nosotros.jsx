@@ -144,7 +144,7 @@ export default function SobreNosotros() {
                 "CEO <a href='http://tax-o.com.co/' target='_blank' rel='noreferrer'>Taxo</a>"
               }
               text={
-                "Con sus ideas logramos una mayor cantidad de interacciones en redes sociales y vamos por buen camino en el posicionamiento de marca con nuestros Blogs y Posts. Muchas Gracias!"
+                "<p>Con sus ideas logramos una mayor cantidad de interacciones en redes sociales y vamos por buen camino en el posicionamiento de marca con nuestros Blogs y Posts. Muchas Gracias!</p>"
               }
             />
 
@@ -166,7 +166,7 @@ export default function SobreNosotros() {
                 "Founder <a href='http://naranjaexport.com/' target='_blank' rel='noreferrer'>Naranja Export</a>"
               }
               text={
-                "Cambiamos nuestra imagen y nuestra página web para hacerla más atractiva y sólida para nuestros clientes. También empezamos a generar contenido para potenciar nuestras ventas. Excelente gestión"
+                "<p>Cambiamos nuestra imagen y nuestra página web para hacerla más atractiva y sólida para nuestros clientes. También empezamos a generar contenido para potenciar nuestras ventas. Excelente gestión</p>"
               }
             />
 
@@ -175,7 +175,7 @@ export default function SobreNosotros() {
               name={"Juan Felipe Arango"}
               position={"Director Creativo Ejecutivo Independiente"}
               text={
-                "El equipo Geniorama se ha convertido en mi aliado estratégico. Desde nuestro primer proyecto me dieron la confianza y calidad para escogerlos con sus soluciones de desarrollo web y administración de campañas de pauta en redes sociales. Hoy ya tenemos una relación de negocio consolidada. ¡Un gran equipo!"
+                "<p>El equipo Geniorama se ha convertido en mi aliado estratégico. Desde nuestro primer proyecto me dieron la confianza y calidad para escogerlos con sus soluciones de desarrollo web y administración de campañas de pauta en redes sociales. Hoy ya tenemos una relación de negocio consolidada. ¡Un gran equipo!</p>"
               }
             />
 
@@ -186,7 +186,7 @@ export default function SobreNosotros() {
                 "Fundadora y Directora Ejecutiva <a href='https://www.socialthink.co/' target='_blank' rel='noreferrer'>Social Think</a>"
               }
               text={
-                "Genios para hacer webs y genios para tratar con los clientes. Genios por su profesionalismo y su capacidad de solucionar en cualquier momento. Genios por su calidez humana y su transparencia. En Geniorama hay genios integrales, profesionales y empáticos. Gracias!"
+                "<p>Genios para hacer webs y genios para tratar con los clientes. Genios por su profesionalismo y su capacidad de solucionar en cualquier momento. Genios por su calidez humana y su transparencia. En Geniorama hay genios integrales, profesionales y empáticos. Gracias!</p>"
               }
             />
 
@@ -197,7 +197,7 @@ export default function SobreNosotros() {
                 "Socio Gerente en <a href='http://univercity.com.co/' target='_blank' rel='noreferrer'>UniverCity</a>"
               }
               text={
-                "Geniorama Agencia, es el mejor Partner en asuntos creativos,  diseño de estrategias digitales y programación web con la mejor experiencia e interfaz de usuario.  Su versatilidad 360, que incluye producción audiovisual de calidad y acciones enfocadas BTL, hace realidad el cumplimiento de ambiciosos objetivos de comunicación para nuestras marcas"
+                "<p>Geniorama Agencia, es el mejor Partner en asuntos creativos,  diseño de estrategias digitales y programación web con la mejor experiencia e interfaz de usuario.  Su versatilidad 360, que incluye producción audiovisual de calidad y acciones enfocadas BTL, hace realidad el cumplimiento de ambiciosos objetivos de comunicación para nuestras marcas</p>"
               }
             />
 
@@ -208,7 +208,7 @@ export default function SobreNosotros() {
                 "Cofounder <a href='https://copublicitarias.com/' target='_blank' rel='noreferrer'>Copublicitarias</a>"
               }
               text={
-                `<div className="${styles.vimeoResponsive}"><iframe title="vimeo-player" src="https://player.vimeo.com/video/697180580?h=64e22c1c94&title=0&byline=0" frameBorder="0" allowFullScreen></iframe></div>`
+                `<div class="${styles.vimeoResponsive}"><iframe title="vimeo-player" src="https://player.vimeo.com/video/697180580?h=64e22c1c94&title=0&byline=0" frameBorder="0" allowFullScreen></iframe></div>`
               }
             />
           </div>

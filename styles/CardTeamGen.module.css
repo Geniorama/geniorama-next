@@ -34,6 +34,7 @@
     text-transform: uppercase;
     font-size: 20px;
     font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: bold;
 }
 .CardTeamGen__info__position{
     color:var(--s-color);
