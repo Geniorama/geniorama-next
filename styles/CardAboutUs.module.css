@@ -29,6 +29,10 @@
     background-color: var(--p-color-2);
 }
 
+.genCardAboutUs:hover .genCardAboutUs__title{
+    color: var(--s-color);
+}
+
 .genCardAboutUs:hover .genCardAboutUs__desc{
     color: white;
 }

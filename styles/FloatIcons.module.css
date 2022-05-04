@@ -7,17 +7,24 @@
 .genFloatIcons__link{
     width: 40px;
     height: 40px;
-    background: var(--p-gradient);
+    background: var(--s-color);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     margin-bottom: 1rem;
     transition: .4s;
+    color: var(--p-color);
 }
 
 .genFloatIcons__link:hover{
     -webkit-box-shadow: 2px 2px 29px 2px rgba(0,0,0,0.10); 
     box-shadow: 2px 2px 29px 2px rgba(0,0,0,0.10);
+    background-color: var(--s-color-2);
+    color: white;
     transform: translateY(-3px);
+}
+
+.genFloatIcons__icon svg{
+    width: 15px;
 }

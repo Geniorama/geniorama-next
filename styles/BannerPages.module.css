@@ -1,0 +1,43 @@
+.genBannerIntro{
+    background-color: var(--p-color-2);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 4rem;
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.genBannerIntro::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--p-color);
+    z-index: 1;
+    opacity: .7;
+}
+
+.genBannerIntro__title__bottom{
+    color: var(--s-color);
+}
+
+.bgBanner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contentBanner{
+    position: relative;
+    z-index: 2;
+}
+
+.genBannerIntro__title span{
+    display: block;
+}

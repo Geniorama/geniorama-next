@@ -7,15 +7,10 @@
 .genTestimonialSingle__profile__avatar{
     width: 70px;
     height: 70px;
+    min-width: 70px;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-}
-
-.genTestimonialSingle__quote{
-    position: absolute;
-    left: 0;
-    top: -50px;
 }
 
 .genTestimonialSingle__desc{
@@ -26,7 +21,6 @@
 .genTestimonialSingle__profile{
     display: flex;
     align-items: center;
-    margin-top: 2rem;
 }
 
 .genTestimonialSingle__profile span{
@@ -43,10 +37,27 @@
 .genTestimonialSingle__profile__info__name{
     color: var(--p-color);
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .genTestimonialSingle__profile__info__pos{
     color: var(--text-2);
+    font-size: 1rem;
+}
+
+.genTestimonialSingle__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.genTestimonialSingle__footer .genTestimonialSingle__quote{
+    transform: rotate(180deg);
+}
+
+.bigText{
+    font-size: 1.7rem;
 }
 
 @media (max-width: 576px){

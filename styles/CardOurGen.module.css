@@ -25,3 +25,25 @@
     display: block;
     text-decoration: none;
 }
+
+.cardDark{
+    background-color: var(--p-color);
+    border-color: var(--p-color);
+}
+
+.cardDark .CardOurGen__title{
+    color: var(--s-color);
+}
+
+.cardShadow{
+    box-shadow: -5px 4px 50px rgba(0, 0, 0, 0.15);
+}
+
+.cardDark:hover{
+    background-color: white;
+    color: var(--p-color);
+}
+
+.cardDark:hover .CardOurGen__title{
+    color: var(--p-color);
+}

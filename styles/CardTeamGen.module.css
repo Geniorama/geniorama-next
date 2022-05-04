@@ -33,9 +33,10 @@
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 .CardTeamGen__info__position{
-    color:rgba(255,255,255,0.68);
+    color:var(--s-color);
     font-size: 15px;
     text-align: center;
 }

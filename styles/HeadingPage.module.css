@@ -33,7 +33,8 @@
 
 .genHeadingPage__largeTitle{
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
+    color: var(--p-color);
 }
 
 .genBreadcrumbs{

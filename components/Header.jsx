@@ -8,7 +8,7 @@ import React, { useEffect } from 'react'
 
 
 export default function Header({isLogoLight}){
-    useEffect(() => {
+    useEffect((isLogoLight) => {
         const header = document.getElementById('gen-header')
         const stickyClass = styles.genHeader__sticky
         const headerDark = styles.genHeader__sticky__dark

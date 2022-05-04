@@ -1,5 +1,5 @@
 import Layout from '../../components/Layout/Layout'
-import Banner from '../../components/Banner'
+import Banner from '../../components/BannerPages'
 import ImgBanner from '../../public/banners/banner-proyectos/cover-banner-proyectos.png'
 import styles from '../../styles/Proyectos.module.css'
 import Link from 'next/link'
@@ -16,16 +16,17 @@ export default function Proyectos() {
     <Layout
         title={"Proyectos - Geniorama"}
         idPage="gen-proyectos"
+        isLogoLight
     >
     <Banner
         photo={ImgBanner}
         reverse
         titleTop={"Combinamos"}
         titleBottom={"Experiencia y pasión"}
-        desc={"En todo lo que hacemos. Este <strong>portafolio</strong> es el resultado de ello"}
+        desc={"En todo lo que hacemos. Estos grandes <strong>proyectos</strong> son el resultado"}
     />
 
-    <section>
+    <section className='mt-5'>
         <div className="container">
             <div className="row">
                 <div className="col-lg-6 px-5">
@@ -46,6 +47,7 @@ export default function Proyectos() {
                         bgImage={coverBranding}
                         title={"BRANDING E IMAGEN CORPORATIVA"}
                         link={"#"}
+                        disabled
                     />
                 </div>
                 <div className="col-lg-6 px-5">
@@ -53,12 +55,14 @@ export default function Proyectos() {
                         bgImage={coverCampanas}
                         title={"CAMPAÑAS DIGITALES"}
                         link={"#"}
+                        disabled
                     />
 
                     <CardCatProyects
                         bgImage={coverAudiovisual}
                         title={"PRODUCCIÓN AUDIOVISUAL"}
                         link={"#"}
+                        disabled
                     />
                 </div>
             </div>

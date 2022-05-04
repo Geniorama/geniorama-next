@@ -3,9 +3,9 @@ import Image from "next/image";
 import ImageTest from "../public/iconos-web_GEN-ESTRATEGICO.svg"
 import Link from "next/link";
 
-export default function CardOurGen({title, description, image, link}) {
+export default function CardOurGen({title, description, image, link, dark, shadow}) {
   return (
-    <div className={styles.CardOurGen}>
+    <div className={`${styles.CardOurGen} ${dark ? styles.cardDark : ""} ${shadow ? styles.cardShadow : ""}`}>
       {link
        ?
         //  If exists link

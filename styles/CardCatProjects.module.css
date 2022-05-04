@@ -55,3 +55,16 @@
     background-color: var(--s-color);
     color: var(--p-color);
 }
+
+.cardDisabled{
+    pointer-events: none;
+    opacity: .5;
+}
+
+.cardDisabled .cardLink__caption{
+    background-color: var(--text-1);
+}
+
+.cardDisabled .cardLink__img{
+    filter: grayscale(1);
+}

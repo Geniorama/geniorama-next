@@ -55,9 +55,45 @@
   margin: .5rem;
 }
 
-/* .servicios{
-  background-image: url('public/img/bg-nuestros-servicios.jpg');
-} */
+.servicios{
+  position: relative;
+  overflow: hidden;
+}
+
+.servicios::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--p-color);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: .6;
+}
+
+.servicesContent{
+  position: relative;
+  z-index: 2;
+}
+
+.servicesContent__title{
+  color: white;
+}
+
+.bgImage{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.sectionTestimonial{
+  max-width: 1000px;
+  margin: 4rem auto;
+}
+
 @media (max-width: 576px){
   .genImgRounded{
     margin-bottom: 3rem;

@@ -32,7 +32,7 @@
 .genNav{
     position: fixed;
     height: 100vh;
-    background: white;
+    background: var(--p-color);
     top: 0;
     left: 0;
     width: 100%;
@@ -51,16 +51,17 @@
 
 .genNav ul a{
     font-size: 2rem;
-    color: var(--text-2);
+    color: var(--s-color);
     margin: 1rem 0;
     position: relative;
+    transition: .4s;
 }
 
 .genNav ul a::before{
     content: '';
     width: 0;
-    height: 3px;
-    background-color: var(--p-color);
+    height: 2px;
+    background-color: var(--s-color);
     position: absolute;
     top: 49%;
     left: 50%;
@@ -69,7 +70,8 @@
 }
 
 .genNav ul a:hover{
-    color: var(--p-color);
+    color: white;
+    opacity: .9;
 }
 
 .genNav ul a:hover::before{

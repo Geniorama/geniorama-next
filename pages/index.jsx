@@ -33,6 +33,7 @@ import IconGenExample from '../public/img/icon-gen-example.svg'
 import PatternPlus from '../public/img/pattern-plus.svg'
 import SectionDataCounters from "../components/SectionDataCounters";
 import BgNuestrosServicios from "../public/img/bg-nuestros-servicios.jpg"
+import ImgMasDeNosotros from "../public/img/img-mas-de-nosotros.png"
 
 export default function Home({data, dataBlog}) {
   useEffect(()=>{
@@ -161,9 +162,12 @@ export default function Home({data, dataBlog}) {
         </div>
       </section>
 
-      <section style={{backgroundImage: `url(${BgNuestrosServicios})`}} className={`${styles.servicios} gen-info-section`} id="servicios">
-        <div className="container">
-          <h2 className="gen-info-section__title">
+      <section className={`${styles.servicios} gen-info-section`} id="servicios">
+        <div className={styles.bgImage}>
+            <Image src={BgNuestrosServicios} layout={"fill"} objectFit={"cover"} />
+        </div>
+        <div className={`${styles.servicesContent} container`}>
+          <h2 className={`${styles.servicesContent__title} gen-info-section__title`}>
             NUESTROS <br /> SERVICIOS
           </h2>
           <div className={styles.genWrapServices}>
@@ -171,78 +175,128 @@ export default function Home({data, dataBlog}) {
               image={IconDisenoWeb}
               link="/"
               title="DISEÑO DE PÁGINAS WEB"
+              dark
+              shadow
             />
             <CardOurGen
               image={IconSoporteWeb}
               link="/"
               title="MANTENIMIENTO Y SOPORTE WEB"
+              dark
+              shadow
             />
             <CardOurGen
               image={IconHosting}
               link="/"
               title="HOSTING Y SERVIDORES"
+              dark
+              shadow
             />
 
             <CardOurGen
               image={IconPosicionamientoSeo}
               link="/"
               title="POSICIONAMIENTO WEB (SEO)"
+              dark
+              shadow
             />
 
             <CardOurGen
               image={IconPauta} 
               link="/" 
               title="PAUTA DIGITAL"
+              dark
+              shadow
             />
 
             <CardOurGen 
               image={IconSocialMedia} 
               link="/" 
               title="SOCIAL MEDIA"
+              dark
+              shadow
             />
 
             <CardOurGen
               image={IconDisenoGrafico}
               link="/"
               title="DISEÑO GRÁFICO"
+              dark
+              shadow
             />
 
             <CardOurGen
               image={IconProdAudiovisual}
               link="/"
               title="PRODUCCIÓN AUDIOVISUAL"
+              dark
+              shadow
             />
 
             <CardOurGen
               image={IconStream}
               link="/"
               title="STREAMING (TRANSMISIONES ONLINE)"
+              dark
+              shadow
             />
           </div>
         </div>
       </section>
 
+
+      <section className={styles.sectionTestimonial}>
+        <div className="container">
+          <Testimonial
+            image={ImgTeam}
+            text={"“ <strong>¡Somos constructores!</strong> Hacemos puentes que unen marcas y personas, hacemos caminos que facilitan viajes de ida y vuelta”"}
+            name={"Oscar Pedraza"}
+            position={"CEO / Marketing Manager"}
+            bigText
+          />
+
+          <div className="text-center mt-5">
+            <ButtonGen text={"Construyamos tu proyecto"} cta link={"/contactanos"} />
+          </div>
+        </div>
+      </section>
       <section className="gen-info-section">
         <div className="container">
-          <div className="row justify-content-between">
+          <div className="row justify-content-between align-items-center">
             <div className="col-12 col-lg-6 mb-5 mb-lg-0">
-              <Testimonial
-                image={ImgTeam}
-                text={"“ ¡Somos constructores! Hacemos puentes que unen marcas y personas, hacemos caminos que facilitan viajes de ida y vuelta”"}
-                name={"Oscar Pedraza"}
-                position={"CEO / Marketing Manager"}
-              />
+            <div className={styles.genImgRounded}>
+                  <div className={styles.decorationImgRounded}>
+                    {/* Pattern plus 1 */}
+                    <div style={{position: "absolute", top: "-30px", left: "-20px"}}>
+                       <Image src={PatternPlus} />
+                    </div>
+
+                    {/* Pattern plus 2 */}
+                    <div style={{position: "absolute", bottom: "-30px", right: "0px", transform: "rotate(90deg)"}}>
+                       <Image src={PatternPlus} />
+                    </div> 
+                  </div>
+
+                  <div style={{borderRadius: "50px", overflow: "hidden", position: "relative", width: "100%", height: "100%"}}>
+                    <Image 
+                      src={ImgMasDeNosotros}
+                      layout={"fill"}
+                      objectFit={"cover"}
+                    />
+                  </div>
+                  
+                </div>
             </div>
             <div className="col-12 col-lg-5">
               <h2 className="gen-info-section__title">
-                MÁS DE <br /> NOSOTROS
+                MÁS DE <br /> <span className="gen-text-s-color-2">NOSOTROS</span>
               </h2>
               <p className="my-4 gen-info-section__desc">
                 Somos una agencia de marketing y publicidad digital con más de 8
                 años de experiencia, administrando, optimizando y generando
                 resultados para diferentes marcas nacionales e internacionales.{" "}
               </p>
-              <ButtonGen text="SOBRE NOSOTROS" link="/sobre-nosotros" />
+              <ButtonGen secondary text="SOBRE GENIORAMA" link="/sobre-nosotros" />
             </div>
           </div>
         </div>
@@ -251,7 +305,7 @@ export default function Home({data, dataBlog}) {
       <section className="gen-info-section">
         <div className="container">
           <h2 className="gen-info-section__title">
-            PUBLICACIONES <br /> RECIENTES
+            PUBLICACIONES <br /> <span className="gen-text-s-color-2">RECIENTES</span>
           </h2>
           <CarouselPosts
             info={dataBlog}
@@ -284,7 +338,7 @@ export default function Home({data, dataBlog}) {
               <h2 className="gen-info-section__title">
                 NUESTROS
                 <br />
-                GENIOS
+                <span className="gen-text-s-color-2">GENIOS</span>
               </h2>
               <p className="gen-info-section__desc">
                 En <strong>Geniorama</strong> creemos en el talento, es por eso que hemos consolidado un equipo de trabajo integral, lleno de profesionales listos para afrontar cualquier reto, llevando a nuestros clientes a alcanzar sus objetivos.
@@ -293,7 +347,7 @@ export default function Home({data, dataBlog}) {
                 ¡Conoce a los miembros del <br /> <strong>Dream Team Geniorama</strong>!
                 </span>
               </p>
-              <ButtonGen text="VER MÁS" link="/sobre-nosotros" />
+              <ButtonGen secondary text="VER MÁS" link="/sobre-nosotros" />
             </div>
           </div>
         </div>
@@ -311,7 +365,7 @@ export default function Home({data, dataBlog}) {
   );
 }
 
-export async function getStaticProps(ctx){
+export async function getServerSideProps(ctx){
   const url_api_blog ="https://www.geniorama.site/cms/wp-json/wp/v2/posts"
   const url_api = "https://www.geniorama.site/cms/wp-json/wp/v2/portfolio/?per_page=6&_embed=true"
   try{

@@ -34,7 +34,7 @@ export default function Index({data}) {
 }
 
 
-export async function getStaticProps(ctx){
+export async function getServerSideProps(ctx){
 
   const url_api = "https://www.geniorama.site/cms/wp-json/wp/v2/portfolio/?per_page=24&_embed=true"
   try{

@@ -34,7 +34,7 @@
     font-size: 1.5rem;
     margin: 1rem 0;
     margin-top: .5rem;
-    color: var(--text-1);
+    color: var(--p-color);
     transition: .3s;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .genCardPostLink:hover .genCardPostArticle__cap__title{
-    color: var(--p-color);
+    color: var(--s-color-2);
 }
 
 .genCardPostLink:hover .genCardPostArticle{

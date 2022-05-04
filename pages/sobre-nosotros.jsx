@@ -29,7 +29,7 @@ export default function SobreNosotros() {
       <div className="mt-5">
         <HeadingPage
           sTitle={"SOBRE NOSOTROS"}
-          lTitle={"¡MARKETING DE RESULTADOS DIGITALES!"}
+          lTitle={"¡MARKETING DE RESULTADOS REALES!"}
         />
       </div>
 
@@ -155,12 +155,7 @@ export default function SobreNosotros() {
                 "Founder & Director <a href='https://ultravioleta.co/' target='_blank' rel='noreferrer'>Ultravioleta.co</a>"
               }
               text={
-                <iframe
-                  src="https://widget.spreaker.com/player?episode_id=49245846&theme=light&playlist=false&playlist-continuous=false&chapters-image=true&episode_image_position=right&hide-logo=false&hide-likes=false&hide-comments=false&hide-sharing=false&hide-download=true"
-                  width="100%"
-                  height="150px"
-                  frameBorder="0"
-                ></iframe>
+                '<iframe src="https://widget.spreaker.com/player?episode_id=49245846&theme=light&playlist=false&playlist-continuous=false&chapters-image=true&episode_image_position=right&hide-logo=false&hide-likes=false&hide-comments=false&hide-sharing=false&hide-download=true" width="100%" height="150px" frameBorder="0"></iframe>'
               }
             />
 
@@ -213,9 +208,7 @@ export default function SobreNosotros() {
                 "Cofounder <a href='https://copublicitarias.com/' target='_blank' rel='noreferrer'>Copublicitarias</a>"
               }
               text={
-                <div className={styles.vimeoResponsive}>
-                  <iframe title="vimeo-player" src="https://player.vimeo.com/video/697180580?h=64e22c1c94&title=0&byline=0" frameBorder="0" allowFullScreen></iframe>
-                </div>
+                `<div className="${styles.vimeoResponsive}"><iframe title="vimeo-player" src="https://player.vimeo.com/video/697180580?h=64e22c1c94&title=0&byline=0" frameBorder="0" allowFullScreen></iframe></div>`
               }
             />
           </div>
