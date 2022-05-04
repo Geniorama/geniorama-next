@@ -39,3 +39,7 @@
 .genArticleBody h1 span, .genArticleBody h2 span, .genArticleBody h3 span, .genArticleBody h4 span, .genArticleBody h5 span{
     font-family: 'Poppins', sans-serif;
 }
+
+.iconDate svg{
+    width: 15px;
+}

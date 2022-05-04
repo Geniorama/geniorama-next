@@ -35,7 +35,7 @@ export default function Single({data}) {
         <article className={`my-5 ${styles.genArticle}`}>
           <div className="container">
             <div className={styles.genBlogDate}>
-              <span>
+              <span className={styles.iconDate}>
                 <FontAwesomeIcon icon={faClock} size={"xs"} /> {new Date(dataPost.date).toLocaleString()}
               </span>
             </div>
@@ -54,7 +54,7 @@ export async function getStaticPaths(){
     const paths = data.map(({slug}) => ({params: {slug: `${slug}`}}))
     return {
       paths,
-      fallback: true
+      fallback: false
     }
   } catch (error) {
     console.log(error)

@@ -365,7 +365,7 @@ export default function Home({data, dataBlog}) {
   );
 }
 
-export async function getServerSideProps(ctx){
+export async function getStaticProps(ctx){
   const url_api_blog ="https://www.geniorama.site/cms/wp-json/wp/v2/posts"
   const url_api = "https://www.geniorama.site/cms/wp-json/wp/v2/portfolio/?per_page=6&_embed=true"
   try{
