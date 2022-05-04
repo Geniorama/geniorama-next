@@ -26,3 +26,12 @@
     margin-top: 0px;
     margin-left: 0px;
 }
+
+@media (max-width: 576px){
+    .grid{
+        border-radius: 30px;
+    }
+    .grid::before{
+        display: none;
+    }
+}

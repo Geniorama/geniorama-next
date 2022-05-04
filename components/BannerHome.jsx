@@ -102,36 +102,6 @@ export default function BannerHome(props){
                     </div>
                     <Image src={Banner1} layout={"fill"} objectFit={"cover"} />
                 </div>
-                <div className={styles.sliderHomeItem}>
-                    <div className={styles.sliderHome__caption}>
-                        <div className="container">
-                            <h3 className={styles.sliderHome__title1}>Estrategias digitales con</h3>
-                            <h2 className={styles.sliderHome__title2}>Resultados reales</h2>
-                            <p className={styles.sliderHome__desc}>
-                                Generamos campañas de alto impacto para tu negocio
-                            </p>
-                            <a href="#" className="gen-button gen-button-primary">
-                                VER MÁS
-                            </a>
-                        </div>
-                    </div>
-                    <Image src={Banner1} layout={"fill"} objectFit={"cover"} />
-                </div>
-                <div className={styles.sliderHomeItem}>
-                    <div className={styles.sliderHome__caption}>
-                        <div className="container">
-                            <h3 className={styles.sliderHome__title1}>Estrategias digitales con</h3>
-                            <h2 className={styles.sliderHome__title2}>Resultados reales</h2>
-                            <p className={styles.sliderHome__desc}>
-                                Generamos campañas de alto impacto para tu negocio
-                            </p>
-                            <a href="#" className="gen-button gen-button-primary">
-                                VER MÁS
-                            </a>
-                        </div>
-                    </div>
-                    <Image src={Banner1} layout={"fill"} objectFit={"cover"} />
-                </div>
             </Slider>
         </div>
     )

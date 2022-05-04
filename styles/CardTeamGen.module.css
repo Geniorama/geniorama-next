@@ -56,3 +56,9 @@
 .CardTeamGen__info__social__contIcons svg:hover{
     opacity: .8;
 }
+
+@media (max-width: 576px){
+    .CardTeamGen__info{
+        padding: 2rem 1rem;
+    }
+}

@@ -46,7 +46,7 @@ export default function Contactanos() {
       <section className="gen-info-section">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-lg-6 px-5">
+            <div className="col-12 col-lg-6 px-lg-5">
               <h3 className="gen-info-section__title">
                 Queremos ser el aliado más valioso de tu compañía
               </h3>
@@ -77,7 +77,7 @@ export default function Contactanos() {
                 ))}
               </ul>
             </div>
-            <div className="col-12 col-lg-6 px-5">
+            <div className="col-12 col-lg-6 px-lg-5">
               <ContactForm />
             </div>
           </div>

@@ -4,11 +4,14 @@ import LogoLight from '../public/logo/logo-geniorama-03.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import MenuPrincipal from '../menus/menuPrincipal.json'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 export default function Header({isLogoLight}){
-    useEffect((isLogoLight) => {
+    
+    const [logoLight, setLogoLight] = useState(isLogoLight)
+
+    useEffect(() => {
         const header = document.getElementById('gen-header')
         const stickyClass = styles.genHeader__sticky
         const headerDark = styles.genHeader__sticky__dark
@@ -29,12 +32,12 @@ export default function Header({isLogoLight}){
         window.addEventListener('scroll', function(){
             if(scrollY > 100){
                 header.classList.add(stickyClass)
-                if(isLogoLight){
+                if(logoLight){
                     header.classList.add(headerDark)
                 }
             } else {
                 header.classList.remove(stickyClass)
-                if(isLogoLight){
+                if(logoLight){
                     header.classList.remove(headerDark)
                 }
             }

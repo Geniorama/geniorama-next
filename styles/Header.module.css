@@ -99,7 +99,7 @@
     display: block;
     width: 80%;
     height: 3px;
-    background-color: var(--text-1);
+    background-color: white;
     box-sizing: border-box;
     border-radius: 50px;
     position: absolute;

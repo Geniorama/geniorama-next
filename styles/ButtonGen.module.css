@@ -11,6 +11,7 @@
     letter-spacing: 2px;
     font-family: 'Poppins', sans-serif;
     transition: .4s;
+    text-decoration: none;
 }
 
 /* Primary button */
@@ -52,4 +53,10 @@
     background-color: var(--s-color-2);
     color: white;
     border-color: var(--s-color-2);
+}
+
+@media (max-width: 576px){
+    .genButton{
+        font-size: 1rem;
+    }
 }

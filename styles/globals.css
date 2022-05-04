@@ -238,6 +238,10 @@ p, span{
 
 @media (max-width: 576px){
   .gen-info-section{
-    padding: 2rem 0;
+    padding: 2rem 1rem;
+  }
+
+  .gen-info-section__title{
+    font-size: 1.8rem;
   }
 }

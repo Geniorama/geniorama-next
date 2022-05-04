@@ -88,7 +88,7 @@ export default function Home({data, dataBlog}) {
       <section className="gen-info-section">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-12 col-lg-6 px-5">
+            <div className="col-12 col-lg-6 px-5 mb-5 mb-lg-0">
                 <div data-aos="fade-right" data-aos-duration="1000">
                   <h2 className="gen-info-section__title">¿CÓMO LO HACEMOS?</h2>
                   <h5 className="gen-text-s-color-2">¡Tus clientes son nuestra prioridad!</h5>

@@ -29,7 +29,7 @@ export default function Proyectos() {
     <section className='mt-5'>
         <div className="container">
             <div className="row">
-                <div className="col-lg-6 px-5">
+                <div className="col-lg-6 px-lg-5">
                     <Link href={"/"}>
                         <a className={styles.linkBack}>
                             <Image src={IconBack} />
@@ -50,7 +50,7 @@ export default function Proyectos() {
                         disabled
                     />
                 </div>
-                <div className="col-lg-6 px-5">
+                <div className="col-lg-6 px-lg-5">
                     <CardCatProyects
                         bgImage={coverCampanas}
                         title={"CAMPAÑAS DIGITALES"}

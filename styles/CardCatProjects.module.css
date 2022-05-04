@@ -68,3 +68,9 @@
 .cardDisabled .cardLink__img{
     filter: grayscale(1);
 }
+
+@media (max-width: 576px){
+    .cardLink__caption{
+        border-radius: 20px;
+    }
+}

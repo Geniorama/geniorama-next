@@ -41,6 +41,7 @@
     color: var(--text-2);
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 
 .genBreadcrumbs a{
@@ -57,4 +58,14 @@
 
 .genBreadcrumbs a::after{
     content: ' / ';
+}
+
+@media (max-width: 576px){
+    .genHeadingPage__largeTitle{
+        font-size: 2rem;
+    }
+
+    .genBreadcrumbs{
+        margin-top: 2rem;
+    }
 }
