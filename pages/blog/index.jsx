@@ -39,7 +39,7 @@ export default function Index({data}) {
 }
 
 
-export async function getStaticProps(ctx){
+export async function getServerSideProps(ctx){
     const url_api_blog ="https://www.geniorama.site/cms/wp-json/wp/v2/posts"
     try{
         const res = await fetch(url_api_blog)
