@@ -4,9 +4,16 @@ import Breadcrumbs from 'nextjs-breadcrumbs';
 import styles from '../../styles/SingleBlog.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { useRouter } from "next/router";
 
 export default function Single({data}) {
+  const router = useRouter()
   const dataPost = data[0]
+
+  if(router.isFallback){
+    return <h1>Cargando...</h1>
+  }
+
   return (
     <Layout
       title={dataPost.title.rendered}
@@ -47,7 +54,7 @@ export async function getStaticPaths(){
     const paths = data.map(({slug}) => ({params: {slug: `${slug}`}}))
     return {
       paths,
-      fallback: false
+      fallback: true
     }
   } catch (error) {
     console.log(error)
