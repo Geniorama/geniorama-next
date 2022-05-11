@@ -11,6 +11,7 @@ import rightArrow from "../public/img/right-arrow.svg"
 import circleBg from "../public/img/circle-bg.svg"
 import circleLinesBg from "../public/img/circle-lines-bg.svg"
 import patternDotsWhite from "../public/img/pattern-dots-white.svg"
+import ButtonGen from "./ButtonGen";
 
 export default function BannerHome(props){
     function SampleNextArrow(props) {
@@ -62,7 +63,7 @@ export default function BannerHome(props){
                         </div>
 
                         {/* Circle lines bg */}
-                        <div style={{
+                        <div className={styles.elDecor} style={{
                             position: 'absolute',
                             right: '0px',
                             bottom: '-10px'
@@ -71,7 +72,7 @@ export default function BannerHome(props){
                         </div>
 
                         {/* Pattern dots white 1 */}
-                        <div style={{
+                        <div className={styles.elDecor} style={{
                             position: "absolute",
                             top: "20%",
                             left: "10%"
@@ -80,7 +81,7 @@ export default function BannerHome(props){
                         </div>
 
                         {/* Pattern dots white 2 */}
-                        <div style={{
+                        <div className={styles.elDecor} style={{
                             position: "absolute",
                             top: "70%",
                             left: "30%"
@@ -95,9 +96,14 @@ export default function BannerHome(props){
                             <p className={styles.sliderHome__desc}>
                                 Generamos campañas de alto impacto para tu negocio
                             </p>
-                            <a href="#" className="gen-button gen-button-primary">
-                                VER MÁS
-                            </a>
+                            <ButtonGen
+                                text={"TE ASESORAMOS"}
+                                link="https://calendly.com/geniorama-agencia/consultoria-proyecto-digital-30-mins"
+                                primary
+                                external
+                                target={"_blank"}
+                                rel={"noreferrer"}
+                            />
                         </div>
                     </div>
                     <Image src={Banner1} layout={"fill"} objectFit={"cover"} />

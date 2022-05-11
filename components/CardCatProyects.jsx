@@ -14,7 +14,7 @@ export default function CardCatProyects({title, bgImage, link, disabled}) {
             />
 
             <div className={styles.cardLink__caption}>
-                <h2>{title}</h2>
+                <h2 className={styles.cardLink__caption__title}>{title}</h2>
             </div>
         </a>
     </Link>

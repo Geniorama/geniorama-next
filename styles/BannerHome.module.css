@@ -22,12 +22,14 @@
 
 .sliderHome__title1{
   font-size: 2em;
+  font-weight: bold;
 }
 
 .sliderHome__title2{
   font-size: 4em;
   color: var(--s-color);
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .sliderHome__desc{
@@ -47,5 +49,9 @@
 @media (max-width: 576px){
   .sliderHome{
     font-size: 10px;
+  }
+
+  .elDecor{
+    display: none;
   }
 }

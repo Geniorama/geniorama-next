@@ -24,12 +24,6 @@
     },
 
     {
-        "id": "genBlog",
-        "title": "BLOG",
-        "link": "/blog"
-    },
-
-    {
         "id": "genContact",
         "title": "CONTÁCTANOS",
         "link": "/contactanos"

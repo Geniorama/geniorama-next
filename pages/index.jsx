@@ -98,7 +98,7 @@ export default function Home({data, dataBlog}) {
                     actividades y ejecutamos. Los resultados son la consecuencia de
                     tu visión y nuestra ejecución.
                   </p>
-                  <ButtonGen secondary text="VER SERVICIOS" link="#" />
+                  <ButtonGen secondary text="VER SERVICIOS" link="/#servicios" />
                 </div>
             </div>
             <div className="col-12 col-lg-6">
@@ -154,9 +154,12 @@ export default function Home({data, dataBlog}) {
             />
 
             <ButtonGen
-              link="/proyectos/web"
+              link="https://wa.link/k9v2me"
               text="COTICEMOS TU PROYECTO"
               cta
+              external
+              target={'_blank'}
+              rel={'noreferrer'}
             />
           </div>
         </div>
@@ -256,7 +259,7 @@ export default function Home({data, dataBlog}) {
           />
 
           <div className="text-center mt-5">
-            <ButtonGen text={"Construyamos tu proyecto"} cta link={"/contactanos"} />
+            <ButtonGen text={"Construyamos tu proyecto"} cta link={"https://wa.link/73cza4"} external target={'_blank'} rel={'noreferrer'}/>
           </div>
         </div>
       </section>
@@ -302,7 +305,7 @@ export default function Home({data, dataBlog}) {
         </div>
       </section>
 
-      <section className="gen-info-section">
+      <section className="gen-info-sectio d-none">
         <div className="container">
           <h2 className="gen-info-section__title">
             PUBLICACIONES <br /> <span className="gen-text-s-color-2">RECIENTES</span>
