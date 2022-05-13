@@ -50,7 +50,7 @@ export default function Home({data, dataBlog}) {
           popup.classList.add(activeClass)
         }
 
-        setTimeout(showPopup, 8000)
+        setTimeout(showPopup, 5000)
     }
 
     

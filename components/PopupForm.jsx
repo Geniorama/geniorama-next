@@ -1,8 +1,9 @@
 import styles from "../styles/PopupForm.module.css"
 import Link from "next/link"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
+import { GoogleReCaptchaProvider, useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 export default function PopupForm() {
   const [name, setName] = useState("");
@@ -12,6 +13,20 @@ export default function PopupForm() {
   const [position, setPosition] = useState("");
   const [policy, setPolicy] = useState(1);
   const [message, setMessage] = useState({});
+  const [token, setToken] = useState();
+
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
+  async function handleReCaptchaVerify(){
+    if (!executeRecaptcha) {
+        console.log('Execute recaptcha not yet available');
+        return;
+      }
+  
+      const token = await executeRecaptcha('yourAction');
+      console.log(token)
+  }
+
 
   function handleChange(e){
       const {name, value} = e.target
@@ -36,8 +51,10 @@ export default function PopupForm() {
     }
 
   function sendData(e){
-      const hook_url = "https://hook.us1.make.com/uk4g16rucoxomb8niqalk5qcyd5l1c7q?name&email&phone&company&position&policy"
       e.preventDefault()
+
+      //   Verify Recaptcha
+      handleReCaptchaVerify()
 
       if(name.length > 1 && email.length > 1 && phone.length > 1 && company.length > 1 && position.length > 1 && position.length > 1){
         const data = {
@@ -93,15 +110,15 @@ export default function PopupForm() {
     <form action="" className={styles.popupForm} onSubmit={sendData}>
         <div>
             {message.success ?
-                <div class="alert alert-success text-center" role="alert">
+                <div className="alert alert-success text-center" role="alert">
                     {message.message} <br />
-                    <a href="javascript:void(0)" onClick={closePopup} className="gen-text-link text-danger">Cerrar ventana</a>
+                    <a href="#" onClick={closePopup} className="gen-text-link text-danger">Cerrar ventana</a>
                 </div>
                : ""
             }
 
             {message.error ?
-            <div class="alert alert-danger text-center" role="alert">
+            <div className="alert alert-danger text-center" role="alert">
                 {message.message}
             </div>
             : ""
@@ -110,40 +127,35 @@ export default function PopupForm() {
         </div>
         <div className="row mt-5">
             <div className="gen-input-group col-12 col-lg-6">
-                <label htmlFor="" className="gen-input-label">Tu nombre</label>
+                <label htmlFor="" className="gen-input-label">Tu nombre*</label>
                 <input type="text" className="gen-input-text input-small" name="name" required value={name} onChange={handleChange} placeholder="Tu nombre completo"/>
             </div>
             <div className="gen-input-group col-12 col-lg-6">
-                <label htmlFor="" className="gen-input-label">Tu email</label>
+                <label htmlFor="" className="gen-input-label">Tu email*</label>
                 <input type="email" className="gen-input-text input-small" name="email" required value={email} onChange={handleChange} placeholder="Ingresa tu email"/>
             </div>
             <div className="gen-input-group col-12">
-                <label htmlFor="" className="gen-input-label">Celular</label>
+                <label htmlFor="" className="gen-input-label">Celular*</label>
                 <PhoneInput 
                     value={phone} defaultCountry="CO" onChange={setPhone} placeholder="Ingresa tu número"
                 />
-                {/* <input type="text" className="gen-input-text input-small" name="phone" required value={phone} onChange={handleChange} placeholder="Ingresa tu número"/> */}
             </div>
             <div className="gen-input-group col-12 col-lg-6">
-                <label htmlFor="" className="gen-input-label">Nombre empresa</label>
-                <input type="text" className="gen-input-text input-small" name="company" required value={company} onChange={handleChange} placeholder="Ingresa el nombre de la empresa"/>
+                <label htmlFor="" className="gen-input-label">Nombre empresa*</label>
+                <input type="text" className="gen-input-text input-small" name="company" required value={company} onChange={handleChange} placeholder="Nombre de la empresa"/>
             </div>
             <div className="gen-input-group col-12 col-lg-6">
-                <label htmlFor="" className="gen-input-label">Cargo</label>
+                <label htmlFor="" className="gen-input-label">Cargo*</label>
                 <input type="text" className="gen-input-text input-small" name="position" required value={position} onChange={handleChange} placeholder="Ingresa tu cargo"/>
             </div>
             <div className="form-group">
-                <p className={styles.genPrivacyPolicy}>Al dar click en <strong>&quot;QUIERO RECIBIR EL DESCUENTO&quot;</strong> aceptas nuestra <a href="/politica-de-privacidad" target={"_blank"}>Política de privacidad</a></p>
+                <p className={styles.genPrivacyPolicy}>Al dar click en <strong>&quot;QUIERO RECIBIR EL DESCUENTO&quot;</strong> aceptas nuestra <Link href="/politica-de-privacidad"><a rel="noreferrer" target={"_blank"}>Política de privacidad</a></Link></p>
             </div>
-
-            {/* <div className="form-group mb-3">
-                <ReCAPTCHA size='normal' sitekey={"6LcFpi4fAAAAAJl5-nQwrpA_skN6CGh3EGZyf_N1"} />
-            </div> */}
             <button type="submit" className={styles.submitButton}>
                 <span>QUIERO RECIBIR EL DESCUENTO</span>
             </button>
 
-            <a href="javascript:void(0)" onClick={closePopup} className="gen-text-link text-center mt-4">
+            <a href="#" onClick={closePopup} className="gen-text-link text-center mt-4">
                 No me interesa
             </a>
         </div>
