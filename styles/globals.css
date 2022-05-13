@@ -114,9 +114,25 @@ p, span{
   color: var(--text-2);
 }
 
+.gen-input-text.input-small{
+  height: 50px;
+}
+
 .gen-textarea{
   height: 170px;
   padding-top: 1.5rem;
+}
+
+.PhoneInput .PhoneInputInput{
+  height: 50px;
+  padding: 10px 1.5rem;
+  margin: .5rem 0;
+  border-radius: 15px;
+  border: none;
+  background-color: white;
+  -webkit-box-shadow: 5px 2px 49px 0px rgba(0,0,0,0.1); 
+  box-shadow: 5px 2px 49px 0px rgba(0,0,0,0.1);
+  outline: none;
 }
 
 /* Center logo brands */
@@ -140,6 +156,8 @@ p, span{
   transition: .4s;
 }
 
+
+
 .gen-button-primary{
   border-color: var(--s-color);
   color: var(--s-color);
@@ -148,6 +166,11 @@ p, span{
 .gen-button-primary:hover{
   background-color: var(--s-color);
   color: var(--p-color-2);
+}
+
+.gen-text-link{
+  text-decoration: underline;
+  color: var(--p-color);
 }
 
 /* Slick styles */

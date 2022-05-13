@@ -34,10 +34,26 @@ import PatternPlus from '../public/img/pattern-plus.svg'
 import SectionDataCounters from "../components/SectionDataCounters";
 import BgNuestrosServicios from "../public/img/bg-nuestros-servicios.jpg"
 import ImgMasDeNosotros from "../public/img/img-mas-de-nosotros.png"
+import ReCAPTCHA from 'react-google-recaptcha'
+import ImgHeaderPopup from '../public/img/header-popup.jpg'
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
+import PopupForm from "../components/PopupForm";
 
 export default function Home({data, dataBlog}) {
   useEffect(()=>{
-    AOS.init()   
+    AOS.init()
+
+    if(!localStorage.getItem('isFormComplete')){
+        const activeClass = styles.activePopup
+        const showPopup = () => {
+          const popup = document.getElementById('pop-up')
+          popup.classList.add(activeClass)
+        }
+
+        setTimeout(showPopup, 8000)
+    }
+
+    
   }, [])
   return (
     <Layout 
@@ -46,6 +62,22 @@ export default function Home({data, dataBlog}) {
       isLogoLight
       >
       
+      <div className={styles.popupHome} id="pop-up">
+          <div className={styles.popupHomeBox}>
+              <div className={styles.popupHomeBox__header}>
+                  <Image src={ImgHeaderPopup} layout="responsive"/>
+              </div>
+              <div className={styles.popupHomeBox__body}>
+                <p className={styles.popupHomeBox__body__desc}>
+                  Déjanos tus datos y recibe un bono de <strong>30% de descuento</strong> en el desarrollo de tu tienda virtual
+                </p>
+
+                <PopupForm />
+              </div>
+              
+          </div>
+      </div>
+
       <BannerHome />
 
       <section className="gen-info-section">

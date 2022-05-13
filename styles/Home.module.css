@@ -94,9 +94,66 @@
   margin: 4rem auto;
 }
 
+.popupHome{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 5;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  overflow-y: scroll;
+  display: none;
+  opacity: 0;
+  transition: 1s;
+}
+
+.activePopup{
+  display: flex;
+  opacity: 1;
+  animation: fadeIn 1s
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+.popupHomeBox__body{
+  padding: 2rem 4rem;
+}
+
+.popupHomeBox__body__desc{
+  text-align: center;
+}
+
+.popupHomeBox{
+  background-color: white;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 90%;
+  overflow: hidden;
+  margin: auto;
+}
+
 @media (max-width: 576px){
   .genImgRounded{
     margin-bottom: 3rem;
     height: 250px;
+  }
+}
+
+@media (max-width: 768px){
+  .popupHome{
+    padding: 2rem 1rem;
+  }
+  .popupHomeBox__body{
+    padding: 2rem;
   }
 }
