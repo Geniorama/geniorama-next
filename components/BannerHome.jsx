@@ -110,7 +110,7 @@ export default function BannerHome(props) {
               </h3>
               <h2 className={styles.sliderHome__title4}>tienda virtual?</h2>
               <p className={styles.sliderHome__desc2}>
-                Obtén ahora un 30% de descuento en el desarrollo de tu<br></br> tienda
+                Obtén ahora un <strong>30% de descuento</strong> en el desarrollo de tu<br></br> tienda
                 Online agendando una reunión<br></br> de 30 minutos con nosotros.
               </p>
               <p className={styles.sliderHome__observation}>
