@@ -28,6 +28,8 @@
 
 .sliderHome__caption{
   position: absolute;
+  left: 0;
+  top: 0;
   z-index: 3;
   height: 100%;
   width: 100%;
@@ -86,10 +88,16 @@
 
 @media (max-width: 576px){
   .sliderHome{
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .elDecor{
     display: none;
+  }
+
+  .sliderHome__caption{
+    padding: 1rem;
+    align-items: flex-start;
+    padding-top: 6rem;
   }
 }
