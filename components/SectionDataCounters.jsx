@@ -1,9 +1,9 @@
 import styles from "../styles/SectionDataCounters.module.css";
 import DataCounter from "./DataCounter";
-import IconoExperiencia from "../public/iconos-web_6-anos-experiencia.svg"
-import IconoClientes from "../public/iconos-web_clientes-felices.svg"
-import IconoTazas from '../public/iconos-web_tazas-de-cafe.svg'
-import IconoIdea from '../public/iconos-web_me-gusta-la-idea.svg'
+import IconoExperiencia from "../public/icons/new-icons/iconos web_6 años experiencia.svg";
+import IconoClientes from "../public/icons/new-icons/iconos web_clientes felices.svg";
+import IconoTazas from '../public/icons/new-icons/iconos web_tazas de cafe.svg';
+import IconoIdea from '../public/icons/new-icons/iconos web_me gusta la idea.svg';
 import { useEffect } from "react";
 
 export default function SectionDataCounters() {
