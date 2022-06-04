@@ -5,6 +5,10 @@ import styles from "../styles/Home.module.css";
 import CardOurGen from "../components/CardOurGen";
 import ImagenComo from "../public/como-lo-hacemos-scaled.jpg";
 import PortfolioGallery from "../components/PortfolioGallery";
+import IconGenEstr from "../public/icons/new-icons/iconos web_GEN ESTRATEGICO copia.svg";
+import IconGenCrea from "../public/icons/new-icons/iconos web_GEN CREATIVO copia.svg";
+import IconGenReal from "../public/icons/new-icons/iconos web_GEL REAL copia.svg";
+import ImgExampleServ from "../public/opportunity.svg";
 import Testimonial from "../components/Testimonial";
 import CarouselPosts from "../components/CarouselPosts";
 import CardTeamGen from "../components/CardTeamGen";
@@ -16,17 +20,17 @@ import BannerHome from "../components/BannerHome";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import IconDisenoWeb from '../public/icons/iconos web_diseno_paginas_web.svg'
-import IconSoporteWeb from '../public/icons/iconos web_soporte_web.svg'
-import IconHosting from '../public/icons/iconos web_hosting_ servidores.svg'
-import IconPosicionamientoSeo from '../public/icons/iconos web_posicionamiento_seo.svg'
-import IconSocialMedia from '../public/icons/iconos web_social media.svg'
-import IconDisenoGrafico from '../public/icons/iconos web_diseno grafico.svg'
-import IconProdAudiovisual from '../public/icons/iconos web_produccion audiovisual.svg'
-import IconStream from '../public/icons/iconos web_streaming.svg'
-import IconPauta from '../public/icons/pauta digital.svg'
-import IconGenExample from '../public/img/icon-gen-example.svg'
-import PatternPlus from '../public/img/pattern-plus.svg'
+import IconDisenoWeb from '../public/icons/new-icons/iconos web_Diseño de páginas web.svg';
+import IconSoporteWeb from '../public/icons/new-icons/iconos web_ajuste y soporte web.svg';
+import IconHosting from '../public/icons/new-icons/iconos web_hosting y servidores.svg';
+import IconPosicionamientoSeo from '../public/icons/new-icons/iconos web_posicionamiento web.svg';
+import IconSocialMedia from '../public/icons/new-icons/iconos web_social media.svg';
+import IconDisenoGrafico from '../public/icons/new-icons/iconos web_diseño grafico.svg';
+import IconProdAudiovisual from '../public/icons/new-icons/iconos web_produccion audiovisual.svg';
+import IconStream from '../public/icons/new-icons/iconos web_streaming.svg';
+import IconPauta from '../public/icons/new-icons/iconos web_pauta digital.svg';
+import IconGenExample from '../public/img/icon-gen-example.svg';
+import PatternPlus from '../public/img/pattern-plus.svg';
 import SectionDataCounters from "../components/SectionDataCounters";
 import BgNuestrosServicios from "../public/img/bg-nuestros-servicios.jpg"
 import ImgMasDeNosotros from "../public/img/img-mas-de-nosotros.png"
@@ -89,7 +93,7 @@ export default function Home({data, dataBlog}) {
             <div className="col-12" data-aos="fade-left" data-aos-duration="1000">
               <div className={styles.genContGrid}>
                 <CardOurGen
-                  image={IconGenExample}
+                  image={IconGenEstr}
                   title="GEN ESTRATÉGICO"
                   description={
                     "<p>Somos expertos en crear y llevar a cabo campañas de comunicación y propuestas web innovadoras y arriesgadas,  capaces de sorprender y cautivar. Ponemos a su disposición las últimas tendencias de diseño y navegación, con el fin de mejorar en todo momento la experiencia del usuario ya que  nuestro objetivo es lograr en todo momento, que nuestros clientes alcancen sus objetivos.</p>"
@@ -97,13 +101,13 @@ export default function Home({data, dataBlog}) {
                 />
 
                 <CardOurGen
-                  image={IconGenExample}
+                  image={IconGenCrea}
                   title="GEN CREATIVO"
                   description="<p>La creatividad también hace parte de nuestro ADN, somos expertos en investigación, conceptualización y diseño de campañas y páginas web creativas con un mensaje contundente. Toda nuestra atención está en los pequeños detalles, siendo este, el verdadero secreto de nuestro nivel de éxito al momento de comunicar y hacer visibles a nuestros clientes.</p>"
                 />
 
                 <CardOurGen
-                  image={IconGenExample}
+                  image={IconGenReal}
                   title="GEN REAL"
                   description="<p>Desde nuestros inicios, hemos creído en el gran poder que tiene el Internet para el desarrollo e impulso de las marcas y nos hemos consolidado como verdaderos maestros de la pauta digital, llevando a cabo procesos creados específicamente para lograr las metas de cada uno de nuestros clientes.</p>"
                 />

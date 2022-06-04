@@ -1,3 +1,19 @@
+.circleBanner2 .imgCircle{
+  min-width: 100% !important;
+  min-height: 65% !important;
+  opacity: .5;
+}
+
+.elDecor .vectorGreen{
+  min-width: 70% !important;
+}
+
+.elDecor .imgCircle2{
+  right: 240px;
+  top: -100px;
+  opacity: .3;
+}
+
 .sliderHome{
   position: relative;
   font-size: 20px;
@@ -12,6 +28,8 @@
 
 .sliderHome__caption{
   position: absolute;
+  left: 0;
+  top: 0;
   z-index: 3;
   height: 100%;
   width: 100%;
@@ -32,9 +50,31 @@
   font-weight: bold;
 }
 
+.sliderHome__title3{
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.sliderHome__title4{
+  font-size: 2em;
+  color: var(--s-color);
+  font-weight: bold;
+  margin-top: -15px;
+}
+
 .sliderHome__desc{
   font-size: 1.3em;
   margin-bottom: 3rem;
+}
+
+.sliderHome__desc2{
+  font-size: 1.3em;
+  margin-bottom: 1rem;
+}
+
+.sliderHome__observation{
+  font-size: .8em;
 }
 
 .decoration{
@@ -48,10 +88,16 @@
 
 @media (max-width: 576px){
   .sliderHome{
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .elDecor{
     display: none;
+  }
+
+  .sliderHome__caption{
+    padding: 1rem;
+    align-items: flex-start;
+    padding-top: 6rem;
   }
 }
