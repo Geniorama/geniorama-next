@@ -4,18 +4,14 @@ import Layout from "../components/Layout/Layout";
 import styles from "../styles/Home.module.css";
 import CardOurGen from "../components/CardOurGen";
 import ImagenComo from "../public/como-lo-hacemos-scaled.jpg";
-import DataCounter from "../components/DataCounter";
 import PortfolioGallery from "../components/PortfolioGallery";
-import IconGenEstr from "../public/iconos-web_GEN-ESTRATEGICO.svg";
-import IconGenCrea from "../public/iconos-web_GEN-CREATIVO.svg";
-import IconGenReal from "../public/iconos-web_GEL-REAL.svg";
-import ImgExampleServ from "../public/opportunity.svg";
 import Testimonial from "../components/Testimonial";
 import CarouselPosts from "../components/CarouselPosts";
 import CardTeamGen from "../components/CardTeamGen";
 import ImgTeam from "../public/team-member.png";
 import CarouselGen from "../components/CarouselGen";
-import ImgAngelBurgos from "../public/angel-burgos.jpg"
+import ImgAngelBurgos from "../public/equipo/team-angel.png"
+import ImgOscarPedraza from "../public/equipo/team-oscar.png"
 import BannerHome from "../components/BannerHome";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -354,19 +350,19 @@ export default function Home({data, dataBlog}) {
             <div className="col-12 col-lg-8">
               <div className={styles.genWrapTeam}>
                 <CardTeamGen
-                  image={ImgTeam}
-                  name="Oscar Pedraza"
-                  position={"CEO / Marketing Manager"}
-                  linkedin={"https://www.linkedin.com/in/oscar-pedraza/"}
-                />
-
-                <CardTeamGen
                   image={ImgAngelBurgos}
                   name="Angel Burgos"
                   position={"CTO / Web Manager"}
                   linkedin={"https://www.linkedin.com/in/angel-burgos-mesa-a5907a126/"}
                   github={"https://github.com/angelpublicista"}
                 />
+
+                <CardTeamGen
+                  image={ImgOscarPedraza}
+                  name="Oscar Pedraza"
+                  position={"CEO / Marketing Manager"}
+                  linkedin={"https://www.linkedin.com/in/oscar-pedraza/"}
+                />                
               </div>
             </div>
             <div className="col-12 col-lg-4 p-4">

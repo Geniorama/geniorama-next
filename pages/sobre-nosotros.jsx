@@ -3,13 +3,13 @@ import HeadingPage from "../components/HeadingPage";
 import Layout from "../components/Layout/Layout";
 import styles from "../styles/SobreNosotros.module.css";
 import CardTeamGen from "../components/CardTeamGen";
-import ImgAngelBurgos from "../public/angel-burgos.jpg";
-import ImgOscarPedraza from "../public/team-member.png";
-import ImgDuvanR from "../public/foto-duvan.jpg";
-import ImgDiegoB from "../public/foto-diego.jpg";
-import ImgCatalinaB from "../public/foto-catalina-barrera.jpg";
+import ImgAngelBurgos from "../public/equipo/team-angel.png";
+import ImgOscarPedraza from "../public/equipo/team-oscar.png";
+import ImgDuvanR from "../public/equipo/team-duvan.png";
+import ImgDiegoB from "../public/equipo/team-diego.png";
+import ImgCatalinaB from "../public/equipo/team-cata.png";
 import ImgFelipeH from "../public/foto-felipe-h.jpg";
-import ImgCristianM from "../public/foto-cristian-marin.png";
+import ImgCristianM from "../public/equipo/team-cristian.png";
 import CarouselGen from "../components/CarouselGen";
 import Testimonial from "../components/Testimonial";
 import AvatarExample from "../public/pexels-pixabay-415829.jpg";
@@ -38,14 +38,14 @@ export default function SobreNosotros() {
           <div className={styles.genWrapCardsAbout}>
             <CardAboutUs
               icon={<SvgIconOurVission />}
-              title={"NUESTRA VISIÓN"}
+              title={"NUESTRO MAYOR DESEO"}
               description={
                 "Nuestros objetivos están encaminados en ser la agencia de Marketing Digital y Desarrollo Web líder en el mercado colombiano y en un mediano plazo exportar servicios en mercados importantes como Estados Unidos y algunas regiones de Europa"
               }
             />
             <CardAboutUs
               icon={<SvgIconOurMission />}
-              title={"NUESTRA MISIÓN"}
+              title={"ASÍ DEJAMOS HUELLA"}
               description={
                 "Para llevar a cabo los proyectos contamos con personas apasionadas por su oficio y trabajamos bajo una metodología que permite a nuestros colaboradores tomar decisiones creativas sobre los procesos, garantizando así proyectos diferenciados y de calidad."
               }
@@ -88,6 +88,7 @@ export default function SobreNosotros() {
               name="Diego Burgos"
               position={"WordPress Developer"}
               github={"https://github.com/DiegoFreelance2020"}
+              linkedin={"https://www.linkedin.com/in/diego-burgos-85a940211/"}
             />
 
             <CardTeamGen

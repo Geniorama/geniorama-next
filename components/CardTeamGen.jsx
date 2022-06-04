@@ -15,7 +15,7 @@ export default function CardTeamGen({
 }) {
   return (
     <div className={styles.CardTeamGen}>
-      <Image src={image} className={styles.CardTeamGen__img} width={400} height={600} objectFit="cover" />
+      <Image src={image} className={styles.CardTeamGen__img} width={400} height={600} objectFit="cover" objectPosition={"top"} />
 
       <div className={styles.CardTeamGen__info}>
         <h2 className={styles.CardTeamGen__info__name}>{name}</h2>
