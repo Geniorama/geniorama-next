@@ -9,6 +9,7 @@ import ImgDuvanR from "../public/equipo/team-duvan.png";
 import ImgDiegoB from "../public/equipo/team-diego.png";
 import ImgCatalinaB from "../public/equipo/team-cata.png";
 import ImgFelipeH from "../public/foto-felipe-h.jpg";
+import DanielaB from "../public/img/daniela-barreto-geniorama.png";
 import ImgCristianM from "../public/equipo/team-cristian.png";
 import CarouselGen from "../components/CarouselGen";
 import Testimonial from "../components/Testimonial";
@@ -92,13 +93,9 @@ export default function SobreNosotros() {
             />
 
             <CardTeamGen
-              image={ImgFelipeH}
-              name="Felipe Hernández"
-              position={"UX/UI & Digital Designer"}
-              linkedin={"https://www.linkedin.com/in/fyliip96/"}
-              behance={
-                "https://www.behance.net/Fyliip96?tracking_source=search_users%7Cfelipe%20hernandez"
-              }
+              image={DanielaB}
+              name="Daniela Barreto"
+              position={"Community Manager"}
             />
 
             <CardTeamGen
