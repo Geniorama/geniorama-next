@@ -9,6 +9,7 @@ import ImgDuvanR from "../public/equipo/team-duvan.png";
 import ImgDiegoB from "../public/equipo/team-diego.png";
 import ImgCatalinaB from "../public/equipo/team-cata.png";
 import ImgFelipeH from "../public/foto-felipe-h.jpg";
+import ImgNatalia from "../public/equipo/team-natalia.jpg";
 import DanielaB from "../public/img/daniela-barreto-geniorama.png";
 import ImgCristianM from "../public/equipo/team-cristian.png";
 import CarouselGen from "../components/CarouselGen";
@@ -79,9 +80,19 @@ export default function SobreNosotros() {
             />
 
             <CardTeamGen
-              image={ImgCatalinaB}
-              name="Catalina Barrera"
-              position={"Digital Ads Manager"}
+              image={ImgNatalia}
+              name="Natalia Sáenz"
+              position={"Project & Account Manager"}
+              linkedin={"https://www.linkedin.com/in/nataliasaenz11/"}
+            />
+
+            <CardTeamGen
+              image={ImgCristianM}
+              name="Cristian Marín"
+              position={"Content Manager & Creative"}
+              linkedin={
+                "https://www.linkedin.com/in/cristhian-camilo-mar%C3%ADn-linares-7b976754/"
+              }
             />
 
             <CardTeamGen
@@ -93,18 +104,15 @@ export default function SobreNosotros() {
             />
 
             <CardTeamGen
-              image={DanielaB}
-              name="Daniela Barreto"
-              position={"Community Manager"}
+              image={ImgCatalinaB}
+              name="Catalina Barrera"
+              position={"Digital Ads Manager"}
             />
 
             <CardTeamGen
-              image={ImgCristianM}
-              name="Cristian Marín"
-              position={"Content Manager & Creative"}
-              linkedin={
-                "https://www.linkedin.com/in/cristhian-camilo-mar%C3%ADn-linares-7b976754/"
-              }
+              image={DanielaB}
+              name="Daniela Barreto"
+              position={"Community Manager"}
             />
 
             <CardTeamGen
