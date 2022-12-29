@@ -40,7 +40,7 @@ export async function getServerSideProps({res}){
     'public, s-maxage=10, stale-while-revalidate=59'
   )
 
-  const url_api = "https://www.geniorama.site/cms/wp-json/wp/v2/portfolio/?per_page=24&_embed=true"
+  const url_api = "https://www.geniorama.site/cms/wp-json/wp/v2/portfolio/?per_page=99&_embed=true"
   try{
     const res = await fetch(url_api)
     const data = await res.json()
