@@ -1,0 +1,73 @@
+.genBannerIntro{
+    background-color: var(--p-color-2);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 4rem;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.genBannerIntro::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--p-color);
+    z-index: 1;
+    opacity: .7;
+}
+
+.genBannerIntro__title__bottom{
+    color: var(--s-color);
+}
+
+.bgBanner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contentBanner{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.genTextTop{
+    font-size: 25px;
+    position: relative;
+}
+
+.genTextTop::before{
+    position: absolute;
+    content: '';
+    top: 15px;
+    left: -50%;
+    width: 45%;
+    height: 4px;
+    background-color: #00FFFF;
+}
+
+.genTextTop::after{
+    position: absolute;
+    content: '';
+    top: 15px;
+    right: -50%;
+    width: 45%;
+    height: 4px;
+    background-color: #00FFFF;
+}
+
+.genBannerIntro__title span{
+    display: block;
+}
+
+.genBannerIntro__desc{
+    padding: 0px 8em;
+}

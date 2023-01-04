@@ -201,7 +201,7 @@ export default function Home({data, dataBlog}) {
             />
             <CardOurGen
               image={IconHosting}
-              link="/"
+              link="/planes-hosting"
               title="HOSTING Y SERVIDORES"
               dark
               shadow
