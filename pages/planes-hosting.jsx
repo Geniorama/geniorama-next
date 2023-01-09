@@ -33,12 +33,21 @@ export default function planesHosting(){
                     src={imgGrid}
                     sizes="50vh"
                     >
-
                     </Image>
                 </div>
                 <div className={styles.gridLeft}>
 
                 </div >
+            </section>
+            <section>
+                <div className={styles.bannerRadius}>
+                    <h2 className={styles.titleTop}>¿Aún no sabes qué plan necesitas?</h2>
+                    <span className={styles.textDesc}>No te preocupes, nosotros te asesoramos</span>
+                    <a href="" className={styles.linkButton}>Si por favor, asesórame</a>
+                </div>
+            </section>
+            <section>
+                <h2 className={styles.titlePlanes}>PLANES <span className={styles.titlePlanesColor}>ALTO TRÁFICO</span></h2>
             </section>
         </Layout>
     );

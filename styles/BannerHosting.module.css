@@ -105,3 +105,87 @@
 .gridLeft{
     width: 50%;
 }
+
+.bannerRadius{
+    background-color: var(--p-color);
+    padding: 3rem;
+    border-radius: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0px 4em;
+    text-align: center;
+    z-index: 2;
+}
+
+.bannerRadius::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: -30px;
+    margin-left: 30px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--s-color);
+    border-radius: 300px;
+    transition: .4s;
+    z-index: -1;
+}
+
+.bannerRadius:hover::before{
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.titleTop{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.textDesc{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.linkButton{
+    border: 2px solid #00FFFF;
+    padding: 10px 35px;
+    border-radius: 30px;
+    margin-top: 1em;
+    color: #00FFFF;
+    letter-spacing: 2px;
+    transition: .4s;
+}
+
+.linkButton:hover{
+    background-color: #00FFFF;
+    color:#004B87;
+}
+
+.titlePlanes{
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 50px;
+    color:#004B87;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.titlePlanesColor{
+    color:#009CE1;
+}
+
+@media (max-width: 576px){
+    .bannerRadius{
+        border-radius: 30px;
+    }
+    .bannerRadius::before{
+        display: none;
+    }
+}
