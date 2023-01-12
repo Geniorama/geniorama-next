@@ -10,6 +10,10 @@ import logo1 from "../public/img/image1.png";
 import logo2 from "../public/img/image2.png";
 import logo3 from "../public/img/image3.png";
 import logo4 from "../public/img/image4.png";
+import logo5 from "../public/img/image5.png";
+import logo6 from "../public/img/image6.png";
+import logo7 from "../public/img/image7.png";
+import logo8 from "../public/img/image8.png";
 
 export default function planesHosting(){
     return(
@@ -126,6 +130,20 @@ export default function planesHosting(){
                         </div>
                         <div className="col-12 col-lg-3">
                             <Image src={logo4} />
+                        </div>
+                    </div>
+                    <div className="row mt-5">
+                        <div className="col-12 col-lg-3">
+                            <Image src={logo5} />
+                        </div>
+                        <div className="col-12 col-lg-3">
+                            <Image src={logo6} />
+                        </div>
+                        <div className="col-12 col-lg-3">
+                            <Image src={logo7} />
+                        </div>
+                        <div className="col-12 col-lg-3">
+                            <Image src={logo8} />
                         </div>
                     </div>
                 </div>
