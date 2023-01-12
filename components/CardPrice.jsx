@@ -8,7 +8,6 @@ export default function CardPrice({link, title, desc, item, precioanual, textsma
       <p className={styles.descPlanPrice}>{desc}</p>
       <ul className={styles.listItems}>
         <li>
-          <i class="fa-light fa-square-check"></i>
           <span>{item}</span>
         </li>
       </ul>
