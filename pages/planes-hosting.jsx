@@ -6,6 +6,10 @@ import styles from "../styles/BannerHosting.module.css";
 import Image from "next/image";
 import imgGrid from "../public/img/grid-left.png"
 import CardPrice from "../components/CardPrice";
+import logo1 from "../public/img/image1.png";
+import logo2 from "../public/img/image2.png";
+import logo3 from "../public/img/image3.png";
+import logo4 from "../public/img/image4.png";
 
 export default function planesHosting(){
     return(
@@ -29,16 +33,32 @@ export default function planesHosting(){
                 <h2 className={styles.titleHostingBottom}>NUESTROS PLANES</h2>
             </div>
             <section className={styles.contGrid1}>
-                <div className={styles.gridLeft}>
-                    <Image
-                    src={imgGrid}
-                    sizes="50vh"
+                <Image classname={styles.imgLeft} src={imgGrid} />
+                <CardPrice
+                    title="ADS ADVANCED"
+                    desc="Descripción pendiente"
+                    item="4 GB de almacenamiento en SSD."
+                    precioanual="$768.000"
+                    textsmallyear="/anual"
+                    preciomensual="20.000"
+                    textsmallmonth="/mes*"
+                    link="/#"
                     >
-                    </Image>
-                </div>
-                <div className={styles.gridLeft}>
 
-                </div >
+                    </CardPrice>
+
+                    <CardPrice
+                    title="ADS ADVANCED"
+                    desc="Descripción pendiente"
+                    item="4 GB de almacenamiento en SSD."
+                    precioanual="$768.000"
+                    textsmallyear="/anual"
+                    preciomensual="20.000"
+                    textsmallmonth="/mes*"
+                    link="/#"
+                    >
+
+                    </CardPrice>
             </section>
             <section>
                 <div className={styles.bannerRadius}>
@@ -54,15 +74,61 @@ export default function planesHosting(){
             </section>
             <section className={styles.genContGrid}>
                 <CardPrice
-                title="Hola"
-                desc="Hola"
-                item="item 1"
-                precioanual="20.000"
+                title="ADS ADVANCED"
+                desc="Descripción pendiente"
+                item="4 GB de almacenamiento en SSD."
+                precioanual="$768.000"
+                textsmallyear="/anual"
                 preciomensual="20.000"
+                textsmallmonth="/mes*"
                 link="/#"
                 >
 
                 </CardPrice>
+                <CardPrice
+                title="ADS ADVANCED"
+                desc="Descripción pendiente"
+                item="4 GB de almacenamiento en SSD."
+                precioanual="$768.000"
+                textsmallyear="/anual"
+                preciomensual="20.000"
+                textsmallmonth="/mes*"
+                link="/#"
+                >
+
+                </CardPrice>
+
+                <CardPrice
+                title="ADS ADVANCED"
+                desc="Descripción pendiente"
+                item="4 GB de almacenamiento en SSD."
+                precioanual="$768.000"
+                textsmallyear="/anual"
+                preciomensual="20.000"
+                textsmallmonth="/mes*"
+                link="/#"
+                >
+
+                </CardPrice>
+            </section>
+            <section className={styles.contLogos}>
+                <h2 className={styles.titleLight}>Todos nuestros planes cuentan con la mejor<br></br>tecnología</h2>
+                <div className="container">
+                    <div className="row mt-5">
+                        <div className="col-12 col-lg-3">
+                            <Image src={logo1} />
+                        </div>
+                        <div className="col-12 col-lg-3">
+                            <Image src={logo2} />
+                        </div>
+                        <div className="col-12 col-lg-3">
+                            <Image src={logo3} />
+                        </div>
+                        <div className="col-12 col-lg-3">
+                            <Image src={logo4} />
+                        </div>
+                    </div>
+                </div>
             </section>
         </Layout>
     );

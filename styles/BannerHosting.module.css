@@ -99,12 +99,14 @@
 
 .contGrid1{
     padding: 4em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    grid-auto-flow: dense;
+    align-items: center;
+    justify-content: center;
 }
 
-
-.gridLeft{
-    width: 50%;
-}
 
 .bannerRadius{
     background-color: var(--p-color);
@@ -199,9 +201,26 @@
 
 .genContGrid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
     grid-auto-flow: dense;
+    background-color: #004B87;
+    margin: 3em 0px;
+    padding: 0px 4em;
+}
+
+.titleLight{
+    text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 3em;
+    color: #004B87;
+
+}
+
+.contLogos{
+    margin: 0px 4em;
 }
 
 @media (max-width: 576px){
