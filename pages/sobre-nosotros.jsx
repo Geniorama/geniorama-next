@@ -4,10 +4,12 @@ import Layout from "../components/Layout/Layout";
 import styles from "../styles/SobreNosotros.module.css";
 import CardTeamGen from "../components/CardTeamGen";
 import ImgAngelBurgos from "../public/equipo/team-angel.png";
+import ImgJuliana from "../public/img/Juliana-sossa.jpg";
 import ImgOscarPedraza from "../public/equipo/team-oscar.png";
 import ImgDuvanR from "../public/equipo/team-duvan.png";
 import ImgDiegoB from "../public/equipo/team-diego.png";
 import ImgCatalinaB from "../public/equipo/team-cata.png";
+import ImgWilliam from "../public/img/william-mondul.jpg";
 import ImgFelipeH from "../public/foto-felipe-h.jpg";
 import ImgNatalia from "../public/equipo/team-natalia.jpg";
 import DanielaB from "../public/img/daniela-barreto-geniorama.png";
@@ -80,10 +82,10 @@ export default function SobreNosotros() {
             />
 
             <CardTeamGen
-              image={ImgNatalia}
-              name="Natalia Sáenz"
-              position={"Project & Account Manager"}
-              linkedin={"https://www.linkedin.com/in/nataliasaenz11/"}
+              image={ImgJuliana}
+              name="Juliana Sossa"
+              position={"Community Manager"}
+              behance={"https://www.behance.net/gallery/154274671/PORTAFOLIO-DISENO-GRAFICO"}
             />
 
             <CardTeamGen
@@ -110,9 +112,12 @@ export default function SobreNosotros() {
             />
 
             <CardTeamGen
-              image={DanielaB}
-              name="Daniela Barreto"
-              position={"Community Manager"}
+              image={ImgWilliam}
+              name="William Mondul"
+              position={"Multimedia Digital Designer"}
+              instagram={"https://www.instagram.com/williammonduldg/"}
+              linkedin={"https://www.linkedin.com/in/william-mondul-paternina-14161319a/"}
+              behance={"https://www.behance.net/willianmondulDG94"}
             />
 
             <CardTeamGen
