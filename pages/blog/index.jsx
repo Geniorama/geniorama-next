@@ -39,7 +39,11 @@ export default function Index({data}) {
 }
 
 
-export async function getStaticProps(ctx){
+export async function getServerSideProps({res}){
+    res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=59'
+    )
     const url_api_blog ="https://www.geniorama.site/cms/wp-json/wp/v2/posts"
     try{
         const res = await fetch(url_api_blog)
