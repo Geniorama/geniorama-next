@@ -20,6 +20,7 @@ import PatternPoints from "../public/img/patter-points.svg";
 import PatternPoinsVertical from "../public/img/patter-points-vertical.svg";
 import ImagenForm from "../public/img/imgform.png";
 import iconForm from "../public/img/icon-form.png";
+import NewsletterForm from "../components/NewsletterForm";
 
 
 export default function planesHosting(){
@@ -228,52 +229,53 @@ export default function planesHosting(){
                 </div>
             </section>
             <section className="gen-info-section">
-        <div className="container mt-5">
-          <div className="row align-items-center">
-          <div className="col-12 col-lg-6">
-              <div data-aos="fade-left" data-aos-duration="1000">
-                <div className={styles.genImgRounded}>
-                  <div className={styles.decorationImgRounded}>
-                    {/* Pattern plus 1 */}
-                    <div style={{position: "absolute", top: "-30px", right: "20px", zIndex: "2"}}>
-                       <Image src={PatternPlus} />
+                <div className="container mt-5">
+                <div className="row align-items-center">
+                <div className="col-12 col-lg-6">
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <div className={styles.genImgRounded}>
+                        <div className={styles.decorationImgRounded}>
+                            {/* Pattern plus 1 */}
+                            <div style={{position: "absolute", top: "-30px", right: "20px", zIndex: "2"}}>
+                            <Image src={PatternPlus} />
+                            </div>
+
+                            {/* Pattern plus 2 */}
+                            <div style={{position: "absolute", bottom: "-30px", left: "30px", zIndex: "2"}}>
+                            <Image src={PatternPlus} />
+                            </div> 
+                        </div>
+
+                        <div className={styles.imgAuxForm} style={{overflow: "hidden", position: "relative", width: "100%", height: "100%"}}>
+                            <Image 
+                            src={ImagenForm}
+                            layout={"fill"}
+                            objectFit={"cover"}
+                            />
+                        </div>
+                        
+                        </div>
                     </div>
+                    </div>
+                    <div className="col-12 col-lg-6 px-5 mb-5 mb-lg-0">
+                        <div data-aos="fade-right" data-aos-duration="1000">
+                        <Image
+                        src={iconForm}
+                        width= "60"
+                        height= "60"
+                        >
+                        </Image>
+                        <h5 className="gen-text-s-color-2">¡SOMOS EL MEJOR LUGAR</h5>
+                        <h2 className="gen-info-section__title">PARA ALOJAR TU SITIO WEB!</h2>
+                        <p className="gen-info-section__desc">
+                        No se trata simplemente de estar en Internet, contar con los mejores beneficios de hosting ahora es posible con el acompañamiento de <span style={{color: "#009CE1"}}>Geniorama.</span> Déjanos tus datos y te asesoramos.
+                        </p>
 
-                    {/* Pattern plus 2 */}
-                    <div style={{position: "absolute", bottom: "-30px", left: "30px", zIndex: "2"}}>
-                       <Image src={PatternPlus} />
-                    </div> 
-                  </div>
-
-                  <div className={styles.imgAuxForm} style={{overflow: "hidden", position: "relative", width: "100%", height: "100%"}}>
-                    <Image 
-                      src={ImagenForm}
-                      layout={"fill"}
-                      objectFit={"cover"}
-                    />
-                  </div>
-                  
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div className="col-12 col-lg-6 px-5 mb-5 mb-lg-0">
-                <div data-aos="fade-right" data-aos-duration="1000">
-                  <Image
-                  src={iconForm}
-                  width= "60"
-                  height= "60"
-                  >
-                  </Image>
-                  <h5 className="gen-text-s-color-2">¡SOMOS EL MEJOR LUGAR</h5>
-                  <h2 className="gen-info-section__title">PARA ALOJAR TU SITIO WEB!</h2>
-                  <p className="gen-info-section__desc">
-                  No se trata simplemente de estar en Internet, contar con los mejores beneficios de hosting ahora es posible con el acompañamiento de <span style={{color: "#009CE1"}}>Geniorama.</span> Déjanos tus datos y te asesoramos.
-                  </p>
                 </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </section>
         </Layout>
     );
 }
