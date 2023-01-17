@@ -271,9 +271,6 @@ export default function planesHosting(){
                         No se trata simplemente de estar en Internet, contar con los mejores beneficios de hosting ahora es posible con el acompañamiento de <span style={{color: "#009CE1"}}>Geniorama.</span> Déjanos tus datos y te asesoramos.
                         </p>
 
-                        <NewsletterForm>
-                            
-                        </NewsletterForm>
                         </div>
                     </div>
                 </div>
