@@ -263,7 +263,6 @@ export default function planesHosting(){
                   width= "60"
                   height= "60"
                   >
-
                   </Image>
                   <h5 className="gen-text-s-color-2">¡SOMOS EL MEJOR LUGAR</h5>
                   <h2 className="gen-info-section__title">PARA ALOJAR TU SITIO WEB!</h2>
