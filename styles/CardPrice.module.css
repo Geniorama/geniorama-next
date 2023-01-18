@@ -32,6 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: baseline;
+    margin: 5px 0px;
 }
 
 .listItems li svg{

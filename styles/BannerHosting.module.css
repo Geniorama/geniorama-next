@@ -267,4 +267,41 @@
     .bannerRadius::before{
         display: none;
     }
+    .genBannerIntro{
+        padding: 1.5em;
+    }
+    .genBannerIntro__desc{
+        padding: 1em;
+    }
+    .titleHosting{
+        margin-top: 7em;
+    }
+    .titleTop{
+        font-size: 35px;
+        line-height: 37px;
+    }
+    .textDesc{
+        line-height: 25px;
+    }
+    .linkButton{
+        padding: 10px 20px;
+    }
+    .titlePlanes{
+        font-size: 37px;
+    }
+    .secondPlanes{
+        font-size: 22px;
+    }
+    .descPlanes{
+        padding: 0px 2em;
+    }
+    .genContGrid{
+        padding: 2em;
+    }
+    .titleLight{
+        font-size: 35px;
+    }
+    .contTitleBasic{
+        text-align: center;
+    }
 }

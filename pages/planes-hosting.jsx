@@ -20,14 +20,14 @@ import PatternPoints from "../public/img/patter-points.svg";
 import PatternPoinsVertical from "../public/img/patter-points-vertical.svg";
 import ImagenForm from "../public/img/imgform.png";
 import iconForm from "../public/img/icon-form.png";
-
+import FormHosting from "../components/FormHosting";
 
 
 export default function planesHosting(){
     return(
         <Layout
             title={"Planes de hosting - Geniorama"}
-            idPage={"gen-home"}
+            idPage={"gen-planes-hosting"}
             isLogoLight
          >
             <BannerHosting
@@ -41,8 +41,10 @@ export default function planesHosting(){
             linkButton={"#"}
             />
             <div className={styles.titleHosting}>
-                <h2 className={styles.titleHostingTop}>CONOCE</h2>
-                <h2 className={styles.titleHostingBottom}>NUESTROS PLANES</h2>
+                <div className="container">
+                    <h2 className={styles.titleHostingTop}>CONOCE</h2>
+                    <h2 className={styles.titleHostingBottom}>NUESTROS PLANES</h2>
+                </div>
             </div>
             <section>
             <div className={styles.decorationImgRounded}>
@@ -82,13 +84,13 @@ export default function planesHosting(){
             <section>
             <div className={styles.decorationImgRounded}>
                     {/* Pattern plus 1 */}
-                        <div style={{position: "absolute", bottom: "-720px", left: "550px", zIndex: "2"}}>
+                        <div style={{position: "absolute", bottom: "-750px", left: "550px", zIndex: "2"}}>
                             <Image src={PatternPoints} />
                         </div>
-                        <div style={{position: "absolute", bottom: "-670px", left: "750px", zIndex: "2"}}>
+                        <div style={{position: "absolute", bottom: "-720px", left: "750px", zIndex: "2"}}>
                             <Image src={PatternPoints} />
                         </div>
-                        <div style={{position: "absolute", bottom: "-720px", left: "950px", zIndex: "2"}}>
+                        <div style={{position: "absolute", bottom: "-750px", left: "950px", zIndex: "2"}}>
                             <Image src={PatternPoints} />
                         </div>
                     </div>
@@ -257,7 +259,7 @@ export default function planesHosting(){
                         </div>
                     </div>
                     </div>
-                    <div className="col-12 col-lg-6 px-5 mb-5 mb-lg-0">
+                    <div className="col-12 col-lg-6 px-5 mb-5 mb-lg-0 mt-5">
                         <div data-aos="fade-right" data-aos-duration="1000">
                         <Image
                         src={iconForm}
@@ -270,7 +272,7 @@ export default function planesHosting(){
                         <p className="gen-info-section__desc">
                         No se trata simplemente de estar en Internet, contar con los mejores beneficios de hosting ahora es posible con el acompañamiento de <span style={{color: "#009CE1"}}>Geniorama.</span> Déjanos tus datos y te asesoramos.
                         </p>
-
+                        <FormHosting></FormHosting>
                         </div>
                     </div>
                 </div>
