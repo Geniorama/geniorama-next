@@ -20,7 +20,7 @@ import PatternPoints from "../public/img/patter-points.svg";
 import PatternPoinsVertical from "../public/img/patter-points-vertical.svg";
 import ImagenForm from "../public/img/imgform.png";
 import iconForm from "../public/img/icon-form.png";
-import NewsletterForm from "../components/NewsletterForm";
+
 
 
 export default function planesHosting(){
