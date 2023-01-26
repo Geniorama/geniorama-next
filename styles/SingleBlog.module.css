@@ -43,3 +43,15 @@
 .iconDate svg{
     width: 15px;
 }
+
+.genArticle a{
+    color: var(--s-color-2);
+}
+
+.genArticle a:hover{
+    text-decoration: underline;
+}
+
+.genArticle li{
+    margin: 1rem 0;
+}

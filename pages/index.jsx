@@ -316,7 +316,7 @@ export default function Home({data, dataBlog}) {
         </div>
       </section>
 
-      <section className="gen-info-sectio d-none">
+      <section className="gen-info-section">
         <div className="container">
           <h2 className="gen-info-section__title">
             PUBLICACIONES <br /> <span className="gen-text-s-color-2">RECIENTES</span>

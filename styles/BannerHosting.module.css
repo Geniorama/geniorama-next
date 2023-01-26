@@ -4,7 +4,7 @@
     position: relative;
     overflow: hidden;
     padding: 4rem;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
 }
@@ -202,12 +202,13 @@
 
 .genContGrid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
     gap: 20px;
     grid-auto-flow: dense;
     background-color: #004B87;
     margin: 3em 0px;
     padding: 2em 4em;
+    box-sizing: border-box;
 }
 
 .titleLight{
@@ -221,7 +222,8 @@
 }
 
 .contLogos{
-    margin: 0px 4em;
+    padding: 0px 4em;
+    box-sizing: border-box;
 }
 
 .genImgRounded{
@@ -263,6 +265,7 @@
 @media (max-width: 576px){
     .bannerRadius{
         border-radius: 30px;
+        margin: 1rem;
     }
     .bannerRadius::before{
         display: none;
@@ -303,6 +306,9 @@
     }
     .contTitleBasic{
         text-align: center;
+    }
+    .contLogos{
+        padding: 2em;
     }
 }
 
