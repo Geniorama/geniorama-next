@@ -18,7 +18,7 @@ export default function Banner({textTop, titleTop, desc, textButton, linkButton,
                 </h1>
                 <p className={styles.genBannerIntro__desc} dangerouslySetInnerHTML={{__html:desc}}></p>
                 <a className={styles.genButtonBanner}>
-                    VER PLANES DE HOSTING
+                  {textButton}
                 </a>
                 
             </div>
