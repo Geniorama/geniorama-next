@@ -98,7 +98,7 @@
 }
 
 .contGrid1{
-    padding: 4em;
+    padding: 1em 4em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
@@ -117,7 +117,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 2em 4em 0px 4em;
+    margin: 8em 4em 0px 4em;
     text-align: center;
     z-index: 2;
 }
@@ -155,19 +155,20 @@
     color: white;
 }
 
-.linkButton{
+.genButtonBanner{
     border: 2px solid #00FFFF;
     padding: 10px 35px;
     border-radius: 30px;
-    margin-top: 1em;
-    color: #00FFFF;
+    margin: 3em 0px;
+    color: #004B87;
     letter-spacing: 2px;
     transition: .4s;
 }
 
-.linkButton:hover{
-    background-color: #00FFFF;
-    color:#004B87;
+.genButtonBanner:hover{
+    background: #009CE1 !important;
+    border: 2px solid #009CE1;
+    color:white;
 }
 
 .titlePlanes{
@@ -206,7 +207,7 @@
     grid-auto-flow: dense;
     background-color: #004B87;
     margin: 3em 0px;
-    padding: 0px 4em;
+    padding: 2em 4em;
 }
 
 .titleLight{
@@ -223,11 +224,84 @@
     margin: 0px 4em;
 }
 
+.genImgRounded{
+    border-radius: 50px;
+    position: relative;
+    width: 85%;
+    height: 735px;
+    left: 10%;
+  }
+
+  .linkButton{
+    color: #00FFFF;
+    border: 2px solid #00FFFF;
+    border-radius: 30px;
+    padding: 10px 70px;
+    margin-top: 1.5em;
+    letter-spacing: 2px;
+    transition: .4s;
+  }
+
+  .linkButton:hover{
+    background: #009CE1 !important;
+    border: 2px solid #009CE1;
+    color:white;
+  }
+
+  .contTitleBasic{
+    align-items: center;
+    margin-top: 4em;
+  }
+
+  .contTitleBasic h2{
+    color:#004B87;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 900;
+  }
+
+
 @media (max-width: 576px){
     .bannerRadius{
         border-radius: 30px;
     }
     .bannerRadius::before{
         display: none;
+    }
+    .genBannerIntro{
+        padding: 1.5em;
+    }
+    .genBannerIntro__desc{
+        padding: 1em;
+    }
+    .titleHosting{
+        margin-top: 7em;
+    }
+    .titleTop{
+        font-size: 35px;
+        line-height: 37px;
+    }
+    .textDesc{
+        line-height: 25px;
+    }
+    .linkButton{
+        padding: 10px 20px;
+    }
+    .titlePlanes{
+        font-size: 37px;
+    }
+    .secondPlanes{
+        font-size: 22px;
+    }
+    .descPlanes{
+        padding: 0px 2em;
+    }
+    .genContGrid{
+        padding: 2em;
+    }
+    .titleLight{
+        font-size: 35px;
+    }
+    .contTitleBasic{
+        text-align: center;
     }
 }

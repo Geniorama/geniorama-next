@@ -106,6 +106,19 @@ p, span{
   outline: none;
 }
 
+.gen-input-text2{
+  width: 98%;
+  height: 70px;
+  padding: 10px 1.5rem;
+  margin: .5rem 0;
+  border-radius: 15px;
+  border: none;
+  background-color: white;
+  -webkit-box-shadow: 5px 2px 49px 0px rgba(0,0,0,0.1); 
+  box-shadow: 5px 2px 49px 0px rgba(0,0,0,0.1);
+  outline: none;
+}
+
 .gen-input-text::placeholder{
   color: #ccc;
 }
@@ -133,6 +146,16 @@ p, span{
   -webkit-box-shadow: 5px 2px 49px 0px rgba(0,0,0,0.1); 
   box-shadow: 5px 2px 49px 0px rgba(0,0,0,0.1);
   outline: none;
+}
+
+.acceptance{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.acceptance p{
+  margin: 0px 0px 0px 7px;
 }
 
 /* Center logo brands */
@@ -271,5 +294,9 @@ p, span{
   .gen-slick-arrow{
     bottom: 1.5rem;
     top: unset;
+  }
+  
+  .gen-input-text2{
+    width: 100%;
   }
 }

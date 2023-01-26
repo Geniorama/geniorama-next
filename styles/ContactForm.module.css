@@ -30,3 +30,55 @@
 .genPrivacyPolicy a{
     color: var(--p-color);
 }
+
+.contFormTwo{
+    display: flex;
+}
+
+.contFormTwo input{
+    width: 96%;
+}
+
+#gen-contact-hosting input{
+    width: 98%;
+}
+
+.submitButton2{
+    font-size: 20px;
+    height: 58px;
+    border: 2px solid;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--s-color);
+    color: var(--p-color);
+    border-color: var(--s-color);
+    transition: .4s;
+    width: 98%;
+}
+
+.submitButton2:hover{
+    background-color: var(--s-color-2);
+    color: white;
+    border-color: var(--s-color-2);
+}
+
+@media (max-width: 579px){
+    .contFormTwo{
+        display: block;
+    }
+    .contFormTwo input{
+        width: 100%;
+    }
+    .submitButton2{
+        font-size: 18px;
+        padding: 20px;
+        height: 70px;
+        width: 100%;
+    }
+}
