@@ -6,29 +6,29 @@ export default function FormHosting() {
     <div className={styles.genContactForm}>
             <form action="" id="gen-contact-hosting">
                 <div className={styles.contFormTwo}>
-                  <div className="form-group gen-input-group">
+                  <div className={styles.genInputGroup1}>
                       <label className='gen-input-label' htmlFor="">Tu nombre</label>
                       <input className='gen-input-text' type="text" id='full-name' name='full-name' />
                   </div>
 
-                  <div className="form-group gen-input-group">
+                  <div className={styles.genInputGroup1}>
                       <label className='gen-input-label' htmlFor=""> Tu email</label>
                       <input className='gen-input-text' name='email' id='email' type="email" />
                   </div>
                 </div>
 
-                <div className="form-group gen-input-group">
+                <div className={styles.genInputGroup1}>
                     <label className='gen-input-label' htmlFor="">Celular</label>
                     <input className='gen-input-text2' type="number" name='number' id='number' />
                 </div>
 
                 <div className={styles.contFormTwo}>
-                  <div className="form-group gen-input-group">
+                  <div className={styles.genInputGroup1}>
                       <label className='gen-input-label' htmlFor="">Nombre empresa</label>
                       <input className='gen-input-text' type="text" id='company' name='com' />
                   </div>
 
-                  <div className="form-group gen-input-group">
+                  <div className={styles.genInputGroup1}>
                       <label className='gen-input-label' htmlFor=""> Cargo</label>
                       <input className='gen-input-text' name='range' id='range' type="text" />
                   </div>
