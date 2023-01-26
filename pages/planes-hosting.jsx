@@ -49,7 +49,7 @@ export default function planesHosting(){
             <section>
             <div className={styles.decorationImgRounded}>
                     {/* Pattern plus 1 */}
-                        <div style={{position: "absolute", top: "700px", left: "90px", zIndex: "2"}}>
+                        <div style={{position: "absolute", top: "700px", left: "90px", zIndex: "-1"}}>
                             <Image src={PatternPlus} />
                         </div>
                     </div>
@@ -248,7 +248,7 @@ export default function planesHosting(){
                             </div> 
                         </div>
 
-                        <div className={styles.imgAuxForm} style={{overflow: "hidden", position: "relative", width: "100%", height: "100%"}}>
+                        <div className={`${styles.imgAuxForm} d-none d-md-block`} style={{overflow: "hidden", position: "relative", width: "100%", height: "100%"}}>
                             <Image 
                             src={ImagenForm}
                             layout={"fill"}
@@ -259,7 +259,7 @@ export default function planesHosting(){
                         </div>
                     </div>
                     </div>
-                    <div className="col-12 col-lg-6 px-5 mb-5 mb-lg-0 mt-5">
+                    <div className="col-12 col-lg-6 px-3 px-lg-5 mb-5 mb-lg-0 mt-5">
                         <div data-aos="fade-right" data-aos-duration="1000">
                         <Image
                         src={iconForm}
@@ -272,7 +272,7 @@ export default function planesHosting(){
                         <p className="gen-info-section__desc">
                         No se trata simplemente de estar en Internet, contar con los mejores beneficios de hosting ahora es posible con el acompañamiento de <span style={{color: "#009CE1"}}>Geniorama.</span> Déjanos tus datos y te asesoramos.
                         </p>
-                        <FormHosting></FormHosting>
+                        <FormHosting />
                         </div>
                     </div>
                 </div>
