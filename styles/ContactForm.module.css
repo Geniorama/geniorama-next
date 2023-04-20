@@ -36,7 +36,12 @@
 }
 
 .contFormTwo input{
+    flex: 1;
     width: 96%;
+}
+
+.genInputGroup1{
+    width: 100% !important;
 }
 
 #gen-contact-hosting input{

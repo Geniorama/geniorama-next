@@ -17,7 +17,7 @@ export default function FormHosting() {
                   </div>
                 </div>
 
-                <div className="form-group gen-input-group">
+                <div className={styles.genInputGroup1}>
                     <label className='gen-input-label' htmlFor="">Celular</label>
                     <input className='gen-input-text2' type="number" name='number' id='number' />
                 </div>
