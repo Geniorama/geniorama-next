@@ -1,5 +1,4 @@
 import Layout from "../components/Layout/Layout";
-import HeadingPage from "../components/HeadingPage";
 import BannerHosting from "../components/BannerHosting";
 import ImgBanner from "../public/banners/banner-hosting/bg-hosting.png"
 import styles from "../styles/BannerHosting.module.css";
@@ -37,8 +36,11 @@ export default function planesHosting(){
             titleTop={"UN LUGAR, TODOS LOS BENEFICIOS"}
             titleBottom={"Experiencia y pasión"}
             desc={"Tener tu sitio web es importante, pero también lo es el lugar en donde estará alojado. Descubre los beneficios del servicio de hosting de Geniorama y disfruta del acompañamiento experto de nuestros profesionales en cada paso del camino."}
-            textButton={"VER PLANES"}
-            linkButton={"#"}
+            button={{
+                text: "VER PLANES",
+                link: "#planes-hosting"
+            }}
+            
             />
             <div className={styles.titleHosting}>
                 <div className="container">
@@ -46,6 +48,11 @@ export default function planesHosting(){
                     <h2 className={styles.titleHostingBottom}>NUESTROS PLANES</h2>
                 </div>
             </div>
+
+            {/* Ancla */}
+            <div id="planes-hosting"></div>
+
+            {/* PREMIUM */}
             <section>
             <div className={styles.decorationImgRounded}>
                     {/* Pattern plus 1 */}
@@ -56,7 +63,7 @@ export default function planesHosting(){
             </section>
             <section className={styles.contGrid1}>
                 <Image classname={styles.imgLeft} src={imgGrid} />
-                <CardPrice
+                    <CardPrice
                     title="ADS ADVANCED"
                     desc="Descripción pendiente"
                     item="4 GB de almacenamiento en SSD."
@@ -65,9 +72,7 @@ export default function planesHosting(){
                     preciomensual="20.000"
                     textsmallmonth="/mes*"
                     link="/#"
-                    >
-
-                    </CardPrice>
+                    />
 
                     <CardPrice
                     title="ADS ADVANCED"
@@ -78,8 +83,8 @@ export default function planesHosting(){
                     preciomensual="20.000"
                     textsmallmonth="/mes*"
                     link="/#"
-                    >
-                    </CardPrice>
+                    />
+                    
             </section>
             <section>
             <div className={styles.decorationImgRounded}>
@@ -95,6 +100,8 @@ export default function planesHosting(){
                         </div>
                     </div>
             </section>
+
+            {/* BÁSICOS */}
             <section className={styles.contTitleBasic}>
                 <div className="container">
                     <h2>BÁSICOS</h2>
@@ -113,8 +120,7 @@ export default function planesHosting(){
                     preciomensual="20.000"
                     textsmallmonth="/mes*"
                     link="/#"
-                    >
-                </CardPrice>
+                    />
 
                 <CardPrice
                     title="ADS ADVANCED"
@@ -125,9 +131,7 @@ export default function planesHosting(){
                     preciomensual="20.000"
                     textsmallmonth="/mes*"
                     link="/#"
-                    >
-
-                </CardPrice>
+                    />
 
                 <CardPrice
                     title="ADS ADVANCED"
@@ -138,8 +142,7 @@ export default function planesHosting(){
                     preciomensual="20.000"
                     textsmallmonth="/mes*"
                     link="/#"
-                    >
-                </CardPrice>
+                    />
             </section>
             <section>
             <div style={{position: "absolute", top: "1880px", left: "90px", zIndex: "-1"}}>
@@ -168,21 +171,7 @@ export default function planesHosting(){
                 preciomensual="20.000"
                 textsmallmonth="/mes*"
                 link="/#"
-                >
-
-                </CardPrice>
-                <CardPrice
-                title="ADS ADVANCED"
-                desc="Descripción pendiente"
-                item="4 GB de almacenamiento en SSD."
-                precioanual="$768.000"
-                textsmallyear="/anual"
-                preciomensual="20.000"
-                textsmallmonth="/mes*"
-                link="/#"
-                >
-
-                </CardPrice>
+                />
 
                 <CardPrice
                 title="ADS ADVANCED"
@@ -193,47 +182,56 @@ export default function planesHosting(){
                 preciomensual="20.000"
                 textsmallmonth="/mes*"
                 link="/#"
-                >
+                />
 
-                </CardPrice>
+                <CardPrice
+                title="ADS ADVANCED"
+                desc="Descripción pendiente"
+                item="4 GB de almacenamiento en SSD."
+                precioanual="$768.000"
+                textsmallyear="/anual"
+                preciomensual="20.000"
+                textsmallmonth="/mes*"
+                link="/#"
+                />
             </section>
             <section className={styles.contLogos}>
                 <h2 className={styles.titleLight}>Todos nuestros planes cuentan con la mejor<br></br>tecnología</h2>
                 <div className="container">
                     <div className="row mt-5">
-                        <div className="col-12 col-lg-3 p-4">
+                        <div className="col-12 col-md-3 p-4">
                             <Image src={logo1} />
                         </div>
-                        <div className="col-12 col-lg-3 p-4">
+                        <div className="col-12 col-md-3 p-4">
                             <Image src={logo2} />
                         </div>
-                        <div className="col-12 col-lg-3 p-4">
+                        <div className="col-12 col-md-3 p-4">
                             <Image src={logo3} />
                         </div>
-                        <div className="col-12 col-lg-3 p-4">
+                        <div className="col-12 col-md-3 p-4">
                             <Image src={logo4} />
                         </div>
                     </div>
                     <div className="row mt-5">
-                        <div className="col-12 col-lg-3 p-4">
+                        <div className="col-12 col-md-3 p-4">
                             <Image src={logo5} />
                         </div>
-                        <div className="col-12 col-lg-3 p-4">
+                        <div className="col-12 col-md-3 p-4">
                             <Image src={logo6} />
                         </div>
-                        <div className="col-12 col-lg-3 p-4">
+                        <div className="col-12 col-md-3 p-4">
                             <Image src={logo7} />
                         </div>
-                        <div className="col-12 col-lg-3 p-4">
+                        <div className="col-12 col-md-3 p-4">
                             <Image src={logo8} />
                         </div>
                     </div>
                 </div>
             </section>
             <section className="gen-info-section">
-                <div className="container mt-5">
+                <div className="container mt-lg-5">
                 <div className="row align-items-center">
-                <div className="col-12 col-lg-6">
+                <div className="col-12 col-lg-6  d-none d-md-block">
                     <div data-aos="fade-left" data-aos-duration="1000">
                         <div className={styles.genImgRounded}>
                         <div className={styles.decorationImgRounded}>
@@ -248,7 +246,7 @@ export default function planesHosting(){
                             </div> 
                         </div>
 
-                        <div className={`${styles.imgAuxForm} d-none d-md-block`} style={{overflow: "hidden", position: "relative", width: "100%", height: "100%"}}>
+                        <div className={`${styles.imgAuxForm}`} style={{overflow: "hidden", position: "relative", width: "100%", height: "100%"}}>
                             <Image 
                             src={ImagenForm}
                             layout={"fill"}
@@ -259,7 +257,7 @@ export default function planesHosting(){
                         </div>
                     </div>
                     </div>
-                    <div className="col-12 col-lg-6 px-3 px-lg-5 mb-5 mb-lg-0 mt-5">
+                    <div className="col-12 col-lg-6 px-3 px-lg-5 mb-5 mb-lg-0 mt-md-5">
                         <div data-aos="fade-right" data-aos-duration="1000">
                         <Image
                         src={iconForm}

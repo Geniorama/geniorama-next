@@ -59,7 +59,7 @@
     color: var(--p-color);
     border-color: var(--s-color);
     transition: .4s;
-    width: 98%;
+    width: 100%;
 }
 
 .submitButton2:hover{
