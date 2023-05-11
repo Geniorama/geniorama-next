@@ -75,20 +75,20 @@ export default function Home({data, dataBlog}) {
                   image={IconGenEstr}
                   title="GEN ESTRATÉGICO"
                   description={
-                    "<p>Somos expertos en crear y llevar a cabo campañas de comunicación y propuestas web innovadoras y arriesgadas,  capaces de sorprender y cautivar. Ponemos a su disposición las últimas tendencias de diseño y navegación, con el fin de mejorar en todo momento la experiencia del usuario ya que  nuestro objetivo es lograr en todo momento, que nuestros clientes alcancen sus objetivos.</p>"
+                    "<p>Campañas digitales innovadoras y arriesgadas que mejoran la experiencia del usuario y ayudan a los clientes a alcanzar objetivos.</p>"
                   }
                 />
 
                 <CardOurGen
                   image={IconGenCrea}
                   title="GEN CREATIVO"
-                  description="<p>La creatividad también hace parte de nuestro ADN, somos expertos en investigación, conceptualización y diseño de campañas y páginas web creativas con un mensaje contundente. Toda nuestra atención está en los pequeños detalles, siendo este, el verdadero secreto de nuestro nivel de éxito al momento de comunicar y hacer visibles a nuestros clientes.</p>"
+                  description="<p>Expertos en diseño y creación de campañas web creativas con mensaje contundente y atención a los detalles para el éxito de nuestros clientes.</p>"
                 />
 
                 <CardOurGen
                   image={IconGenReal}
                   title="GEN REAL"
-                  description="<p>Desde nuestros inicios, hemos creído en el gran poder que tiene el Internet para el desarrollo e impulso de las marcas y nos hemos consolidado como verdaderos maestros de la pauta digital, llevando a cabo procesos creados específicamente para lograr las metas de cada uno de nuestros clientes.</p>"
+                  description="<p>Creemos en el poder del Internet para el desarrollo de marcas y somos expertos en la pauta digital. Nuestros procesos son personalizados para lograr las metas de cada cliente.</p>"
                 />
               </div>
             </div>
@@ -384,14 +384,12 @@ export async function getServerSideProps({res}){
     'Cache-Control',
     'public, s-maxage=10, stale-while-revalidate=59'
   )
-
-  const url_api_blog ="https://www.geniorama.site/cms/wp-json/wp/v2/posts"
-  const url_api = "https://www.geniorama.site/cms/wp-json/wp/v2/portfolio/?per_page=6&_embed=true"
+  
   try{
-    const res = await fetch(url_api)
+    const res = await fetch(process.env.API_URL + '/portfolio/?per_page=6&_embed=true')
     const data = await res.json()
 
-    const resBlog = await fetch(url_api_blog)
+    const resBlog = await fetch(process.env.API_URL + '/posts')
     const dataBlog = await resBlog.json()
     return {
       props: {

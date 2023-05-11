@@ -63,7 +63,7 @@ export async function getStaticPaths(){
 
 export async function getStaticProps({params}){
   try {
-    const res = await fetch('https://www.geniorama.site/cms/wp-json/wp/v2/posts/?slug=' + params.slug)
+    const res = await fetch(process.env.API_URL + '/posts/?slug=' + params.slug)
     const data = await res.json()
 
     return{

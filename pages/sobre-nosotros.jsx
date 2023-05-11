@@ -4,13 +4,13 @@ import Layout from "../components/Layout/Layout";
 import styles from "../styles/SobreNosotros.module.css";
 import CardTeamGen from "../components/CardTeamGen";
 import ImgAngelBurgos from "../public/equipo/team-angel.png";
-import ImgJuliana from "../public/img/Juliana-sossa.jpg";
+import ImgJuliana from "../public/img/juliana.jpg";
 import ImgOscarPedraza from "../public/equipo/team-oscar.png";
 import ImgDuvanR from "../public/equipo/team-duvan.png";
 import ImgDiegoB from "../public/equipo/team-diego.png";
 import ImgCatalinaB from "../public/equipo/team-cata.png";
 import ImgWilliam from "../public/img/william-mondul.jpg";
-import ImgFelipeH from "../public/foto-felipe-h.jpg";
+import ImgMelanieF from "../public/img/melanie.jpg";
 import ImgNatalia from "../public/equipo/team-natalia.jpg";
 import DanielaB from "../public/img/daniela-barreto-geniorama.png";
 import ImgCristianM from "../public/equipo/team-cristian.png";
@@ -26,6 +26,7 @@ import JuanArango from "../public/testimonios/juan-f-arango.jpg";
 import SylviaRugeles from "../public/testimonios/sylvia-rugeles.jpg";
 import SorangieLopez from "../public/testimonios/sorangie-lopez.jpg";
 import RodolfoVelasquez from "../public/testimonios/rodolfo-velasquez.jpg"
+import ImgCarmenZ from '../public/img/carmen.jpg'
 
 export default function SobreNosotros() {
   return (
@@ -82,6 +83,15 @@ export default function SobreNosotros() {
             />
 
             <CardTeamGen
+              image={ImgCarmenZ}
+              name="Carmen Zapata"
+              position={"Project Manager"}
+              linkedin={
+                "https://www.linkedin.com/in/carmen-zapata-2a378a1b8/"
+              }
+            />
+
+            <CardTeamGen
               image={ImgJuliana}
               name="Juliana Sossa"
               position={"Community Manager"}
@@ -128,6 +138,15 @@ export default function SobreNosotros() {
                 "https://www.linkedin.com/in/giovanni-rodr%C3%ADguez-25b9b621a/"
               }
               github={"https://github.com/DuvanProgrammer"}
+            />
+
+            <CardTeamGen
+              image={ImgMelanieF}
+              name="Melanie Fitzgerald"
+              position={"UI Designer"}
+              instagram={"https://www.instagram.com/melanie.designer/"}
+              behance={"https://www.behance.net/melaniedesigner"}
+              linkedin={"https://www.linkedin.com/in/mfadesigner/"}
             />
           </div>
         </div>

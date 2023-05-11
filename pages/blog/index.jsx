@@ -44,9 +44,9 @@ export async function getServerSideProps({res}){
     'Cache-Control',
     'public, s-maxage=10, stale-while-revalidate=59'
     )
-    const url_api_blog ="https://www.geniorama.site/cms/wp-json/wp/v2/posts"
+
     try{
-        const res = await fetch(url_api_blog)
+        const res = await fetch(process.env.API_URL + '/posts')
         const data = await res.json()
 
         return{
