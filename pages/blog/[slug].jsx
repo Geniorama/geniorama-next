@@ -8,6 +8,12 @@ import { useRouter } from "next/router";
 
 export default function Single({data}) {
   const router = useRouter()
+  if(!data){
+    console.log(data)
+    return (
+      "No se encontró información"
+    );
+  }
   const dataPost = data[0]
 
   if(router.isFallback){
@@ -49,7 +55,7 @@ export default function Single({data}) {
 
 export async function getStaticPaths(){
   try {
-    const res = await fetch('https://www.geniorama.site/cms/wp-json/wp/v2/posts')
+    const res = await fetch(process.env.API_URL + '/posts')
     const data = await res.json()
     const paths = data.map(({slug}) => ({params: {slug: `${slug}`}}))
     return {
@@ -57,7 +63,10 @@ export async function getStaticPaths(){
       fallback: false
     }
   } catch (error) {
-    console.log(error)
+    return {
+      paths: [],
+      fallback: false,
+    };
   }
 }
 
