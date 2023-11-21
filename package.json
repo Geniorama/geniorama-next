@@ -2,9 +2,9 @@
   "name": "geniorama-next",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && next start",
     "lint": "next lint"
   },
   "engines": {
