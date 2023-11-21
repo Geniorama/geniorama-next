@@ -2,13 +2,13 @@
   "name": "geniorama-next",
   "private": true,
   "scripts": {
-    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev",
+    "dev": "next dev",
     "build": "next build",
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && next start",
+    "start": "next start",
     "lint": "next lint"
   },
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
