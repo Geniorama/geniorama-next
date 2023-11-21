@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import LogoLight from '../public/logo/logo-geniorama-03.svg'
+import LogoLight from '../public/logo/gen-logo-horRecurso 7.svg'
 import styles from '../styles/Footer.module.css'
 import FloatIcons from "./FloatIcons";
 import SocialShapes from "../utils/socialShapes.json"

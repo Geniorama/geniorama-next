@@ -28,11 +28,11 @@ p, span{
 }
 
 :root{
-  --p-color: #004B87;
-  --s-color: #00FFFF;
+  --p-color: #000a3d;
+  --s-color: #fd1383;
   --text-1: #2B2B2B;
   --text-2: #515553;
-  --s-color-2: #009CE1;
+  --s-color-2: #fd1383;
   --p-color-2: #003462;
 
   --p-gradient: linear-gradient(246.88deg, #009EE1 14.68%, #2AF598 91.32%);

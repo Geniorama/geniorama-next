@@ -11,12 +11,9 @@ import ImgDiegoB from "../public/equipo/team-diego.png";
 import ImgCatalinaB from "../public/equipo/team-cata.png";
 import ImgWilliam from "../public/img/william-mondul.jpg";
 import ImgMelanieF from "../public/img/melanie.jpg";
-import ImgNatalia from "../public/equipo/team-natalia.jpg";
-import DanielaB from "../public/img/daniela-barreto-geniorama.png";
-import ImgCristianM from "../public/equipo/team-cristian.png";
+import ImgDarwin from "../public/equipo/Darwin-edit.png";
 import CarouselGen from "../components/CarouselGen";
-import Testimonial from "../components/Testimonial";
-import AvatarExample from "../public/pexels-pixabay-415829.jpg";
+import Testimonial from "../components/Testimonial"; 
 import SvgIconOurVission from "../components/SvgImages/SvgIconOurVission";
 import SvgIconOurMission from "../components/SvgImages/SvgIconOurMission";
 import DiegoRodriguez from "../public/testimonios/diego-rodriguez.jpg";
@@ -26,7 +23,7 @@ import JuanArango from "../public/testimonios/juan-f-arango.jpg";
 import SylviaRugeles from "../public/testimonios/sylvia-rugeles.jpg";
 import SorangieLopez from "../public/testimonios/sorangie-lopez.jpg";
 import RodolfoVelasquez from "../public/testimonios/rodolfo-velasquez.jpg"
-import ImgCarmenZ from '../public/img/carmen.jpg'
+import ImgJair from '../public/equipo/jair.jpeg'
 
 export default function SobreNosotros() {
   return (
@@ -83,11 +80,11 @@ export default function SobreNosotros() {
             />
 
             <CardTeamGen
-              image={ImgCarmenZ}
-              name="Carmen Zapata"
-              position={"Project Manager"}
+              image={ImgJair}
+              name="Jair Pérez"
+              position={"Frontend Dev"}
               linkedin={
-                "https://www.linkedin.com/in/carmen-zapata-2a378a1b8/"
+                "https://www.linkedin.com/in/perezjair94/"
               }
             />
 
@@ -99,9 +96,9 @@ export default function SobreNosotros() {
             />
 
             <CardTeamGen
-              image={ImgCristianM}
-              name="Cristian Marín"
-              position={"Content Manager & Creative"}
+              image={ImgDarwin}
+              name="Darwin Roa"
+              position={"Wordpress / Frontend Dev"}
               linkedin={
                 "https://www.linkedin.com/in/cristhian-camilo-mar%C3%ADn-linares-7b976754/"
               }
@@ -130,7 +127,7 @@ export default function SobreNosotros() {
               behance={"https://www.behance.net/willianmondulDG94"}
             />
 
-            <CardTeamGen
+            {/* <CardTeamGen
               image={ImgDuvanR}
               name="Duvan Rodríguez"
               position={"Frontend Developer"}
@@ -138,7 +135,7 @@ export default function SobreNosotros() {
                 "https://www.linkedin.com/in/giovanni-rodr%C3%ADguez-25b9b621a/"
               }
               github={"https://github.com/DuvanProgrammer"}
-            />
+            /> */}
 
             <CardTeamGen
               image={ImgMelanieF}

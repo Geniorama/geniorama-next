@@ -1,6 +1,6 @@
 import styles from './../styles/Header.module.css'
-import LogoDark from './../public/logo/logo-geniorama-02.svg'
-import LogoLight from '../public/logo/logo-geniorama-03.svg'
+import LogoDark from './../public/logo/gen-logo-horRecurso 8.svg'
+import LogoLight from '../public/logo/gen-logo-horRecurso 7.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import MenuPrincipal from '../menus/menuPrincipal.json'
@@ -66,8 +66,9 @@ export default function Header({isLogoLight}){
                         <a className={styles.logoLink}>
                             <Image 
                                 src={isLogoLight ? LogoLight : LogoDark}
-                                width={150}
-                                height={80}
+                                width={250}
+                                height={100}
+                                alt='logo geniorama'
                             />
                         </a>
                     </Link>

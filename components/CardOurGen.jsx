@@ -18,6 +18,7 @@ export default function CardOurGen({title, description, image, link, dark, shado
                 className={styles.CardOurGen__img}
                 width={80}
                 height={150}
+                alt=""
               />
               :
               null

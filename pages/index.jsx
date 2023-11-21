@@ -72,7 +72,7 @@ export default function Home({data, dataBlog}) {
             <div className="col-12" data-aos="fade-left" data-aos-duration="1000">
               <div className={styles.genContGrid}>
                 <CardOurGen
-                  image={IconGenEstr}
+                  // image={IconGenEstr}
                   title="GEN ESTRATÉGICO"
                   description={
                     "<p>Campañas digitales innovadoras y arriesgadas que mejoran la experiencia del usuario y ayudan a los clientes a alcanzar objetivos.</p>"
@@ -80,13 +80,13 @@ export default function Home({data, dataBlog}) {
                 />
 
                 <CardOurGen
-                  image={IconGenCrea}
+                  // image={IconGenCrea}
                   title="GEN CREATIVO"
                   description="<p>Expertos en diseño y creación de campañas web creativas con mensaje contundente y atención a los detalles para el éxito de nuestros clientes.</p>"
                 />
 
                 <CardOurGen
-                  image={IconGenReal}
+                  // image={IconGenReal}
                   title="GEN REAL"
                   description="<p>Creemos en el poder del Internet para el desarrollo de marcas y somos expertos en la pauta digital. Nuestros procesos son personalizados para lograr las metas de cada cliente.</p>"
                 />
@@ -186,29 +186,29 @@ export default function Home({data, dataBlog}) {
           </h2>
           <div className={styles.genWrapServices}>
             <CardOurGen
-              image={IconDisenoWeb}
+              // image={IconDisenoWeb}
               link="/"
               title="DISEÑO DE PÁGINAS WEB"
               dark
               shadow
             />
             <CardOurGen
-              image={IconSoporteWeb}
+              // image={IconSoporteWeb}
               link="/"
               title="MANTENIMIENTO Y SOPORTE WEB"
               dark
               shadow
             />
             <CardOurGen
-              image={IconHosting}
-              link="/planes-hosting"
+              // image={IconHosting}
+              link="/"
               title="HOSTING Y SERVIDORES"
               dark
               shadow
             />
 
             <CardOurGen
-              image={IconPosicionamientoSeo}
+              // image={IconPosicionamientoSeo}
               link="/"
               title="POSICIONAMIENTO WEB (SEO)"
               dark
@@ -216,7 +216,7 @@ export default function Home({data, dataBlog}) {
             />
 
             <CardOurGen
-              image={IconPauta} 
+              // image={IconPauta} 
               link="/" 
               title="PAUTA DIGITAL"
               dark
@@ -224,7 +224,7 @@ export default function Home({data, dataBlog}) {
             />
 
             <CardOurGen 
-              image={IconSocialMedia} 
+              // image={IconSocialMedia} 
               link="/" 
               title="SOCIAL MEDIA"
               dark
@@ -232,7 +232,7 @@ export default function Home({data, dataBlog}) {
             />
 
             <CardOurGen
-              image={IconDisenoGrafico}
+              // image={IconDisenoGrafico}
               link="/"
               title="DISEÑO GRÁFICO"
               dark
@@ -240,7 +240,7 @@ export default function Home({data, dataBlog}) {
             />
 
             <CardOurGen
-              image={IconProdAudiovisual}
+              // image={IconProdAudiovisual}
               link="/"
               title="PRODUCCIÓN AUDIOVISUAL"
               dark
@@ -248,7 +248,7 @@ export default function Home({data, dataBlog}) {
             />
 
             <CardOurGen
-              image={IconStream}
+              // image={IconStream}
               link="/"
               title="STREAMING (TRANSMISIONES ONLINE)"
               dark

@@ -42,28 +42,28 @@ export default function SectionDataCounters() {
       <div className="container">
         <div className={styles.grid}>
           <DataCounter
-            image={IconoExperiencia}
+            // image={IconoExperiencia}
             prefix="+"
             number="0"
             target="8"
             leyend="Años de experiencia"
           />
           <DataCounter
-            image={IconoClientes}
+            // image={IconoClientes}
             prefix="+"
             number={"0"}
             target="100"
             leyend="Clientes felices"
           />
           <DataCounter
-            image={IconoTazas}
+            // image={IconoTazas}
             prefix="+"
             number={"0"}
             target="45789"
             leyend="Tazas de café o un poco más..."
           />
           <DataCounter
-            image={IconoIdea}
+            // image={IconoIdea}
             prefix="+"
             number={"0"}
             target="367"
